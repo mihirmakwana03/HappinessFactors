@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <style>
+    body{
+        padding-top: 70px;
+    }
     .products-hero {
         background: linear-gradient(rgba(30, 30, 60, 0.7), rgba(30, 30, 60, 0.7)),
         url("{{ asset('assets/img/business-bg.jpg') }}") no-repeat center center/cover;
@@ -128,8 +131,8 @@
 <section class="products-section bg-gray-50 py-5" id="products">
     <div class="products-grid">
 
-            <!-- Trainings -->
-            <div class="product-card">
+        <!-- Trainings -->
+        <div class="product-card" id="trainings">
             <img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Trainings" class="product-img">
             <div class="product-content">
                 <div>
@@ -141,21 +144,21 @@
             </div>
         </div>
 
-            <!-- App -->
-            <div class="product-card">
-            <img src="https://images.pexels.com/photos/6373086/pexels-photo-6373086.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="App" class="product-img">
+        <!-- App -->
+        <div class="product-card" id="app">
+            <img src="../assets/img/products/app.jpg" alt="App" class="product-img" style="object-fit:contain;">
             <div class="product-content">
                 <div>
                     <span class="product-icon"><i class="fas fa-mobile-alt"></i></span>
                     <div class="product-title">App</div>
                     <div class="product-desc">Keep your learning journey on track wherever you go. Access content, track progress, and get reminders on iOS and Android.</div>
                 </div>
-                <a href="products/app" class="product-btn">Get the App</a>
+                <a href="https://apps.apple.com/us/app/happiness-factors/id1575587044?platform=iphone" class="product-btn">Get the App</a>
             </div>
         </div>
 
-                <!-- Courses -->
-                <div class="product-card">
+        <!-- Courses -->
+        <div class="product-card" id="courses">
             <img src="https://images.pexels.com/photos/4443162/pexels-photo-4443162.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Courses" class="product-img">
             <div class="product-content">
                 <div>
@@ -168,7 +171,7 @@
         </div>
 
         <!-- Coaching -->
-        <div class="product-card">
+        <div class="product-card" id="coaching">
             <img src="https://images.pexels.com/photos/1181715/pexels-photo-1181715.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Coaching" class="product-img">
             <div class="product-content">
                 <div>
@@ -184,7 +187,7 @@
 
 
         <!-- Webinars -->
-        <div class="product-card">
+        <div class="product-card" id="webinars">
             <img src="https://images.pexels.com/photos/3727459/pexels-photo-3727459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Webinars" class="product-img">
             <div class="product-content">
                 <div>
@@ -197,7 +200,7 @@
         </div>
 
         <!-- Seminars -->
-        <div class="product-card">
+        <div class="product-card" id="seminars">
             <img src="https://images.pexels.com/photos/3321796/pexels-photo-3321796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Seminars" class="product-img">
             <div class="product-content">
                 <div>
@@ -210,7 +213,7 @@
         </div>
 
         <!-- Workshops -->
-        <div class="product-card">
+        <div class="product-card" id="workshops">
             <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Workshops" class="product-img">
             <div class="product-content">
                 <div>
@@ -225,7 +228,7 @@
 
 
         <!-- Offsites -->
-        <div class="product-card">
+        <div class="product-card" id="offsites">
             <img src="https://images.pexels.com/photos/7551465/pexels-photo-7551465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Offsites" class="product-img">
             <div class="product-content">
                 <div>
@@ -238,7 +241,7 @@
         </div>
 
         <!-- Retreats -->
-        <div class="product-card">
+        <div class="product-card" id="retreats">
             <img src="https://images.pexels.com/photos/31925758/pexels-photo-31925758.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Retreats" class="product-img">
             <div class="product-content">
                 <div>
