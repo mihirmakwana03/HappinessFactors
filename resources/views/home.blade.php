@@ -48,7 +48,7 @@
                     <img class="max-width-4" src="{{ asset('assets/img/title-line.svg') }}" alt="" style="filter: invert(16%) sepia(100%) saturate(7472%) hue-rotate(266deg) brightness(90%) contrast(110%);">
                 </div>
                 <p class="mb-4">
-                    At <span style="color: red; font-weight: bold;">HappinessFactors</span>, we believe in the power of 
+                    At <span style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of 
                     <span style="color: #61009b; font-weight: bold;">positivity</span> and 
                     <span style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the 
                     <span style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a 
