@@ -160,13 +160,13 @@
         transition: all 0.3s ease;
     }
 
-        color: #c71e19 !important;
+        /* color: #c71e19 !important;
         font-weight: 600;
         color: #1a1a1a;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-background-clip: text;
-    }
+    } */
 
     .nav-link span {
         position: relative;

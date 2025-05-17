@@ -1,6 +1,17 @@
 @extends('main')
 
-@section('title', 'Products')
+@section('title', 'Products - Happiness Factors')
+@section('description', 'Explore our range of products designed to enhance well-being and productivity. From training programs to wellness retreats, discover how we can support your journey towards a happier workplace.')
+@section('keywords', 'Happiness Factors, Products, Training, App, Courses, Coaching, Webinars, Seminars, Workshops, Offsites, Retreats')
+@section('canonical', url()->current())
+@section('og-title', 'Happiness Factors - Products')
+@section('og-description', 'Explore our range of products designed to enhance well-being and productivity. From training programs to wellness retreats, discover how we can support your journey towards a happier workplace.')
+@section('og-image', asset('assets/img/business-bg.jpg'))
+@section('og-url', url()->current())
+@section('og-type', 'website')
+@section('og-site_name', 'Happiness Factors')
+@section('og-image-width', '1200')
+@section('og-image-height', '630')
 
 @section('head')
 <link rel="stylesheet" href="{{ asset('css/products.css') }}">
@@ -119,11 +130,13 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="products-hero">
+<section class="products-hero" id="services">
     <div class="container">
         <h1 style="color: #fff; text-shadow: 2px 2px 8px rgba(30,30,60,0.7);">Happy Teams. Productive Minds. Profitable Outcomes.</h1>
         <p>Wellness that feels good—and works hard for your bottom line. 💼💫</p>
-        <a href="#products" class="btn btn-secondary mt-3">Find Out How</a>
+        <a href="#products" class="btn btn-secondary mt-3" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
+                   onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
+                   onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">Find Out How</a>
     </div>
 </section>
 

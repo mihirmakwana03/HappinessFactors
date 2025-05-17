@@ -1,6 +1,27 @@
 @extends('main')
 
-@section('title', 'Home')
+@section('title', 'Welcome to HappinessFactors')
+@section('subtitle', 'Your Go-To Mental Wellness Solutions')
+@section('content-title', 'Welcome to HappinessFactors')
+@section('content-subtitle', 'Discover the factors that contribute to happiness and how you can incorporate them into your daily life.')
+@section('content-description', 'At HappinessFactors, we believe in the power of positivity and mindfulness. Our mission is to help you discover the key elements that contribute to a happier, more fulfilling life. Join us on this journey and learn how to incorporate these factors into your daily routine.')
+@section('content-keywords', 'HappinessFactors, mental wellness, happiness, mindfulness, positivity, emotional wellness, wellness solutions')
+@section('content-author', 'HappinessFactors')
+@section('description', 'Welcome to HappinessFactors, your go-to mental wellness solutions. Discover the factors that contribute to happiness and how you can incorporate them into your daily life.')
+@section('keywords', 'HappinessFactors, mental wellness, happiness, mindfulness, positivity, emotional wellness, wellness solutions')
+@section('author', 'HappinessFactors')
+@section('og')
+    <meta property="og:title" content="Welcome to HappinessFactors" />
+    <meta property="og:description" content="Discover the factors that contribute to happiness and how you can incorporate them into your daily life." />
+    <meta property="og:image" content="{{ asset('assets/img/Logo.png') }}" />
+    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="HappinessFactors" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:image:width" content="1200" />
+
+@endsection
 
 @section('head')
 <!-- <link rel="stylesheet" href="{{ asset('css/home.css') }}"> -->
