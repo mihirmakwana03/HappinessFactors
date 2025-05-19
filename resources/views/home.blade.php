@@ -39,7 +39,7 @@
                 <h1 class="display-4 text-white mb-2 sparkle-text" style="text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
                     💜 HappinessFactors: <br> Feel Better, Anytime. Anywhere 💜
                 </h1>
-                <p class="text-white font-weight-bold mb-5 text-12">
+                <p class="text-white mb-5 text-12">
                     Smart mental wellness for people on the move.
                 </p>
                 <a href="#subscribe" class="btn btn-secondary scroll" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
@@ -71,14 +71,14 @@
                     <img class="max-width-4" src="{{ asset('assets/img/title-line.svg') }}" alt="" style="filter: invert(16%) sepia(100%) saturate(7472%) hue-rotate(266deg) brightness(90%) contrast(110%);">
                 </div>
                 <p class="mb-4">
-                    At <span style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of 
-                    <span style="color: #61009b; font-weight: bold;">positivity</span> and 
-                    <span style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the 
-                    <span style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a 
-                    <span style="color: #61009b; font-weight: bold;">happier</span>, more 
-                    <span style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this 
-                    <span style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these 
-                    <span style="color: #61009b; font-weight: bold;">factors</span> into your daily routine.
+                    At <span class="" style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">positivity</span> and 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">happier</span>, more 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these 
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">factors</span> into your daily routine.
                 </p>
                 <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
                    onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
@@ -240,11 +240,20 @@
                             </div>
 
                             <div class="mt-5 text-center">
-                                <a href="#services" class="btn btn-gradient btn-lg btn-ripple">
+                                <a href="#services" class="btn btn-gradient btn-lg btn-ripple w-100 w-md-auto" style="max-width:320px;">
                                     <span>Explore Our Services</span>
                                     <i class="fas fa-arrow-right ml-2"></i>
                                 </a>
                             </div>
+                            <style>
+                                @media (max-width: 767.98px) {
+                                    .btn-gradient.w-100 {
+                                        font-size: 1rem;
+                                        padding: 14px 0;
+                                        max-width: 100%;
+                                    }
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>
@@ -317,7 +326,7 @@
                     <div class="counter-icon">
                         <i class="fas fa-spa"></i>
                     </div>
-                    <div class="counter-value">
+                    <div class="counter-value" style="font-size: 38.4px;">
                         Spiritual Science Backed Solutions
                     </div>
                 </div>
