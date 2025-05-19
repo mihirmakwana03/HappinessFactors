@@ -364,7 +364,7 @@
                     <div class="vision-icon">
                         <i class="fas fa-eye"></i>
                     </div>
-                    <h3 style="background: linear-gradient(90deg, #FF7D7F, #4B0082); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; font-weight: bold; letter-spacing: 1px;">
+                    <h3 style="color: white;">
                         Our Vision
                     </h3>
                     <p>Building emotionally balanced communities worldwide through innovative wellness solutions that make happiness accessible to everyone.</p>
@@ -375,7 +375,7 @@
                     <div class="mission-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3 style="background: linear-gradient(90deg, #FF7D7F, #4B0082); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; font-weight: bold; letter-spacing: 1px;">
+                    <h3 style="color: white;">
                         Our Mission
                     </h3>
                     <p>To empower individuals and organizations with the tools and knowledge needed to cultivate sustainable happiness and resilience in everyday life.</p>
@@ -1024,7 +1024,7 @@
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10 text-center">
                 <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span>
-                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This Isn't Just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;">HappinessFactors</span></h2>
+                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This Isn't Just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;"><br>HappinessFactors</span></h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
@@ -1046,7 +1046,15 @@
                         <div class="icon-box bg-gradient-primary-to-secondary rounded-circle text-white d-flex align-items-center justify-content-center mr-3" style="width:48px;height:48px;font-size:1.5rem;">
                             <i class="fas fa-quote-left"></i>
                         </div>
-                        <span class="font-italic text-muted">"Happiness is not something ready-made. It comes from your own actions."</span>
+                        <span class="font-italic text-muted floating-quote-text">"Happiness is not something ready-made. It comes from your own actions."</span>
+                        <style>
+                        @media (max-width: 767.98px) {
+                            .floating-quote-text {
+                                font-size: 0.92rem !important;
+                                line-height: 1.3 !important;
+                            }
+                        }
+                        </style>
                     </div>
                     <!-- Decorative floating shapes -->
                     <div class="floating-shape shape1"></div>
@@ -1119,16 +1127,31 @@
         <!-- Call to Action -->
         <div class="row mt-5 pt-5">
             <div class="col-12 text-center">
-                <div class="card bg-gradient-primary-to-secondary text-white p-5 rounded-lg shadow-lg border-0">
+                <div class="card bg-gradient-primary-to-secondary text-white p-5 rounded-lg shadow-lg border-0" style="border-radius: 1.5rem;">
                     <div class="card-body">
-                        <h3 class="mb-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">Join Our Happiness Journey</h3>
+                        <h3 class="mb-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                            Join Our Happiness Journey
+                        </h3>
                         <p class="lead mb-4">Become part of our story and discover your own path to lasting happiness.</p>
-                        <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse">
+                        <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse w-100 w-md-auto" style="max-width:320px;">
                             Subscribe Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
             </div>
+            <style>
+                @media (max-width: 767.98px) {
+                    .card.bg-gradient-primary-to-secondary.p-5 {
+                        padding: 2rem 1rem !important;
+                        border-radius: .75rem !important;
+                    }
+                    .btn-lg.w-100 {
+                        font-size: 1rem;
+                        padding: 14px 0;
+                        max-width: 100%;
+                    }
+                }
+            </style>
         </div>
     </div>
 
