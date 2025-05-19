@@ -37,9 +37,11 @@
         <div class="row align-items-center z-index-2 position-relative text-center">
             <div class="col-12">
                 <h1 class="display-4 text-white mb-2 sparkle-text" style="text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    💜 Welcome to HappinessFactors <br> Your Go-To Mental Wellness Solutions! 💜
+                    💜 HappinessFactors: <br> Feel Better, Anytime. Anywhere 💜
                 </h1>
-                <p class="text-white font-weight-300 mb-5 text-12">Discover the factors that contribute to happiness and how you can incorporate them into your daily life.</p>
+                <p class="text-white font-weight-bold mb-5 text-12">
+                    Smart mental wellness for people on the move.
+                </p>
                 <a href="#subscribe" class="btn btn-secondary scroll" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
                    onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
                    onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
@@ -313,13 +315,11 @@
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="counter-card">
                     <div class="counter-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-spa"></i>
                     </div>
                     <div class="counter-value">
-                        <span class="counter" data-count="5">0</span><span>K+</span>
+                        Spiritual Science Backed Solutions
                     </div>
-                    <h4>Clients Helped</h4>
-                    <p>Transforming lives worldwide</p>
                 </div>
             </div>
             <div class="col-md-4">
@@ -331,7 +331,7 @@
                         <span class="counter" data-count="20">0</span><span>+</span>
                     </div>
                     <h4>Wellness Programs</h4>
-                    <p>Comprehensive solution suite</p>
+                    <p>Customise to meet your needs</p>
                 </div>
             </div>
         </div>

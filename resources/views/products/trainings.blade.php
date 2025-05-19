@@ -18,10 +18,30 @@
     <div class="banner-section" style="background-image: url('https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; position: relative;">
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.85); z-index: 1;"></div>
         <div style="position: relative; z-index: 2;">
-            <h1 class="main-title">Group Happiness Training</h1>
-            <div class="description">
-                <p>Happy employees are a company's greatest asset. We offer several training packages for organizations to help each member and the team rise to their highest potential.</p>
-                <p>We work with individuals, small and large groups to not just help achieve greater emotional wellbeing, but also better team spirit, collaboration and overall success!</p>
+            <h1 class="main-title">Group Training: HappinessFactors</h1>
+            <div class="description text-bold">
+                <p>💼 Happier Teams, Better Business.
+                    Your people are your power.
+                    When employees thrive, so does everything else—productivity, culture, and your bottom line.</p>
+                <p>🎉 At HappinessFactors, we deliver engaging, Spiritual science-backed training programs that help your team:
+                    <ol>
+                        <li>✔️ Stress less</li>
+                        <li>✔️ Collaborate better</li>
+                        <li>✔️ Lead with purpose</li>
+                        <li>✔️ Get Proactive Burnout Busters</li>
+                        <li>✔️ Get Better Employee Engagement</li>
+                        <li>✔️ And actually enjoy Mondays!😊</li>
+                    </ol>
+                    We work with individuals, teams, and entire organizations—whether you're a startup or a global giant.
+                    From personalized coaching to fun group sessions, our packages are built to boost:
+                    <ol>
+                        <li>✔️ Productivity</li>
+                        <li>✔️ Team spirit</li>
+                        <li>✔️ Goal Alignment</li>
+                        <li>✔️ Real business results</li>
+                        <li>✔️ Mental/Emotional wellbeing</li>
+                    </ol>
+                </p>
                 <div class="cta-box">
                     <p class="cta-text">Contact us for details.</p>
                     <a href="/#contact" class="btn btn-primary">Get in Touch</a>
@@ -35,7 +55,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Happy team collaborating" class="card-image">
             <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
-            <h3>Disrupting Unhappiness</h3>
+            <h3>🧠 From Blah to Boom: Disrupting Unhappiness at Work</h3>
             <p><em>"Happiness is not by chance, but by choice."</em> – Jim Rohn</p>
             <p>Happy employees are motivated, loyal, engaged and productive.</p>
             <a href="trainings/disrupting-unhappiness" class="read-more">Read more</a>
@@ -44,7 +64,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Person practicing mindfulness" class="card-image">
             <div class="card-icon"><i class="fas fa-brain"></i></div>
-            <h3>Mental Wellness In Uncertain Times</h3>
+            <h3>🌪️ Calm in the Chaos: Mental Wellness for Uncertain Times</h3>
             <p>In these times of a global pandemic, people are forced to stay at home, only go out when necessary, maintain social distancing, wear masks while outside.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
@@ -52,7 +72,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Leadership meeting" class="card-image">
             <div class="card-icon"><i class="fas fa-users"></i></div>
-            <h3>Happiness And Leadership</h3>
+            <h3>🌪️ Calm in the Chaos: Mental Wellness for Uncertain Times</h3>
             <p><em>"There is little success where there is little laughter."</em> – Andrew Carnegie</p>
             <p>It is a well-known secret that a happy leader is outstandingly effective and leads to an impactful team.</p>
             <a href="#" class="read-more">Read more</a>
@@ -61,7 +81,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Person relaxing in nature" class="card-image">
             <div class="card-icon"><i class="fas fa-balance-scale"></i></div>
-            <h3>Managing Stress*</h3>
+            <h3>😄 Lead with a Smile: The Happiness-Driven Leadership Advantage</h3>
             <p><em>"If you cannot manage stress, you will not manage success."</em> – Buddhist proverb</p>
             <p>Many times, life throws us curveballs or unexpected things happen, that lead us to stress...</p>
             <p class="note">*Offered as both a group training and one-on-one coaching package</p>
@@ -71,7 +91,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Team resolving conflict" class="card-image">
             <div class="card-icon"><i class="fas fa-handshake"></i></div>
-            <h3>Conflict Resolution And Effective Team Building</h3>
+            <h3>💥 Stressed But Still Awesome: Mastering Stress Like a Pro</h3>
             <p><em>"Conflict is inevitable, but combat is optional."</em> – Max Lucardo</p>
             <p>By our very nature, human beings are unique. They have their own thought patterns, opinions, lifestyle and deciding what's wrong or what's right...</p>
             <a href="#" class="read-more">Read more</a>
@@ -80,7 +100,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Productive workspace" class="card-image">
             <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Happiness For Productivity</h3>
+            <h3>🤝 Squash the Drama: Conflict to Connection in Teams</h3>
             <p><em>"Productivity is less about what you do with your time. And more about how you run your mind."</em> – Robin Sharma</p>
             <a href="#" class="read-more">Read more</a>
         </div>
@@ -88,7 +108,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Modern office culture" class="card-image">
             <div class="card-icon"><i class="fas fa-building"></i></div>
-            <h3>Happiness And Corporate Culture</h3>
+            <h3>🚀 Joy = Results: The Happy Path to High Performance</h3>
             <p>A company's culture defines the company's success, employee motivation, core beliefs, behavior norms, accepted work practices and the different styles of operation.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
@@ -96,7 +116,7 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Innovation concept" class="card-image">
             <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
-            <h3>Happiness And Innovation</h3>
+            <h3>🎉 Ready to Energize Your Workplace?</h3>
             <p>Innovation is the bottom line for the success of any organization. It can transform insights into growth, build and launch new products, transform customer experiences.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
