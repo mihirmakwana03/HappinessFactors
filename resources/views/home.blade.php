@@ -37,7 +37,7 @@
         <div class="row align-items-center z-index-2 position-relative text-center">
             <div class="col-12">
                 <h1 class="display-4 text-white mb-2 sparkle-text" style="text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    💜 HappinessFactors: <br> Feel Better, Anytime. Anywhere 💜
+                    💜 HappinessFactors: <br> Feel Better, Anytime, Anywhere 💜
                 </h1>
                 <p class="text-white mb-5 text-12">
                     Smart mental wellness for people on the move.
@@ -152,9 +152,21 @@
                     <div class="card border-0 bg-white shadow-lg rounded-lg overflow-hidden hover-lift">
                         <div class="card-body p-5">
                             <div class="card-header-icon mb-4">
-                                <div class="icon-wrapper">
+                                <div class="icon-wrapper responsive-icon-wrapper">
                                     <i class="fas fa-spa"></i>
                                 </div>
+                                <style>
+                                    @media (max-width: 767.98px) {
+                                        .responsive-icon-wrapper {
+                                            width: 80px !important;
+                                            height: 80px !important;
+                                            font-size: 32px !important;
+                                        }
+                                        .responsive-icon-wrapper i {
+                                            font-size: 32px !important;
+                                        }
+                                    }
+                                </style>
                                 <h3 class="h4 ml-3">Our Approach to Emotional Wellness</h3>
                             </div>
 
