@@ -15,40 +15,200 @@
 
 <div class="training-container"><br><br><br>
     <!-- Hero Section -->
-    <div class="banner-section" style="background-image: url('https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center; position: relative;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.85); z-index: 1;"></div>
-        <div style="position: relative; z-index: 2;">
-            <h1 class="main-title">Group Training: HappinessFactors</h1>
-            <div class="description text-bold">
-                <p>💼 Happier Teams, Better Business.
-                    Your people are your power.
-                    When employees thrive, so does everything else—productivity, culture, and your bottom line.</p>
-                <p>🎉 At HappinessFactors, we deliver engaging, Spiritual science-backed training programs that help your team:
-                    <ol>
-                        <li>✔️ Stress less</li>
-                        <li>✔️ Collaborate better</li>
-                        <li>✔️ Lead with purpose</li>
-                        <li>✔️ Get Proactive Burnout Busters</li>
-                        <li>✔️ Get Better Employee Engagement</li>
-                        <li>✔️ And actually enjoy Mondays!😊</li>
-                    </ol>
-                    We work with individuals, teams, and entire organizations—whether you're a startup or a global giant.
-                    From personalized coaching to fun group sessions, our packages are built to boost:
-                    <ol>
-                        <li>✔️ Productivity</li>
-                        <li>✔️ Team spirit</li>
-                        <li>✔️ Goal Alignment</li>
-                        <li>✔️ Real business results</li>
-                        <li>✔️ Mental/Emotional wellbeing</li>
-                    </ol>
-                </p>
-                <div class="cta-box">
-                    <p class="cta-text">Contact us for details.</p>
-                    <a href="/#contact" class="btn btn-primary">Get in Touch</a>
-                </div>
-            </div>
+    <div class="training-hero-section">
+        <div class="training-hero-bg">
+            <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Group Happiness Training" />
+            <div class="training-hero-overlay"></div>
+        </div>
+        <div class="training-hero-content">
+            <h1 class="training-hero-title">Unlock Team Happiness &amp; Performance</h1>
+            <p class="training-hero-subtitle">Transform your workplace with science-backed, interactive group trainings that spark joy, boost productivity, and build resilient teams.</p>
+            <ul class="training-hero-benefits">
+                <li><i class="fas fa-smile-beam"></i> Stress less, smile more</li>
+                <li><i class="fas fa-users"></i> Collaborate &amp; connect</li>
+                <li><i class="fas fa-bolt"></i> Energize leadership</li>
+                <li><i class="fas fa-fire"></i> Prevent burnout</li>
+                <li><i class="fas fa-chart-line"></i> Drive real results</li>
+            </ul>
+            <a href="/#contact" class="training-hero-cta">Book a Free Consultation</a>
         </div>
     </div>
+    <style>
+    .training-hero-section {
+        position: relative;
+        width: 100%;
+        min-height: 480px;
+        margin-bottom: 3.5rem;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+        display: flex;
+        align-items: stretch;
+    }
+
+    .training-hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .training-hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.7) blur(1px) saturate(1.1);
+        transition: transform 0.7s cubic-bezier(.23,1.01,.32,1);
+        will-change: transform;
+    }
+
+    .training-hero-section:hover .training-hero-bg img {
+        transform: scale(1.04) rotate(-1deg);
+    }
+
+    .training-hero-overlay {
+        position: absolute;
+        inset: 0;
+        /* background: linear-gradient(120deg, rgba(2,117,216,0.85) 0%, rgba(0,123,255,0.65) 100%); */
+        mix-blend-mode: multiply;
+        z-index: 2;
+    }
+
+    .training-hero-content {
+        position: relative;
+        z-index: 3;
+        max-width: 650px;
+        margin: max(3rem, 12vh) 0 3rem 4vw;
+        padding: 2.5rem 2.5rem 2.5rem 2rem;
+        background: rgba(255,255,255,0.92);
+        border-radius: 18px;
+        box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        animation: fadeInUp 1.1s cubic-bezier(.23,1.01,.32,1);
+    }
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+
+    .training-hero-title {
+        font-size: 2.7rem;
+        font-weight: 800;
+        color: #0275d8;
+        margin-bottom: 1.1rem;
+        letter-spacing: -1px;
+        text-shadow: 0 2px 12px rgba(2,117,216,0.08);
+        line-height: 1.1;
+    }
+
+    .training-hero-subtitle {
+        font-size: 1.25rem;
+        color: #343a40;
+        margin-bottom: 1.4rem;
+        font-weight: 500;
+        line-height: 1.6;
+        text-shadow: 0 1px 8px rgba(2,117,216,0.07);
+    }
+
+    .training-hero-benefits {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.1rem 2.2rem;
+    }
+
+    .training-hero-benefits li {
+        font-size: 1.08rem;
+        color: #0275d8;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        background: rgba(2,117,216,0.07);
+        border-radius: 22px;
+        padding: 0.45rem 1.2rem 0.45rem 0.9rem;
+        margin-bottom: 0.2rem;
+        box-shadow: 0 2px 8px rgba(2,117,216,0.06);
+        transition: background 0.2s;
+    }
+
+    .training-hero-benefits li i {
+        margin-right: 0.7em;
+        font-size: 1.3em;
+        color: #0275d8;
+        filter: drop-shadow(0 1px 2px rgba(2,117,216,0.12));
+    }
+
+    .training-hero-benefits li:hover {
+        background: rgba(2,117,216,0.18);
+    }
+
+    .training-hero-cta {
+        display: inline-block;
+        background: linear-gradient(90deg, #0275d8 0%, #0056b3 100%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.13rem;
+        padding: 0.85rem 2.2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        box-shadow: 0 4px 18px rgba(2,117,216,0.13);
+        transition: background 0.22s, transform 0.18s, box-shadow 0.18s;
+        margin-top: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+
+    .training-hero-cta:hover {
+        background: linear-gradient(90deg, #0056b3 0%, #0275d8 100%);
+        color: #fff;
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 28px rgba(2,117,216,0.19);
+        text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+        .training-hero-content {
+            margin: max(2rem, 7vh) 0 2rem 0.5rem;
+            padding: 2rem 1.2rem 2rem 1.2rem;
+            max-width: 98vw;
+        }
+        .training-hero-title {
+            font-size: 2rem;
+        }
+        .training-hero-section {
+            min-height: 340px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .training-hero-section {
+            min-height: 220px;
+            border-radius: 10px;
+        }
+        .training-hero-content {
+            margin: 1.2rem 0.2rem;
+            padding: 1.1rem 0.7rem;
+            border-radius: 10px;
+        }
+        .training-hero-title {
+            font-size: 1.25rem;
+        }
+        .training-hero-benefits {
+            flex-direction: column;
+            gap: 0.5rem 0;
+        }
+        .training-hero-cta {
+            font-size: 1rem;
+            padding: 0.7rem 1.3rem;
+        }
+    }
+    </style>
 
     <div class="training-grid">
         <!-- Training Cards -->
@@ -72,9 +232,9 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Leadership meeting" class="card-image">
             <div class="card-icon"><i class="fas fa-users"></i></div>
-            <h3>🌪️ Calm in the Chaos: Mental Wellness for Uncertain Times</h3>
-            <p><em>"There is little success where there is little laughter."</em> – Andrew Carnegie</p>
-            <p>It is a well-known secret that a happy leader is outstandingly effective and leads to an impactful team.</p>
+            <h3>🌟 Leading with Positivity: Building Happy Teams</h3>
+            <p><em>"The role of a leader is not to put greatness into people, but to elicit it, for the greatness is there already."</em> – John Buchan</p>
+            <p>Discover how positive leadership inspires trust, boosts morale, and creates a culture where teams thrive and happiness drives results.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
 
@@ -124,17 +284,18 @@
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Engaged team members" class="card-image">
             <div class="card-icon"><i class="fas fa-hands-helping"></i></div>
-            <h3>Employee Engagement</h3>
-            <p><em>"When people are financially invested, they want a return. When people are emotionally invested, they want to contribute."</em> – Simon Sinek</p>
+            <h3>🙌 Building Engagement: Fostering a Happy Workplace</h3>
+            <p><em>"To win in the marketplace you must first win in the workplace."</em> – Doug Conant</p>
+            <p>Discover actionable strategies to boost employee engagement, create a sense of belonging, and inspire teams to contribute their best every day.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
             <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Goal setting concept" class="card-image">
             <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-            <h3>Employee Goal Management</h3>
-            <p><em>"A goal without a timeline is just a dream."</em> – Robert Herjavec</p>
-            <p>Goal setting involves the development of an action plan...</p>
+            <h3>🎯 Purposeful Progress: Goal Setting for Team Success</h3>
+            <p><em>"Setting goals is the first step in turning the invisible into the visible."</em> – Tony Robbins</p>
+            <p>Learn how to set meaningful goals, align team objectives, and drive motivation through clarity and shared purpose.</p>
             <a href="#" class="read-more">Read more</a>
         </div>
     </div>

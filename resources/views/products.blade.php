@@ -17,15 +17,20 @@
 <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <style>
-    body{
+    body {
         padding-top: 70px;
     }
+
     .products-hero {
         background: linear-gradient(rgba(30, 30, 60, 0.7), rgba(30, 30, 60, 0.7)),
         url("{{ asset('assets/img/business-bg.jpg') }}") no-repeat center center/cover;
         color: #fff;
         padding: 6rem 0 4rem 0;
         text-align: center;
+        height: 100vh;
+        margin-top: -50px;
+        /* Adjusted for fixed navbar */
+        position: relative;
     }
 
     .products-hero h1 {
@@ -130,14 +135,42 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="products-hero" id="services">
-    <div class="container">
-        <h1 style="color: #fff; text-shadow: 2px 2px 8px rgba(30,30,60,0.7);">Happy Teams. Productive Minds. Profitable Outcomes.</h1>
-        <p>Wellness that feels good—and works hard for your bottom line. 💼💫</p>
-        <a href="#products" class="btn btn-secondary mt-3" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
-                   onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
-                   onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">Find Out How</a>
+<section class="products-hero" id="services" style="display: flex; align-items: center; justify-content: center; min-height: 70vh; background-blend-mode: overlay; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
+    <div class="container" style="max-width: 700px; background: rgba(34, 34, 60, 0.65); border-radius: 1.5rem; padding: 3rem 2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.18); z-index: 1000;">
+        <h1 style="color: #fff; font-size: 2.7rem; font-weight: 900; margin-bottom: 1.2rem; letter-spacing: 1.5px; text-shadow: 0 4px 24px rgba(30,30,60,0.5);">
+            <span style="color: #ffd700;">Happy Teams.</span> <span style="color: #00e6d0;">Productive Minds.</span> <span style="color: #ff6f61;">Profitable Outcomes.</span>
+        </h1>
+        <p style="font-size: 1.35rem; color: #e0e0e0; margin-bottom: 2.2rem; line-height: 1.7;">
+            Wellness that <span style="color:#ffd700;font-weight:600;">feels good</span>—and <span style="color:#00e6d0;font-weight:600;">works hard</span> for your bottom line.<br>
+            <span style="font-size:1.7rem;">💼 <span style="color:#ffd700;">✨</span> <span style="color:#00e6d0;">😊</span></span>
+        </p>
+        <a href="#products"
+           class="product-btn"
+           style="font-size: 1.15rem; padding: 0.85rem 2.2rem; border-radius: 2rem; background: linear-gradient(90deg, #61009b 0%, #4f46e5 100%); border: none; color: #fff; font-weight: 700; box-shadow: 0 2px 12px rgba(97,0,155,0.18); letter-spacing: 1px; transition: background 0.2s, transform 0.18s;"
+           onmouseover="this.style.background='linear-gradient(90deg,#4f46e5 0%,#61009b 100%)';this.style.transform='scale(1.05)';"
+           onmouseout="this.style.background='linear-gradient(90deg,#61009b 0%,#4f46e5 100%)';this.style.transform='scale(1)';">
+            Find Out How <i class="fas fa-arrow-down" style="margin-left: 0.5rem;"></i>
+        </a>
+        <div style="margin-top:2.5rem; display:flex; justify-content:center; gap:1.5rem;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <i class="fas fa-heartbeat" style="color:#ff6f61; font-size:2.2rem;"></i>
+                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Well-being</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <i class="fas fa-lightbulb" style="color:#ffd700; font-size:2.2rem;"></i>
+                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Innovation</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <i class="fas fa-users" style="color:#00e6d0; font-size:2.2rem;"></i>
+                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Teamwork</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <i class="fas fa-chart-line" style="color:#4f46e5; font-size:2.2rem;"></i>
+                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Growth</span>
+            </div>
+        </div>
     </div>
+    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(30,30,60,0.55); box-shadow: 0 8px 32px rgba(0,0,0,0.35); pointer-events:none; z-index:0;"></div>
 </section>
 
 <!-- Products Grid Section -->

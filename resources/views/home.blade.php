@@ -35,9 +35,14 @@
     <img class="bg-image" src="{{ asset('assets/img/1-1.jpg') }}" alt="">
     <div class="container hero hero-responsive" style="padding-top: 350px; margin-top: -100px;">
         <div class="row align-items-center z-index-2 position-relative text-center">
+            <div class="col-12 d-flex justify-content-center mb-3">
+                <span class="badge badge-pill px-4 py-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">
+                    Corporate Wellness Solutions
+                </span>
+            </div>
             <div class="col-12">
-                <h1 class="display-4 text-white mb-2 sparkle-text" style="text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    Elevate Your Workplace <br>Wellness with HappinessFactors 😊
+                <h1 class="display-4 text-white mb-2 sparkle-text" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 3.5rem; line-height: 1.1; letter-spacing: -1px; text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
+                    Transform Your Workplace with <span style="color: #1036a1; font-weight: 700;">Happiness</span> Driven Wellness
                 </h1>
                 <p class="text-white mb-5 text-12">
                     Smart mental wellness for people on the move.
@@ -1081,7 +1086,7 @@
                     </div>
                     <div class="col-6">
                         <div class="stat-card p-3 rounded shadow-sm bg-white mb-2">
-                            <span class="display-4 text-gradient font-weight-bold" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">5K+</span>
+                            <span class="display-4 text-gradient font-weight-bold" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">1000+</span>
                             <div class="small text-uppercase font-weight-bold text-muted">Lives Transformed</div>
                         </div>
                     </div>
@@ -2030,7 +2035,8 @@
     <div class="container spacer-xlg z-index-2 position-relative">
         <div class="row justify-content-center text-center">
             <div class="col-md-8 col-lg-6 ">
-                <a class="venobox play-but  mt-3" data-vbtype="video" data-overlay="rgba(52,58,64,.6)" href="https://youtu.be/sy8qJhHQkZI">
+                <!-- Video Play Button: opens YouTube video in a modal overlay on the same page -->
+                <a href="#" class="play-but mt-3" id="openVideoModal">
                     <span class="play-icon play-icon-md">
                         <span class="play-icon-inner">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -2041,6 +2047,57 @@
                         </span>
                     </span>
                 </a>
+
+                <!-- Modal Overlay for YouTube Video -->
+                <div id="videoModalOverlay" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.85);align-items:center;justify-content:center;">
+                    <div style="position:relative;max-width:90vw;max-height:80vh;width:640px;">
+                        <button id="closeVideoModal" style="position:absolute;top:-32px;right:-8px;background:none;border:none;font-size:2rem;color:#fff;z-index:2;cursor:pointer;">&times;</button>
+                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:1rem;box-shadow:0 8px 32px rgba(0,0,0,0.25);">
+                            <iframe id="videoModalIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var openBtn = document.getElementById('openVideoModal');
+                    var modal = document.getElementById('videoModalOverlay');
+                    var closeBtn = document.getElementById('closeVideoModal');
+                    var iframe = document.getElementById('videoModalIframe');
+                    var youtubeUrl = "https://www.youtube.com/embed/sy8qJhHQkZI?autoplay=1&rel=0&showinfo=0";
+
+                    openBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        iframe.src = youtubeUrl;
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    });
+
+                    closeBtn.addEventListener('click', function() {
+                        modal.style.display = 'none';
+                        iframe.src = '';
+                        document.body.style.overflow = '';
+                    });
+
+                    // Close modal on overlay click (but not when clicking inside the video)
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
+                            modal.style.display = 'none';
+                            iframe.src = '';
+                            document.body.style.overflow = '';
+                        }
+                    });
+
+                    // Optional: close modal on ESC key
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === "Escape" && modal.style.display === 'flex') {
+                            modal.style.display = 'none';
+                            iframe.src = '';
+                            document.body.style.overflow = '';
+                        }
+                    });
+                });
+                </script>
                 <h3 class="h5 text-white mt-3 mb-0">Discover HappinessFactors</h3>
                 <span class="font-size-14 text-white">Watch our introduction video</span>
             </div>

@@ -14,6 +14,9 @@ Route::get('/products', function () {
 Route::get('/terms-and-conditions', function () {
     return view('terms-and-conditions');
 });
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+});
 // Route::get('/quiz', function () {
 //     return view('quiz');
 // });
@@ -21,17 +24,15 @@ Route::get('/terms-and-conditions', function () {
 
 // Products---------------------------------------------------------------------------------------------------------
 
-Route::prefix('products')->group(function () {
-    Route::view('/coaching', 'products.coaching');
-    Route::view('/courses', 'products.courses');
-    Route::view('/app', 'products.app');
-    Route::view('/webinars', 'products.webinars');
-    Route::view('/seminars', 'products.seminars');
-    Route::view('/workshops', 'products.workshops');
-    Route::view('/training', 'products.training');
-    Route::view('/offsites', 'products.offsites');
-    Route::view('/retreats', 'products.retreats');
-});
+    Route::view('products/trainings', 'products.trainings');
+    Route::view('products/courses', 'products.courses');
+    Route::view('products/coaching', 'products.coaching');
+    Route::view('products/webinars', 'products.webinars');
+    Route::view('products/seminars', 'products.seminars');
+    Route::view('products/workshops', 'products.workshops');
+    Route::view('products/offsites', 'products.offsites');
+    Route::view('products/retreats', 'products.retreats');
+    Route::view('products/packages', 'products.packages');
 
 
 //-----Controllers--------------------------------------------------------------------------------------------------
@@ -39,14 +40,17 @@ Route::prefix('products')->group(function () {
 
 //Subscribe
 use App\Http\Controllers\SubscriptionController;
+
 Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
 
 //Contact Us
 use App\Http\Controllers\ContactController;
+
 Route::post('/contact/send', [ContactController::class, 'send'])
-     ->name('contact.send');
+    ->name('contact.send');
 
 
 //Download Quiz
 use App\Http\Controllers\QuizController;
+
 Route::get('/quiz', [QuizController::class, 'downloadQuizPdf'])->name('quiz');

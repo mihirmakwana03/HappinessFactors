@@ -13,9 +13,10 @@
                     <ul class="navbar-nav header-navbar-nav">
                         <li class="nav-item"><a class="nav-link scroll" href="{{ url('/') }}"><span>Home</span></a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/products" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link" href="/products" id="productsDropdown">
                                 <span>Products</span>
                             </a>
+
                             <div class="dropdown-menu" aria-labelledby="productsDropdown">
                                 <a class="dropdown-item" href="{{ url('products/#trainings') }}">
                                     <i class="fa fa-graduation-cap mr-2"></i> Trainings
@@ -160,7 +161,7 @@
         transition: all 0.3s ease;
     }
 
-        /* color: #c71e19 !important;
+    /* color: #c71e19 !important;
         font-weight: 600;
         color: #1a1a1a;
         -webkit-background-clip: text;
