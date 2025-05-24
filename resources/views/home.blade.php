@@ -11,15 +11,15 @@
 @section('keywords', 'HappinessFactors, mental wellness, happiness, mindfulness, positivity, emotional wellness, wellness solutions')
 @section('author', 'HappinessFactors')
 @section('og')
-    <meta property="og:title" content="Welcome to HappinessFactors" />
-    <meta property="og:description" content="Discover the factors that contribute to happiness and how you can incorporate them into your daily life." />
-    <meta property="og:image" content="{{ asset('assets/img/Logo.png') }}" />
-    <meta property="og:url" content="{{ url('/') }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="HappinessFactors" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="en_GB" />
-    <meta property="og:image:width" content="1200" />
+<meta property="og:title" content="Welcome to HappinessFactors" />
+<meta property="og:description" content="Discover the factors that contribute to happiness and how you can incorporate them into your daily life." />
+<meta property="og:image" content="{{ asset('assets/img/Logo.png') }}" />
+<meta property="og:url" content="{{ url('/') }}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="HappinessFactors" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="og:image:width" content="1200" />
 
 @endsection
 
@@ -37,14 +37,14 @@
         <div class="row align-items-center z-index-2 position-relative text-center">
             <div class="col-12">
                 <h1 class="display-4 text-white mb-2 sparkle-text" style="text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    💜 HappinessFactors: <br> Feel Better, Anytime, Anywhere 💜
+                    Elevate Your Workplace <br>Wellness with HappinessFactors 😊
                 </h1>
                 <p class="text-white mb-5 text-12">
                     Smart mental wellness for people on the move.
                 </p>
                 <a href="#subscribe" class="btn btn-secondary scroll" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
-                   onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
-                   onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
+                    onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
+                    onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
                     Subscribe
                 </a>
             </div>
@@ -66,23 +66,24 @@
             <div class="col-md-5 mb-5 mb-lg-0 text-center">
                 <img class="mb-4 max-width-9" src="{{ asset('assets/img/Logo.png') }}" alt="" style="width: 45%; max-width: none;">
                 <div class="mb-4">
-                    <span class="text-uppercase font-size-12 font-weight-bold" style="color:rgb(162, 0, 255);">what we do</span>
+                    <!-- <span class="text-uppercase font-size-12 font-weight-bold" style="color:rgb(162, 0, 255);">what we do</span> -->
+                    <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">what we do</span>
                     <h1 class="mb-0">Who We Are?</h1>
                     <img class="max-width-4" src="{{ asset('assets/img/title-line.svg') }}" alt="" style="filter: invert(16%) sepia(100%) saturate(7472%) hue-rotate(266deg) brightness(90%) contrast(110%);">
                 </div>
                 <p class="mb-4">
-                    At <span class="" style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">positivity</span> and 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">happier</span>, more 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this 
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these 
+                    At <span class="" style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">positivity</span> and
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">happier</span>, more
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this
+                    <span class="highlight" style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these
                     <span class="highlight" style="color: #61009b; font-weight: bold;">factors</span> into your daily routine.
                 </p>
                 <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
-                   onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
-                   onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
+                    onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
+                    onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
                     Subscribe
                 </a>
             </div>
@@ -131,7 +132,8 @@
             <div class="row justify-content-center mb-5 reveal-fade">
                 <div class="col-lg-8 text-center">
                     <div class="badge-wrapper mb-3">
-                        <span class="badge badge-pill badge-glow px-3 py-2">Discover Our Mission</span>
+                        <!-- <span class="badge badge-pill badge-glow px-3 py-2">Discover Our Mission</span> -->
+                        <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Discover Our Mission</span>
                     </div>
                     <h2 class="display-4 mb-3 font-weight-bold text-gradient">About HappinessFactors</h2>
                     <div class="divider-custom animate-pulse">
@@ -162,6 +164,7 @@
                                             height: 80px !important;
                                             font-size: 32px !important;
                                         }
+
                                         .responsive-icon-wrapper i {
                                             font-size: 32px !important;
                                         }
@@ -1023,7 +1026,8 @@
         <!-- Section Header -->
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10 text-center">
-                <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span>
+                <!-- <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span> -->
+                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span>
                 <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This Isn't Just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;"><br>HappinessFactors</span></h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
@@ -1048,12 +1052,12 @@
                         </div>
                         <span class="font-italic text-muted floating-quote-text">"Happiness is not something ready-made. It comes from your own actions."</span>
                         <style>
-                        @media (max-width: 767.98px) {
-                            .floating-quote-text {
-                                font-size: 0.92rem !important;
-                                line-height: 1.3 !important;
+                            @media (max-width: 767.98px) {
+                                .floating-quote-text {
+                                    font-size: 0.92rem !important;
+                                    line-height: 1.3 !important;
+                                }
                             }
-                        }
                         </style>
                     </div>
                     <!-- Decorative floating shapes -->
@@ -1083,7 +1087,7 @@
                     </div>
                 </div>
                 <a href="#about-us" class="btn btn-gradient btn-lg btn-ripple shadow-sm">
-                    Learn More About Us <i class="fas fa-arrow-right ml-2"></i>
+                    Ready To Feel Good? <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
@@ -1091,7 +1095,7 @@
         <!-- Timeline: Animated, Modern, and Colorful -->
         <div class="row mt-5 pt-5">
             <div class="col-12">
-                <h3 class="text-center mb-5 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Milestones on Our Happiness Journey</h3>
+                <h3 class="text-center mb-5 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Stress Happens, Anxiety Happens, Life Happens! We Got You 🫶🏼</h3>
                 <div class="timeline-modern position-relative mx-auto" style="max-width:900px;">
                     <!-- Timeline Line -->
                     <div class="timeline-modern-line"></div>
@@ -1099,25 +1103,45 @@
                     <div class="timeline-modern-item left">
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
-                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">2013</div>
-                            <h4 class="mb-1">The Beginning</h4>
-                            <p class="mb-0 text-muted">HappinessFactors was born from a desire to understand what truly makes people happy.</p>
+                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 1</div>
+                            <h4 class="mb-1">😍 Connect With HappinessFactors</h4>
+                            <p class="mb-0 text-muted"> Subscribe to App/Courses/Coaching</p>
                         </div>
                     </div>
                     <div class="timeline-modern-item right">
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
-                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">2016</div>
-                            <h4 class="mb-1">First Workshop</h4>
-                            <p class="mb-0 text-muted">Our first happiness workshop reached 100 participants and changed our perspective on what was possible.</p>
+                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 2</div>
+                            <h4 class="mb-1">🔍 Inner Compass Activated</h4>
+                            <p class="mb-0 text-muted">Finding your happy map.
+                                Discover your stressors, motivators, and what actually makes you tick—with science-backed insights.</p>
                         </div>
                     </div>
                     <div class="timeline-modern-item left">
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
-                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Today</div>
-                            <h4 class="mb-1">Global Movement</h4>
-                            <p class="mb-0 text-muted">Now a global movement, our apps, courses, and coaching programs touch thousands of lives every year.</p>
+                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 3</div>
+                            <h4 class="mb-1">🧠 Building Mental Muscle</h4>
+                            <p class="mb-0 text-muted">Flex that positivity muscle!
+                                Daily habits, micro-coaching, and a dose of mindfulness = stronger emotional muscles and calmer vibes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-modern-item right">
+                        <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
+                        <div class="timeline-modern-content shadow bg-white rounded-lg">
+                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 4</div>
+                            <h4 class="mb-1">🎯 Relaxation/Flow Zone!
+                                You're in the groove!</h4>
+                            <p class="mb-0 text-muted">You’re not just coping—you’re thriving. Productivity, purpose, and people skills... all flowing with ease</p>
+                        </div>
+                    </div>
+                    <div class="timeline-modern-item left">
+                        <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
+                        <div class="timeline-modern-content shadow bg-white rounded-lg">
+                            <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 5</div>
+                            <h4 class="mb-1">🏆 The Glow-Up</h4>
+                            <p class="mb-0 text-muted">You’re shining—and lifting others up too.
+                                Your happiness isn’t just personal—it’s contagious. You’re now a wellness warrior, inspiring joy wherever you go.</p>
                         </div>
                     </div>
                 </div>
@@ -1130,9 +1154,9 @@
                 <div class="card bg-gradient-primary-to-secondary text-white p-5 rounded-lg shadow-lg border-0" style="border-radius: 1.5rem;">
                     <div class="card-body">
                         <h3 class="mb-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
-                            Join Our Happiness Journey
+                            Join The HappinessFactors Movement!
                         </h3>
-                        <p class="lead mb-4">Become part of our story and discover your own path to lasting happiness.</p>
+                        <p class="lead mb-4">Hop In—We’re Writing the World’s Happiest Story</p>
                         <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse w-100 w-md-auto" style="max-width:320px;">
                             Subscribe Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -1145,6 +1169,7 @@
                         padding: 2rem 1rem !important;
                         border-radius: .75rem !important;
                     }
+
                     .btn-lg.w-100 {
                         font-size: 1rem;
                         padding: 14px 0;
@@ -1411,7 +1436,7 @@
         <!-- Section Header -->
         <div class="row justify-content-center mb-5">
             <div class="col-lg-9 text-center">
-                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Why Choose Us</span>
+                <!-- <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Why Us</span> -->
                 <h2 class="display-4 mb-3 font-weight-bold text-gradient">Why <span style="color:#4B0082;">HappinessFactors</span>?</h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
@@ -1420,7 +1445,7 @@
                     </div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <p class="lead text-muted mb-0">Revolutionizing workplace wellness with AI-powered, science-backed, and human-centered solutions for real happiness and high performance.</p>
+                <p class="lead text-muted mb-0">Revolutionizing workplace wellness with AI-powered, Spiritual Science-backed, and human-centered solutions for real happiness and high performance.</p>
             </div>
         </div>
 
@@ -1461,7 +1486,7 @@
                     ['icon' => 'fa-heart', 'title' => 'Whole-Person Care', 'desc' => 'Mind, body, and spirit—one platform, total wellness.'],
                     ['icon' => 'fa-clock', 'title' => 'Time-Smart', 'desc' => 'Bite-sized, AI-driven check-ins fit even the busiest schedules.'],
                     ['icon' => 'fa-shield-alt', 'title' => 'Proactive Support', 'desc' => 'Spot stress early and deliver help before it hurts performance.'],
-                    ['icon' => 'fa-lock', 'title' => 'Enterprise-Ready', 'desc' => 'Secure, scalable, and integrates with your HR ecosystem.'],
+                    ['icon' => 'fa-lock', 'title' => 'Enterprise-Ready', 'desc' => 'Secure, scalable, and customizable to fit your organization’s unique needs.'],
                     ];
                     @endphp
                     @foreach($features as $i => $feature)
@@ -1483,21 +1508,21 @@
         <div class="row justify-content-center py-5 mt-5 border-top border-bottom">
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp">
-                    <div class="h1 text-gradient mb-2"><span class="counter" data-count="87">0</span>%</div>
+                    <div class="h1 mb-2" style="font-size:3rem;">😌</div>
                     <div class="font-weight-bold mb-1">Less Workplace Stress</div>
                     <p class="text-muted mb-0">With our platform, teams feel lighter and more resilient.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp" style="animation-delay:.2s;">
-                    <div class="h1 text-gradient mb-2"><span class="counter" data-count="92">0</span>%</div>
+                    <div class="h1 mb-2" style="font-size:3rem;">😊</div>
                     <div class="font-weight-bold mb-1">Employee Satisfaction</div>
                     <p class="text-muted mb-0">Happier, more engaged, and loyal employees.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp" style="animation-delay:.4s;">
-                    <div class="h1 text-gradient mb-2"><span class="counter" data-count="35">0</span>%</div>
+                    <div class="h1 mb-2" style="font-size:3rem;">🚀</div>
                     <div class="font-weight-bold mb-1">Productivity Gain</div>
                     <p class="text-muted mb-0">Real, measurable improvement in output and creativity.</p>
                 </div>
@@ -1777,7 +1802,7 @@
         <!-- Section Header -->
         <div class="row justify-content-center mb-5">
             <div class="col-lg-10 text-center">
-                <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">The HappinessFactors Advantage</span>
+                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">The HappinessFactors Advantage</span>
                 <h2 class="display-4 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">HappinessFactors Products</h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
@@ -2059,7 +2084,7 @@
             <div class="col-lg-6 col-xl-5">
                 <div class="subscribe-form-wrapper bg-white rounded-xl shadow-lg p-5 animate__animated animate__fadeInRight">
                     <div class="mb-4 text-center">
-                        <span class="badge badge-pill px-3 py-2 mb-2" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Stay Connected</span>
+                        <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Stay Connected</span>
                         <h2 class="font-weight-bold mb-1 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Subscribe to Happiness</h2>
                         <!-- <img class="max-width-4 mb-2" src="{{ asset('assets/svg/title-line.svg') }}" alt=""> -->
                         <p class="text-muted mb-0">Get exclusive tips, inspiration, and updates delivered to your inbox. <span class="d-none d-md-inline">No spam, just happiness!</span></p>
@@ -2105,11 +2130,11 @@
                                 <!-- Phone Field -->
                                 <div class="groovemail-form-raw-html-embed-mb-4" style="margin:12px;">
                                     <div class="form-group mb-3">
-                                        <input id="phone_number_681f56a47a5ee8662055df95" pattern="[0-9]{6,12}" 
-                                        type="tel"
-                                        placeholder="Phone" 
-                                        required="required" 
-                                        name="phone_number"                       class="form-control form-control-lg rounded-pill px-4">
+                                        <input id="phone_number_681f56a47a5ee8662055df95" pattern="[0-9]{6,12}"
+                                            type="tel"
+                                            placeholder="Phone"
+                                            required="required"
+                                            name="phone_number" class="form-control form-control-lg rounded-pill px-4">
                                     </div>
                                 </div>
 
@@ -2345,7 +2370,7 @@
     <div class="container position-relative z-index-2">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
-                <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Testimonials</span>
+                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Testimonials</span>
                 <h2 class="display-4 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">What Our Clients Say</h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
@@ -2742,7 +2767,7 @@
             <div class="col-lg-6 mb-5 mb-lg-0">
                 <div class="contact-info-wrapper bg-white rounded-xl shadow-lg p-5 animate__animated animate__fadeInLeft">
                     <div class="mb-4">
-                        <span class="badge badge-pill px-3 py-2 mb-2" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">For Your HappinessFactors!</span>
+                        <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">For Your HappinessFactors!</span>
                         <h2 class="font-weight-bold mb-1 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Let’s Connect!</h2>
                         <!-- <img class="max-width-4 mb-2" src="{{ asset('assets/svg/title-line.svg') }}" alt=""> -->
                         <p class="text-muted mb-0">💌 Got questions, big dreams, or just want to say hi? <br>
@@ -2794,6 +2819,7 @@
             <div class="col-lg-5">
                 <div class="contact-form-wrapper bg-white rounded-xl shadow-lg p-5 animate__animated animate__fadeInRight">
                     <div class="mb-4 text-center">
+                        <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Contact Us</span>
                         <!-- … your “Say Hello” badge and headings … -->
                     </div>
 
