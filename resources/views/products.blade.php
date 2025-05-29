@@ -16,20 +16,23 @@
 @section('head')
 <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         padding-top: 70px;
     }
 
     .products-hero {
-        background: linear-gradient(rgba(30, 30, 60, 0.7), rgba(30, 30, 60, 0.7)),
-        url("{{ asset('assets/img/business-bg.jpg') }}") no-repeat center center/cover;
+        background: url("{{ asset('assets/img/business-bg.jpg') }}") no-repeat center center/cover;
         color: #fff;
         padding: 6rem 0 4rem 0;
         text-align: center;
         height: 100vh;
         margin-top: -50px;
-        /* Adjusted for fixed navbar */
         position: relative;
     }
 
@@ -61,8 +64,15 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        transition: transform 0.18s;
+        transition: all 0.3s ease;
         position: relative;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .product-card.animate__animated {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .product-card:hover {
@@ -74,6 +84,11 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-img {
+        transform: scale(1.05);
     }
 
     .product-content {
@@ -88,12 +103,22 @@
         font-size: 2.5rem;
         color: #4f46e5;
         margin-bottom: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-icon {
+        transform: scale(1.1);
     }
 
     .product-title {
         font-size: 1.5rem;
         font-weight: 700;
         margin-bottom: 0.7rem;
+        transition: color 0.3s ease;
+    }
+
+    .product-card:hover .product-title {
+        color: #4f46e5;
     }
 
     .product-desc {
@@ -111,13 +136,35 @@
         padding: 0.6rem 1.3rem;
         font-weight: 600;
         font-size: 1rem;
-        transition: background 0.18s;
+        transition: all 0.3s ease;
         text-decoration: none;
+        position: relative;
+        overflow: hidden;
     }
 
     .product-btn:hover {
         background: #3730a3;
         color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    }
+
+    .product-btn::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+    }
+
+    .product-btn:hover::after {
+        width: 300px;
+        height: 300px;
     }
 
     @media (max-width: 600px) {
@@ -135,42 +182,25 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="products-hero" id="services" style="display: flex; align-items: center; justify-content: center; min-height: 70vh; background-blend-mode: overlay; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
-    <div class="container" style="max-width: 700px; background: rgba(34, 34, 60, 0.65); border-radius: 1.5rem; padding: 3rem 2rem; box-shadow: 0 8px 32px rgba(0,0,0,0.18); z-index: 1000;">
-        <h1 style="color: #fff; font-size: 2.7rem; font-weight: 900; margin-bottom: 1.2rem; letter-spacing: 1.5px; text-shadow: 0 4px 24px rgba(30,30,60,0.5);">
-            <span style="color: #ffd700;">Happy Teams.</span> <span style="color: #00e6d0;">Productive Minds.</span> <span style="color: #ff6f61;">Profitable Outcomes.</span>
-        </h1>
-        <p style="font-size: 1.35rem; color: #e0e0e0; margin-bottom: 2.2rem; line-height: 1.7;">
-            Wellness that <span style="color:#ffd700;font-weight:600;">feels good</span>—and <span style="color:#00e6d0;font-weight:600;">works hard</span> for your bottom line.<br>
-            <span style="font-size:1.7rem;">💼 <span style="color:#ffd700;">✨</span> <span style="color:#00e6d0;">😊</span></span>
-        </p>
-        <a href="#products"
-           class="product-btn"
-           style="font-size: 1.15rem; padding: 0.85rem 2.2rem; border-radius: 2rem; background: linear-gradient(90deg, #61009b 0%, #4f46e5 100%); border: none; color: #fff; font-weight: 700; box-shadow: 0 2px 12px rgba(97,0,155,0.18); letter-spacing: 1px; transition: background 0.2s, transform 0.18s;"
-           onmouseover="this.style.background='linear-gradient(90deg,#4f46e5 0%,#61009b 100%)';this.style.transform='scale(1.05)';"
-           onmouseout="this.style.background='linear-gradient(90deg,#61009b 0%,#4f46e5 100%)';this.style.transform='scale(1)';">
-            Find Out How <i class="fas fa-arrow-down" style="margin-left: 0.5rem;"></i>
-        </a>
-        <div style="margin-top:2.5rem; display:flex; justify-content:center; gap:1.5rem;">
-            <div style="display:flex; flex-direction:column; align-items:center;">
-                <i class="fas fa-heartbeat" style="color:#ff6f61; font-size:2.2rem;"></i>
-                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Well-being</span>
-            </div>
-            <div style="display:flex; flex-direction:column; align-items:center;">
-                <i class="fas fa-lightbulb" style="color:#ffd700; font-size:2.2rem;"></i>
-                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Innovation</span>
-            </div>
-            <div style="display:flex; flex-direction:column; align-items:center;">
-                <i class="fas fa-users" style="color:#00e6d0; font-size:2.2rem;"></i>
-                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Teamwork</span>
-            </div>
-            <div style="display:flex; flex-direction:column; align-items:center;">
-                <i class="fas fa-chart-line" style="color:#4f46e5; font-size:2.2rem;"></i>
-                <span style="color:#fff; font-size:1rem; margin-top:0.3rem;">Growth</span>
+<section class="products-hero position-relative" style="min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') center/cover;">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="display-3 text-white mb-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                    Transform Your Life with Our Products
+                </h1>
+                <p class="lead text-white mb-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                    Discover transformative services to nurture your mental wellness and cultivate lasting happiness
+                </p>
+                <a href="#products" class="btn btn-primary btn-lg px-5 py-3" style="background: linear-gradient(135deg, #1565c0, #0d47a1); border: none; border-radius: 30px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2); text-decoration: none;">
+                    Explore Products
+                </a>
+                <div class="mt-6 animate__animated animate__bounce animate__infinite" style="animation-duration: 2.5s;">
+                    <i class="fas fa-chevron-down text-white" style="font-size: 1.5rem;"></i>
+                </div>
             </div>
         </div>
     </div>
-    <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(30,30,60,0.55); box-shadow: 0 8px 32px rgba(0,0,0,0.35); pointer-events:none; z-index:0;"></div>
 </section>
 
 <!-- Products Grid Section -->
@@ -178,7 +208,7 @@
     <div class="products-grid">
 
         <!-- Trainings -->
-        <div class="product-card" id="trainings">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.1s" id="trainings">
             <img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Trainings" class="product-img">
             <div class="product-content">
                 <div>
@@ -191,7 +221,7 @@
         </div>
 
         <!-- App -->
-        <div class="product-card" id="app">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.2s" id="app">
             <img src="../assets/img/products/app.jpg" alt="App" class="product-img" style="object-fit:contain;">
             <div class="product-content">
                 <div>
@@ -204,7 +234,7 @@
         </div>
 
         <!-- Courses -->
-        <div class="product-card" id="courses">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.3s" id="courses">
             <img src="https://images.pexels.com/photos/4443162/pexels-photo-4443162.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Courses" class="product-img">
             <div class="product-content">
                 <div>
@@ -217,7 +247,7 @@
         </div>
 
         <!-- Coaching -->
-        <div class="product-card" id="coaching">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.4s" id="coaching">
             <img src="https://images.pexels.com/photos/1181715/pexels-photo-1181715.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Coaching" class="product-img">
             <div class="product-content">
                 <div>
@@ -229,11 +259,8 @@
             </div>
         </div>
 
-
-
-
         <!-- Webinars -->
-        <div class="product-card" id="webinars">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.5s" id="webinars">
             <img src="https://images.pexels.com/photos/3727459/pexels-photo-3727459.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Webinars" class="product-img">
             <div class="product-content">
                 <div>
@@ -246,7 +273,7 @@
         </div>
 
         <!-- Seminars -->
-        <div class="product-card" id="seminars">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.6s" id="seminars">
             <img src="https://images.pexels.com/photos/3321796/pexels-photo-3321796.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Seminars" class="product-img">
             <div class="product-content">
                 <div>
@@ -259,7 +286,7 @@
         </div>
 
         <!-- Workshops -->
-        <div class="product-card" id="workshops">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.7s" id="workshops">
             <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Workshops" class="product-img">
             <div class="product-content">
                 <div>
@@ -271,10 +298,8 @@
             </div>
         </div>
 
-
-
         <!-- Offsites -->
-        <div class="product-card" id="offsites">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.8s" id="offsites">
             <img src="https://images.pexels.com/photos/7551465/pexels-photo-7551465.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Offsites" class="product-img">
             <div class="product-content">
                 <div>
@@ -287,7 +312,7 @@
         </div>
 
         <!-- Retreats -->
-        <div class="product-card" id="retreats">
+        <div class="product-card animate__animated animate__fadeInUp" data-wow-delay="0.9s" id="retreats">
             <img src="https://images.pexels.com/photos/31925758/pexels-photo-31925758.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Retreats" class="product-img">
             <div class="product-content">
                 <div>
@@ -301,4 +326,45 @@
 
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const headerOffset = 70; // Adjust this value based on your header height
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    const cards = document.querySelectorAll('.product-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+});
+</script>
 @endsection
