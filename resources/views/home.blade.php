@@ -998,7 +998,7 @@
             <div class="col-lg-10 text-center">
                 <!-- <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span> -->
                 <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span>
-                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This isn't just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;"><br>HappinessFactors</span></h2>
+                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This isn't just a Brand. It's a Mission with Heart <img src="assets/img/GIF/purple-heart.gif" alt="Heart" style="height: 35px; width: 35px;"> <span style="color:#4B0082;"><br>HappinessFactors</span></h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
@@ -1074,7 +1074,7 @@
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 1</div>
-                            <h4 class="mb-1">😍 Connect With HappinessFactors</h4>
+                            <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/smiling_face_with_heart_eyes.gif') }}" alt="Connect With HappinessFactors" style="height: 35px; width: 35px;"> Connect With HappinessFactors</h4>
                             <p class="mb-0 text-muted"> <a href="#subscribe">Subscribe</a> to App/Courses/Coaching</p>
                         </div>
                     </div>
@@ -1082,7 +1082,7 @@
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 2</div>
-                            <h4 class="mb-1">🔍 Inner Compass Activated</h4>
+                            <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/magnifying-glass.gif') }}" alt="Inner Compass Activated" style="height: 35px; width: 35px;"> Inner Compass Activated</h4>
                             <p class="mb-0 text-muted">Finding your happy map.
                                 Discover your stressors, motivators, and what actually makes you tick—with science-backed insights.</p>
                         </div>
@@ -1100,7 +1100,7 @@
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 4</div>
-                            <h4 class="mb-1">🎯 Relaxation/Flow Zone!
+                            <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/direct_hit.gif') }}" alt="Relaxation/Flow Zone!" style="height: 35px; width: 35px;"> Relaxation/Flow Zone!
                                 You're in the groove!</h4>
                             <p class="mb-0 text-muted">You’re not just coping—you’re thriving. Productivity, purpose, and people skills... all flowing with ease</p>
                         </div>
@@ -1109,7 +1109,7 @@
                         <div class="timeline-modern-dot bg-gradient-primary-to-secondary"></div>
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 5</div>
-                            <h4 class="mb-1">🏆 The Glow-Up</h4>
+                            <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/trophy.gif') }}" alt="The Glow-Up" style="height: 35px; width: 35px;"> The Glow-Up</h4>
                             <p class="mb-0 text-muted">You’re shining—and lifting others up too.
                                 Your happiness isn’t just personal—it’s contagious. You’re now a wellness warrior, inspiring joy wherever you go.</p>
                         </div>
@@ -1478,21 +1478,23 @@
         <div class="row justify-content-center py-5 mt-5 border-top border-bottom">
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp">
-                    <div class="h1 mb-2" style="font-size:3rem;">😌</div>
+                    <div class="h1 mb-2" style="font-size:3rem;">
+                        <img src="{{ asset('assets/img/GIF/relieved_face.gif') }}" alt="Less Workplace Stress" style="width: 100px; height: 100px;">
+                    </div>
                     <div class="font-weight-bold mb-1">Less Workplace Stress</div>
                     <p class="text-muted mb-0">With our platform, teams feel lighter and more resilient.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp" style="animation-delay:.2s;">
-                    <div class="h1 mb-2" style="font-size:3rem;">😊</div>
+                    <div class="h1 mb-2" style="font-size:3rem;"><img src="{{ asset('assets/img/GIF/smiling_face.gif') }}" alt="Employee Satisfaction" style="width: 100px; height: 100px;"></div>
                     <div class="font-weight-bold mb-1">Employee Satisfaction</div>
                     <p class="text-muted mb-0">Happier, more engaged, and loyal employees.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="stat-card text-center p-4 rounded-xl shadow-sm bg-white animate__animated animate__fadeInUp" style="animation-delay:.4s;">
-                    <div class="h1 mb-2" style="font-size:3rem;">🚀</div>
+                    <div class="h1 mb-2" style="font-size:3rem;"><img src="{{ asset('assets/img/GIF/rocket.gif') }}" alt="Productivity Gain" style="width: 100px; height: 100px;"></div>
                     <div class="font-weight-bold mb-1">Productivity Gain</div>
                     <p class="text-muted mb-0">Real, measurable improvement in output and creativity.</p>
                 </div>
@@ -2800,9 +2802,9 @@
                         <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">For Your HappinessFactors!</span>
                         <h2 class="font-weight-bold mb-1 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Let’s Connect!</h2>
                         <!-- <img class="max-width-4 mb-2" src="{{ asset('assets/svg/title-line.svg') }}" alt=""> -->
-                        <p class="text-muted mb-0">💌 Got questions, big dreams, or just want to say hi? <br>
+                        <p class="text-muted mb-0"><img src="{{ asset('assets/img/GIF/heart-letter.gif') }}" alt="Got questions, big dreams, or just want to say hi?" style="height: 20px; width: 20px;"> Got questions, big dreams, or just want to say hi? <br>
                             We’re here for all of it—and for <span class="font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">you</span>.<br>
-                            <span class="d-block mt-2">✨ Let’s turn your “meh” days into magic. 💛</span>
+                            <span class="d-block mt-2"><img src="{{ asset('assets/img/GIF/sparkle.gif') }}" alt="Let’s turn your “meh” days into magic." style="height: 20px; width: 20px;"> Let’s turn your “meh” days into magic. <img src="{{ asset('assets/img/GIF/purple-heart.gif') }}" alt="purple-heart" style="height: 20px; width: 20px;"></span>
                         </p>
                     </div>
                     <div class="row mb-4">

@@ -42,36 +42,36 @@
         @php
         $courses = [
         [
-        'title' => 'Effective Stress Management for Happiness',
-        'desc' => 'Learn practical strategies to manage stress and cultivate lasting happiness in your daily life.',
+        'title' => 'Stressed No More',
+        'desc' => "😩 Stressed spelled backwards is desserts... but let's fix the stress part first. Learn practical strategies to turn meltdown moments into calm, focused, feel-good days. Master stress triggers, relaxation techniques, and build your personal chill-out plan.",
         'icon' => 'fa-solid fa-spa',
         'color' => '#bbdefb',
         'image' => 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80'
         ],
         [
         'title' => 'Impactful Leadership',
-        'desc' => 'Develop leadership skills that inspire, motivate, and drive positive change in any environment.',
+        'desc' => '🚀 Lead Like a Legend: Unlock the Leader in You! Leadership isn\'t just about titles—it\'s about people, purpose, and power moves with heart. Build high-performing teams, master influence, and make confident decisions while staying true to your unique style.',
         'icon' => 'fa-solid fa-chess-king',
         'color' => '#e3f2fd',
         'image' => 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&w=600&q=80'
         ],
         [
-        'title' => 'Unshakeable Confidence and Breakthroughs',
-        'desc' => 'Break through self-doubt and build unshakeable confidence to achieve your goals.',
+        'title' => 'Unstoppable Confidence',
+        'desc' => '✨ Break through self-doubt and build unshakeable confidence to achieve your goals. Learn how to transform fear into power, embrace challenges, and become the best version of yourself.',
         'icon' => 'fa-solid fa-bolt',
         'color' => '#90caf9',
         'image' => 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80'
         ],
         [
-        'title' => 'Influence and Negotiation Success',
-        'desc' => 'Master the art of influence and negotiation for personal and professional success.',
+        'title' => 'Influence & Negotiation Power',
+        'desc' => '💬 Win Hearts. Seal Deals. Lead with Influence. Master the art of influence with kindness, negotiate with empathy, build lasting trust, and handle tough conversations like a pro.',
         'icon' => 'fa-solid fa-handshake',
         'color' => '#b3e5fc',
         'image' => 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80'
         ],
         [
-        'title' => 'Managing Anxiety Effectively',
-        'desc' => 'Discover techniques to manage anxiety and regain control of your emotional well-being.',
+        'title' => 'Effective Anxiety Management',
+        'desc' => '😰 Feeling anxious? Let\'s unstick that stuck feeling. Learn science-backed, soul-soothing strategies to breathe easier, sleep better, and take back control of your life.',
         'icon' => 'fa-solid fa-heartbeat',
         'color' => '#e1f5fe',
         'image' => 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80'
@@ -81,21 +81,28 @@
 
         @foreach($courses as $course)
         <div class="col-md-6 col-lg-4 mb-4 d-flex align-items-stretch">
-            <div class="card shadow-sm border-0 w-100" style="background:rgb(161, 204, 182); border-radius: 10px;">
-                <img src="{{ $course['image'] }}" class="card-img-top" alt="{{ $course['title'] }}" style="height: 200px; object-fit: cover; border-top-left-radius: 10px; border-top-right-radius: 10px;">
-                <div class="card-body text-center">
+            <div class="card shadow-lg border-0 w-100 hover-card" style="background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); border-radius: 15px; transition: transform 0.3s ease;">
+                <img src="{{ $course['image'] }}" class="card-img-top" alt="{{ $course['title'] }}" style="height: 220px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div class="card-body text-center p-4">
                     <div class="mb-3">
-                        <i class="{{ $course['icon'] }} fa-3x" style="color: #1565c0;"></i>
+                        <i class="{{ $course['icon'] }} fa-3x" style="color: #1565c0; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);"></i>
                     </div>
-                    <h5 class="card-title font-weight-bold" style="color: #0d47a1;">{{ $course['title'] }}</h5>
-                    <p class="card-text" style="color: #333;">{{ $course['desc'] }}</p>
-                    <a href="#" class="btn btn-primary mt-2">Learn More</a>
+                    <h5 class="card-title font-weight-bold mb-3" style="color: #0d47a1; font-size: 1.4rem;">{{ $course['title'] }}</h5>
+                    <p class="card-text mb-4" style="color: #333; font-size: 1rem; line-height: 1.6;">{{ $course['desc'] }}</p>
+                    <a href="#" class="btn btn-primary mt-2 px-4 py-2" style="background: linear-gradient(135deg, #1565c0, #0d47a1); border: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);">Learn More</a>
                 </div>
             </div>
         </div>
         @endforeach
     </div>
 </div>
+
+<style>
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+</style>
 
 <!-- Font Awesome CDN for icons (if not already included) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
