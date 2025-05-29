@@ -31,7 +31,7 @@
 
 @section('content')
 
-<section class="gradient-overlay gradient-overlay-dark">
+<section class="">
     <img class="bg-image" src="{{ asset('assets/img/1-1.jpg') }}" alt="">
     <div class="container hero hero-responsive" style="padding-top: 350px; margin-top: -100px;">
         <div class="row align-items-center z-index-2 position-relative text-center">
@@ -42,10 +42,10 @@
             </div>
             <div class="col-12">
                 <h1 class="display-4 text-white mb-2 sparkle-text" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 3.5rem; line-height: 1.1; letter-spacing: -1px; text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    Transform Your Workplace with <span style="color: #1036a1; font-weight: 700;">Happiness</span> Driven Wellness
+                    Holistic <span style="color: #61009b; font-weight: 700;">Mental Wellness</span> Solution for Busy Professionals
                 </h1>
-                <p class="text-white mb-5 text-12">
-                    Smart mental wellness for people on the move.
+                <p class="text-black mb-5 text-12">
+                    <strong style="color: #2c3e50;">Smart mental wellness for people on the move.</strong>
                 </p>
                 <a href="#subscribe" class="btn btn-secondary scroll" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
                     onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
@@ -78,13 +78,13 @@
                 </div>
                 <p class="mb-4">
                     At <span class="" style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">positivity</span> and
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">happier</span>, more
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these
-                    <span class="highlight" style="color: #61009b; font-weight: bold;">factors</span> into your daily routine.
+                    <span class="" style="color: #61009b; font-weight: bold;">positivity</span> and
+                    <span class="" style="color: #61009b; font-weight: bold;">mindfulness</span>. Our mission is to help you discover the
+                    <span class="" style="color: #61009b; font-weight: bold;">key elements</span> that contribute to a
+                    <span class="" style="color: #61009b; font-weight: bold;">happier</span>, more
+                    <span class="" style="color: #61009b; font-weight: bold;">fulfilling life</span>. Join us on this
+                    <span class="" style="color: #61009b; font-weight: bold;">journey</span> and learn how to incorporate these
+                    <span class="" style="color: #61009b; font-weight: bold;">factors</span> into your daily routine.
                 </p>
                 <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
                     onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
@@ -148,7 +148,7 @@
                         </div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <p class="lead mb-0">We combine <span class="highlight">ancient wisdom</span> with <span class="highlight">modern science</span> to create holistic wellness solutions that transform lives.</p>
+                    <p class="lead mb-0">We combine <span class="" style="color: #61009b; font-weight: bold;">Ancient Wisdom</span> with <span class="" style="color: #61009b; font-weight: bold;">Spiritual Science</span> to create holistic wellness solutions that transform lives.</p>
                 </div>
             </div>
 
@@ -156,12 +156,60 @@
             <div class="row align-items-center">
                 <!-- Left side content card -->
                 <div class="col-lg-6 mb-5 mb-lg-0 reveal-slide-right">
-                    <div class="card border-0 bg-white shadow-lg rounded-lg overflow-hidden hover-lift">
+                    <div class="card border-0 bg-white shadow-lg rounded-lg overflow-hidden hover-lift" style="transition: all 0.3s ease;">
                         <div class="card-body p-5">
-                            <div class="card-header-icon mb-4">
-                                <div class="icon-wrapper responsive-icon-wrapper">
+                            <!-- Enhanced Header Section -->
+                            <div class="card-header-icon mb-4 d-flex align-items-center">
+                                <div class="icon-wrapper responsive-icon-wrapper bg-gradient-primary-to-secondary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 64px; height: 64px; font-size: 24px; box-shadow: 0 4px 15px rgba(75,0,130,0.15);">
                                     <i class="fas fa-spa"></i>
                                 </div>
+                                <h3 class="h4 ml-3 mb-0 text-gradient" style="background: linear-gradient(90deg, #4B0082, #9400D3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our Approach to Mental Wellness</h3>
+                            </div>
+
+                            <!-- Main Content Section -->
+                            <div class="content-wrapper">
+                                <p class="text-muted">
+                                    <span class="lead mb-4 d-block fw-bold" style="color: #4B0082; line-height: 1.6;">At HappinessFactors, we believe mental and emotional wellness isn't just a luxury - it's the foundation of a meaningful, purpose-driven life.</span>
+
+                                <div class="methodology-section mb-4">
+                                    <h5 class="mb-3">Our transformative methodology uniquely blends:</h5>
+                                    <ul class="mt-3 mb-4 methodology-list" style="list-style: none; padding-left: 0;">
+                                        <li class="mb-3 p-2 rounded hover-lift" style="transition: all 0.3s ease; background: rgba(75,0,130,0.03);">
+                                            <i class="text-primary fas fa-om" style="margin-right: 0.5rem;"></i>Ancient wisdom practices
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="transition: all 0.3s ease; background: rgba(75,0,130,0.03);">
+                                            <i class="text-primary fas fa-brain" style="margin-right: 0.5rem;"></i>Modern neuroscience
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="transition: all 0.3s ease; background: rgba(75,0,130,0.03);">
+                                            <i class="text-primary fas fa-heart" style="margin-right: 0.5rem;"></i>Positive psychology
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Enhanced Results Box -->
+                                <div class="highlight-box p-4 mb-4 rounded-lg" style="background: rgba(75,0,130,0.05); border-left: 4px solid #4B0082; box-shadow: 0 2px 10px rgba(75,0,130,0.05);">
+                                    <h5 class="mb-3" style="color: #4B0082; font-weight: bold;">Results-Driven Approach</h5>
+                                    <p class="mb-3">Our spiritual science-backed programs deliver measurable outcomes:</p>
+                                    <ul class="mt-2 mb-0 results-list" style="list-style: none; padding-left: 0;">
+                                        <li class="mb-3 p-2 rounded hover-lift" style="background: rgba(255,255,255,0.5);">
+                                            <i class="fas fa-check-circle text-success mr-2"></i>Reduced stress & anxiety
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="background: rgba(255,255,255,0.5);">
+                                            <i class="fas fa-check-circle text-success mr-2"></i>Enhanced productivity
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="background: rgba(255,255,255,0.5);">
+                                            <i class="fas fa-check-circle text-success mr-2"></i>Improved emotional resilience
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="background: rgba(255,255,255,0.5);">
+                                            <i class="fas fa-check-circle text-success mr-2"></i>Mood Boosts That Last
+                                        </li>
+                                        <li class="mb-3 p-2 rounded hover-lift" style="background: rgba(255,255,255,0.5);">
+                                            <i class="fas fa-check-circle text-success mr-2"></i>Feel Good, Stay Happy
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Enhanced Impact Statement -->
                                 <style>
                                     @media (max-width: 767.98px) {
                                         .responsive-icon-wrapper {
@@ -175,105 +223,7 @@
                                         }
                                     }
                                 </style>
-                                <h3 class="h4 ml-3">Our Approach to Emotional Wellness</h3>
                             </div>
-
-                            <p class="text-muted">Emotional wellness is the cornerstone of a fulfilled life. At HappinessFactors, we've developed a unique methodology that integrates ancient practices with cutting-edge psychology to create powerful, life-changing results.</p>
-
-                            <div class="mt-4 service-wrapper">
-                                <h4 class="h5 mb-4 border-bottom pb-2">Our Comprehensive Solutions:</h4>
-
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <ul class="list-unstyled service-list">
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="100">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-mobile-alt"></i>
-                                                    </div>
-                                                    <span>Wellness Apps</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="200">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-graduation-cap"></i>
-                                                    </div>
-                                                    <span>Online Courses</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="300">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-users"></i>
-                                                    </div>
-                                                    <span>Group Coaching</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="400">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-user-friends"></i>
-                                                    </div>
-                                                    <span>Personal Coaching</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="list-unstyled service-list">
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="150">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-chalkboard-teacher"></i>
-                                                    </div>
-                                                    <span>Virtual Trainings</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="250">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-hands-helping"></i>
-                                                    </div>
-                                                    <span>Immersive Workshops</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="350">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-building"></i>
-                                                    </div>
-                                                    <span>Corporate Offsites</span>
-                                                </div>
-                                            </li>
-                                            <li class="service-item" data-aos="fade-right" data-aos-delay="450">
-                                                <div class="d-flex align-items-center mb-3">
-                                                    <div class="service-icon">
-                                                        <i class="fas fa-spa"></i>
-                                                    </div>
-                                                    <span>Wellness Retreats</span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-5 text-center">
-                                <a href="#services" class="btn btn-gradient btn-lg btn-ripple w-100 w-md-auto" style="max-width:320px;">
-                                    <span>Explore Our Services</span>
-                                    <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                            <style>
-                                @media (max-width: 767.98px) {
-                                    .btn-gradient.w-100 {
-                                        font-size: 1rem;
-                                        padding: 14px 0;
-                                        max-width: 100%;
-                                    }
-                                }
-                            </style>
                         </div>
                     </div>
                 </div>
@@ -301,7 +251,7 @@
                                     <p class="mb-0">Enhance physical wellbeing through mindful practices</p>
                                 </div>
                             </div>
-                            <div class="value-card">
+                            <div class="value-card mb-4">
                                 <div class="value-icon">
                                     <i class="fas fa-infinity"></i>
                                 </div>
@@ -310,18 +260,33 @@
                                     <p class="mb-0">Connect with your deeper purpose for lasting happiness</p>
                                 </div>
                             </div>
+                            <div class="value-card mb-4">
+                                <div class="value-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h4>Growth</h4>
+                                    <p class="mb-0">Continuous personal development and transformation</p>
+                                </div>
+                            </div>
+                            <div class="value-card">
+                                <div class="value-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h4>Community</h4>
+                                    <p class="mb-0">Build meaningful connections and support networks</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Video container with parallax effect -->
                     <div class="video-showcase"></div>
                     <div class="video-container parallax-effect"></div>
-                    <div class="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden">
+                    <div class="embed-responsive embed-responsive-16by9 rounded-lg overflow-hidden" style="border-radius: 15px;">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IcFBXsIb3TI?autoplay=0&mute=1&controls=1&modestbranding=1" title="Discover HappinessFactors" allowfullscreen></iframe>
                     </div>
-                    <!-- <div class="video-badge">
-                            <span>Our Story</span>
-                        </div> -->
                 </div>
             </div>
         </div>
@@ -338,7 +303,7 @@
                         <span class="counter" data-count="10">0</span><span>+</span>
                     </div>
                     <h4>Years Experience</h4>
-                    <p>Dedicated to emotional wellness</p>
+                    <p>Dedicated to Menatal & Emotional wellness</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
@@ -360,7 +325,7 @@
                         <span class="counter" data-count="20">0</span><span>+</span>
                     </div>
                     <h4>Wellness Programs</h4>
-                    <p>Customise to meet your needs</p>
+                    <p>Customizable to meet your needs</p>
                 </div>
             </div>
         </div>
@@ -375,7 +340,7 @@
                     <h3 style="color: white;">
                         Our Vision
                     </h3>
-                    <p>Building emotionally balanced communities worldwide through innovative wellness solutions that make happiness accessible to everyone.</p>
+                    <p>No. 1 holistic mental wellness solution provider to add joy in the lives of busy professionals globally through transformative mental wellness solutions bringing purpose and freedom from stress.</p>
                 </div>
             </div>
             <div class="col-md-6 reveal-slide-left">
@@ -386,7 +351,7 @@
                     <h3 style="color: white;">
                         Our Mission
                     </h3>
-                    <p>To empower individuals and organizations with the tools and knowledge needed to cultivate sustainable happiness and resilience in everyday life.</p>
+                    <p>To empower busy professionals to sustain happiness in the timeless pursuit of purpose, joy & freedom from stress, one professional, one company at a time.</p>
                 </div>
             </div>
         </div>
@@ -1033,7 +998,7 @@
             <div class="col-lg-10 text-center">
                 <!-- <span class="badge badge-pill px-4 py-2 mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span> -->
                 <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Our Journey</span>
-                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This Isn't Just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;"><br>HappinessFactors</span></h2>
+                <h2 class="display-5 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">This isn't just a Brand. It's a Mission with Heart 💜<span style="color:#4B0082;"><br>HappinessFactors</span></h2>
                 <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
@@ -1091,7 +1056,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#about-us" class="btn btn-gradient btn-lg btn-ripple shadow-sm">
+                <a href="#subscribe" class="btn btn-gradient btn-lg btn-ripple shadow-sm">
                     Ready To Feel Good? <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -1110,7 +1075,7 @@
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 1</div>
                             <h4 class="mb-1">😍 Connect With HappinessFactors</h4>
-                            <p class="mb-0 text-muted"> Subscribe to App/Courses/Coaching</p>
+                            <p class="mb-0 text-muted"> <a href="#subscribe">Subscribe</a> to App/Courses/Coaching</p>
                         </div>
                     </div>
                     <div class="timeline-modern-item right">
@@ -1829,56 +1794,64 @@
             'icon' => 'fa-chalkboard-teacher',
             'title' => 'Trainings',
             'desc' => 'Interactive training programs that build emotional resilience, mindfulness and leadership skills.',
-            'color' => 'linear-gradient(135deg,#4B0082,#9400D3)'
+            'color' => 'linear-gradient(135deg,#4B0082,#9400D3)',
+            'link' => '/products/trainings'
             ],
             [
             'icon' => 'fa-mobile-alt',
             'title' => 'App',
             'desc' => 'Our mobile app delivers daily happiness practices, mood tracking, and guided meditations on the go.',
-            'color' => 'linear-gradient(135deg,#00BCD4,#2196F3)'
+            'color' => 'linear-gradient(135deg,#00BCD4,#2196F3)',
+            'link' => 'https://apps.apple.com/us/app/happiness-factors/id1575587044?platform=iphone'
             ],
             [
             'icon' => 'fa-graduation-cap',
             'title' => 'Courses',
             'desc' => 'Comprehensive online courses teaching science-backed techniques for lasting happiness and wellbeing.',
-            'color' => 'linear-gradient(135deg,#FF7D7F,#4B0082)'
+            'color' => 'linear-gradient(135deg,#FF7D7F,#4B0082)',
+            'link' => '/products/courses'
             ],
             [
             'icon' => 'fa-user-friends',
             'title' => 'Coaching',
             'desc' => 'One-on-one and group coaching sessions for personalized guidance on your happiness journey.',
-            'color' => 'linear-gradient(135deg,#6A5ACD,#FF7D7F)'
+            'color' => 'linear-gradient(135deg,#6A5ACD,#FF7D7F)',
+            'link' => '/products/coaching'
             ],
             [
             'icon' => 'fa-video',
             'title' => 'Webinars',
             'desc' => 'Live interactive online sessions featuring experts in positive psychology and emotional wellness.',
-            'color' => 'linear-gradient(135deg,#28a745,#4B0082)'
+            'color' => 'linear-gradient(135deg,#28a745,#4B0082)',
+            'link' => '/products/webinars'
             ],
             [
             'icon' => 'fa-ellipsis-h',
             'title' => 'More to Come',
             'desc' => 'Stay tuned for new, innovative happiness solutions launching soon!',
-            'color' => 'linear-gradient(135deg,#FF7D7F,#9400D3)'
+            'color' => 'linear-gradient(135deg,#FF7D7F,#9400D3)',
+            'link' => '/products/#products'
             ],
             ];
             @endphp
             @foreach($services as $i => $service)
             <div class="col-md-4 mb-4">
-                <div class="service-card-animated bg-white rounded-xl shadow-lg p-5 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: {{ 0.1 + $i*0.1 }}s;">
-                    <div class="service-icon-animated mb-4 mx-auto" style="background: {{ $service['color'] }};">
-                        <i class="fas {{ $service['icon'] }} text-white fa-2x"></i>
+                <a href="{{ $service['link'] }}" class="text-decoration-none">
+                    <div class="service-card-animated bg-white rounded-xl shadow-lg p-5 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: {{ 0.1 + $i*0.1 }}s;">
+                        <div class="service-icon-animated mb-4 mx-auto" style="background: {{ $service['color'] }};">
+                            <i class="fas {{ $service['icon'] }} text-white fa-2x"></i>
+                        </div>
+                        <h5 class="font-weight-bold mb-2 text-dark">{{ $service['title'] }}</h5>
+                        <p class="mb-0 text-muted">{{ $service['desc'] }}</p>
                     </div>
-                    <h5 class="font-weight-bold mb-2">{{ $service['title'] }}</h5>
-                    <p class="mb-0 text-muted">{{ $service['desc'] }}</p>
-                </div>
+                </a>
             </div>
             @endforeach
         </div>
         <!-- Call to Action -->
         <div class="row justify-content-center mt-5 pt-3">
             <div class="col-lg-8 text-center">
-                <a href="#subscribe" class="btn btn-gradient btn-lg btn-ripple shadow">
+                <a href="/products" class="btn btn-gradient btn-lg btn-ripple shadow">
                     Get Started with Happiness <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -2059,44 +2032,44 @@
                 </div>
 
                 <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var openBtn = document.getElementById('openVideoModal');
-                    var modal = document.getElementById('videoModalOverlay');
-                    var closeBtn = document.getElementById('closeVideoModal');
-                    var iframe = document.getElementById('videoModalIframe');
-                    var youtubeUrl = "https://www.youtube.com/embed/sy8qJhHQkZI?autoplay=1&rel=0&showinfo=0";
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var openBtn = document.getElementById('openVideoModal');
+                        var modal = document.getElementById('videoModalOverlay');
+                        var closeBtn = document.getElementById('closeVideoModal');
+                        var iframe = document.getElementById('videoModalIframe');
+                        var youtubeUrl = "https://www.youtube.com/embed/sy8qJhHQkZI?autoplay=1&rel=0&showinfo=0";
 
-                    openBtn.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        iframe.src = youtubeUrl;
-                        modal.style.display = 'flex';
-                        document.body.style.overflow = 'hidden';
-                    });
+                        openBtn.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            iframe.src = youtubeUrl;
+                            modal.style.display = 'flex';
+                            document.body.style.overflow = 'hidden';
+                        });
 
-                    closeBtn.addEventListener('click', function() {
-                        modal.style.display = 'none';
-                        iframe.src = '';
-                        document.body.style.overflow = '';
-                    });
-
-                    // Close modal on overlay click (but not when clicking inside the video)
-                    modal.addEventListener('click', function(e) {
-                        if (e.target === modal) {
+                        closeBtn.addEventListener('click', function() {
                             modal.style.display = 'none';
                             iframe.src = '';
                             document.body.style.overflow = '';
-                        }
-                    });
+                        });
 
-                    // Optional: close modal on ESC key
-                    document.addEventListener('keydown', function(e) {
-                        if (e.key === "Escape" && modal.style.display === 'flex') {
-                            modal.style.display = 'none';
-                            iframe.src = '';
-                            document.body.style.overflow = '';
-                        }
+                        // Close modal on overlay click (but not when clicking inside the video)
+                        modal.addEventListener('click', function(e) {
+                            if (e.target === modal) {
+                                modal.style.display = 'none';
+                                iframe.src = '';
+                                document.body.style.overflow = '';
+                            }
+                        });
+
+                        // Optional: close modal on ESC key
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === "Escape" && modal.style.display === 'flex') {
+                                modal.style.display = 'none';
+                                iframe.src = '';
+                                document.body.style.overflow = '';
+                            }
+                        });
                     });
-                });
                 </script>
                 <h3 class="h5 text-white mt-3 mb-0">Discover HappinessFactors</h3>
                 <span class="font-size-14 text-white">Watch our introduction video</span>

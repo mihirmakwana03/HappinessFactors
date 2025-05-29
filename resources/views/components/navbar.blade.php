@@ -49,7 +49,6 @@
                         </li>
                         <li class="nav-item"><a class="nav-link scroll" href="{{ url('/quiz') }}"><span>Quiz</span></a></li>
                         <li class="nav-item"><a class="nav-link scroll" href="{{ url('/#why-us') }}"><span>Why Us</span></a></li>
-                        <li class="nav-item"><a class="nav-link scroll" href="#testimonials"><span>Testimonials</span></a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span>About</span>
@@ -64,6 +63,9 @@
                                 <a class="dropdown-item" href="{{ url('/#why-us') }}">
                                     <i class="fa fa-question-circle mr-2"></i> Why Us
                                 </a>
+                            <a class="dropdown-item" href="{{ url('/#testimonials') }}">
+                                <i class="fa fa-star mr-2"></i> Testimonials
+                            </a>
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link scroll" href="#contact"><span>Contact</span></a></li>
