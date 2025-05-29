@@ -1,6 +1,6 @@
 
 
-<?php $__env->startSection('title', 'Products'); ?>
+<?php $__env->startSection('title', 'Terms and Conditions'); ?>
 
 <?php $__env->startSection('head'); ?>
 <link rel="stylesheet" href="<?php echo e(asset('css/products.css')); ?>">
@@ -23,12 +23,12 @@
         <div class="terms-card">
             <i class="fa-solid fa-user-shield terms-icon"></i>
             <h2>Privacy Policy</h2>
-            <p>Your use of the App or Website is also subject to our <a href="#">Privacy Policy</a>. Please review it to understand how we collect and use your data.</p>
+            <p>Your use of the App or Website is also subject to our <a href="/privacy-policy">Privacy Policy</a>. Please review it to understand how we collect and use your data.</p>
         </div>
         <div class="terms-card">
             <i class="fa-solid fa-circle-info terms-icon"></i>
             <h2>Disclaimer</h2>
-            <p>Our <a href="#">Disclaimer</a> outlines important limitations regarding the information provided on our platform. Please read it carefully.</p>
+            <p>Our Disclaimer outlines important limitations regarding the information provided on our platform. Please read it carefully.</p>
         </div>
         <div class="terms-card">
             <i class="fa-solid fa-user-check terms-icon"></i>

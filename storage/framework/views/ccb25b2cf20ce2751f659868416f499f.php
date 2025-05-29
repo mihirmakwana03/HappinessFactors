@@ -31,7 +31,7 @@
     <link href="<?php echo e(asset('css/owl-carousel/owl.theme.css')); ?>" rel="stylesheet" media="all" />
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
-    <link href="<?php echo e(asset('css/animations.css')); ?>" rel="stylesheet" type="text/css" media="all" />
+    <!-- <link href="<?php echo e(asset('css/animations.css')); ?>" rel="stylesheet" type="text/css" media="all" /> -->
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
