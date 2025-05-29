@@ -535,8 +535,8 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
    transform: translate3d(0, -5px, 0);
   -webkit-transform: translate3d(0, -5px, 0);
   -moz-transform: translate3d(0, -5px, 0);
-  background-color: #ff7d7f;
-  border-color: #ff7d7f;
+  background-color: #61009b;
+  border-color: #61009b;
   color: #ffffff;
 
 }
@@ -544,8 +544,8 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   position: fixed;
   width: 2.8rem;
   height: 2.8rem;
-  background-color: #f56c6d;
-  border-color: #f56c6d;
+  background-color: #61009b;
+  border-color: #61009b;
   text-align: center;
   right: 1.575rem;
   bottom: 5rem;
