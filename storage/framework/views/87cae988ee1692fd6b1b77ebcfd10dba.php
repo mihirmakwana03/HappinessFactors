@@ -12,6 +12,7 @@
                 <div class="nav-menu collapse navbar-collapse justify-content-end mr-5">
                     <ul class="navbar-nav header-navbar-nav">
                         <li class="nav-item"><a class="nav-link scroll" href="<?php echo e(url('/')); ?>"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link scroll" href="<?php echo e(url('/business')); ?>"><span>Business</span></a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="/products" id="productsDropdown">
                                 <span>Products</span>
@@ -63,9 +64,9 @@
                                 <a class="dropdown-item" href="<?php echo e(url('/#why-us')); ?>">
                                     <i class="fa fa-question-circle mr-2"></i> Why Us
                                 </a>
-                            <a class="dropdown-item" href="<?php echo e(url('/#testimonials')); ?>">
-                                <i class="fa fa-star mr-2"></i> Testimonials
-                            </a>
+                                <a class="dropdown-item" href="<?php echo e(url('/#testimonials')); ?>">
+                                    <i class="fa fa-star mr-2"></i> Testimonials
+                                </a>
                             </div>
                         </li>
                         <li class="nav-item"><a class="nav-link scroll" href="#contact"><span>Contact</span></a></li>

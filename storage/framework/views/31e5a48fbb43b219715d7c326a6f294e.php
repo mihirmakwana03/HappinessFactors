@@ -9,109 +9,87 @@
         <div class="container py-5">
             <div class="row footer-content">
                 <!-- Company Info Column -->
-                <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="col-lg-3 mb-5 mb-lg-0">
                     <div class="footer-logo-container text-center text-lg-left mb-4 align-items-center">
-                        <img id="footerLogo" src="assets/img/Logo.png" alt="HappinessFactors Logo">
+                        <img id="footerLogo" src="<?php echo e(asset('assets/img/Logo.png')); ?>" alt="HappinessFactors Logo">
                     </div>
                     <p class="text-light mb-4">Empowering individuals and organizations to achieve happiness and fulfillment through innovative solutions and guidance.</p>
-                    <!-- <div class="newsletter-form">
-                        <h5 class="text-white mb-3">Stay Updated</h5>
-                        <form action="https://v1.gdapis.com/api/groovemail/saveuserdetails" method="post">
-                            <input type="hidden" name="formid" value="681f56a47a5ee8662055df95">
-                            <input type="hidden" name="ip_address" value="false">
-                            <input type="hidden" name="appUrl" value="https://app.groove.cm">
-                            <input type="hidden" name="form_submit_type" value="raw_html">
-                            <input type="hidden" name="random_hidden_key_KRfIshh" value="">
-                            <div class="input-group">
-                                <input type="email" class="form-control" name="email" placeholder="Your email" required style="background-color: #f1f3f6;">
-                                <div class="input-group-append">
-                                    <button type="submit"
-                                        class="btn btn-gradient text-white"
-                                        style="background: linear-gradient(90deg,#4B0082,#9400D3);">
-                                        Subscribe Now
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <link rel="stylesheet" href="https://app.groove.cm/groovemail/embed/app.css">
-                            <script src="https://app.groove.cm/groovemail/embed/countryCodeInput.js" formId="681f56a47a5ee8662055df95"></script>
-                        </form>
-                    </div> -->
                 </div>
 
-                <!-- Quick Links Column -->
-                <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
-                    <div class="footer-links px-lg-4">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <div class="row">
-                            <div class="col-6">
-                                <ul class="list-unstyled footer-link-list">
-                                    <li class="mb-3"><a href="/#about-us">About Us</a></li>
-                                    <li class="mb-3"><a href="/#services">Services</a></li>
-                                    <li class="mb-3"><a href="/#blog">Blog</a></li>
-                                    <li class="mb-3"><a href="/#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="list-unstyled footer-link-list">
-                                    <li class="mb-3"><a href="/#faq">FAQ</a></li>
-                                    <li class="mb-3"><a href="/#careers">Careers</a></li>
-                                    <li class="mb-3"><a href="/terms-and-conditions">Terms & Conditions</a></li>
-                                    <li class="mb-3"><a href="/privacy-policy">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Products Column -->
+                <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Products</h5>
+                    <ul class="list-unstyled footer-link-list">
+                        <li class="mb-3"><a href="<?php echo e(url('/products/trainings')); ?>">Trainings</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/products/courses')); ?>">Courses</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/products/coaching')); ?>">Coaching</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/products/workshops')); ?>">Workshops</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/products/retreats')); ?>">Retreats</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <ul class="list-unstyled footer-link-list">
+                        <li class="mb-3"><a href="<?php echo e(url('/#about-us')); ?>">About Us</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/#our-story')); ?>">Our Story</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/#why-us')); ?>">Why Us</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/#testimonials')); ?>">Testimonials</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/business')); ?>">Business</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support Column -->
+                <div class="col-lg-2 col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled footer-link-list">
+                        <li class="mb-3"><a href="<?php echo e(url('/#faq')); ?>">FAQ</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/terms-and-conditions')); ?>">Terms</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/privacy-policy')); ?>">Privacy</a></li>
+                        <li class="mb-3"><a href="<?php echo e(url('/#contact')); ?>">Contact</a></li>
+                    </ul>
                 </div>
 
                 <!-- Connect Column -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-connect text-center text-md-left">
-                        <h5 class="text-white mb-4">Connect With Us</h5>
-                        <div class="social-icons-grid mb-4">
-                            <a href="https://www.facebook.com/HappinessFactors/" target="_blank" data-toggle="tooltip" title="Facebook">
-                                <i class="fab fa-facebook-f"></i>
+                <div class="col-lg-3 col-md-3">
+                    <h5 class="text-white mb-4">Connect With Us</h5>
+                    <div class="social-icons-grid mb-4">
+                        <a href="https://www.facebook.com/HappinessFactors/" target="_blank" data-toggle="tooltip" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/happinessfaster" target="_blank" data-toggle="tooltip" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/happinessfactors/" target="_blank" data-toggle="tooltip" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/happinessfactors/" target="_blank" data-toggle="tooltip" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCicqa9p-mkaO5wUL2lllkrQ" target="_blank" data-toggle="tooltip" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tumblr.com/happinessfactors" target="_blank" data-toggle="tooltip" title="Tumblr">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info text-white">
+                        <p class="mb-2">
+                            <a href="https://maps.google.com/?q=PO Box 611104, San Jose, CA 95161" target="_blank" class="contact-link text-white">
+                                <i class="fas fa-map-marker-alt mr-2"></i> PO Box 611104, San Jose, CA 95161
                             </a>
-                            <a href="https://twitter.com/happinessfaster" target="_blank" data-toggle="tooltip" title="Twitter">
-                                <i class="fab fa-twitter"></i>
+                        </p>
+                        <p class="mb-2">
+                            <a href="mailto:funny@happinessfactors.com" class="contact-link text-white">
+                                <i class="fas fa-envelope mr-2"></i> funny@happinessfactors.com
                             </a>
-                            <a href="https://www.instagram.com/happinessfactors/" target="_blank" data-toggle="tooltip" title="Instagram">
-                                <i class="fab fa-instagram"></i>
+                        </p>
+                        <p class="mb-0">
+                            <a href="tel:14083893073" class="contact-link text-white">
+                                <i class="fas fa-phone mr-2"></i> 1 (408) 389 - 3073
                             </a>
-                            <a href="https://www.linkedin.com/company/happinessfactors/" target="_blank" data-toggle="tooltip" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCicqa9p-mkaO5wUL2lllkrQ" target="_blank" data-toggle="tooltip" title="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://www.tumblr.com/happinessfactors" target="_blank" data-toggle="tooltip" title="Tumblr">
-                                <i class="fab fa-tumblr"></i>
-                            </a>
-                        </div>
-                        <div class="contact-info text-white">
-                            <p class="mb-2">
-                                <a href="https://maps.google.com/?q=PO Box 611104, San Jose, CA 95161" target="_blank" class="contact-link text-white">
-                                    <i class="fas fa-map-marker-alt mr-2"></i> PO Box 611104, San Jose, CA 95161
-                                </a>
-                            </p>
-                            <p class="mb-2">
-                                <a href="mailto:funny@happinessfactors.com" class="contact-link text-white">
-                                    <i class="fas fa-envelope mr-2"></i> funny@happinessfactors.com
-                                </a>
-                            </p>
-                            <p class="mb-0">
-                                <a href="tel:14083893073" class="contact-link text-white">
-                                    <i class="fas fa-phone mr-2"></i> 1 (408) 389 - 3073
-                                </a>
-                            </p>
-                        </div>
-                        <style>
-                            .contact-link:hover {
-                                color: #0099ff !important;
-                                text-decoration: none;
-                                transition: color 0.3s ease;
-                            }
-                        </style>
+                        </p>
                     </div>
                 </div>
             </div>

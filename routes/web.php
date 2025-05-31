@@ -11,6 +11,14 @@ Route::get('/home', function () {
 Route::get('/products', function () {
     return view('products');
 });
+Route::get('/business', function () {
+    return view('business');
+})->name('business');
+
+// Demo Request
+use App\Http\Controllers\DemoRequestController;
+Route::post('/request-demo', [DemoRequestController::class, 'requestDemo'])->name('request.demo');
+
 Route::get('/terms-and-conditions', function () {
     return view('terms-and-conditions');
 });

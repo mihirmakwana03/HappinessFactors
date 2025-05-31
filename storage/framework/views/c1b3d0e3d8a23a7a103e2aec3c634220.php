@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title', 'Welcome to HappinessFactors'); ?>
 <?php $__env->startSection('subtitle', 'Your Go-To Mental Wellness Solutions'); ?>
 <?php $__env->startSection('content-title', 'Welcome to HappinessFactors'); ?>

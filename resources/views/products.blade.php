@@ -216,7 +216,7 @@
                     <div class="product-title">Trainings</div>
                     <div class="product-desc">Custom training programs for organizations and teams. Interactive, results-oriented sessions on leadership and technical skills.</div>
                 </div>
-                <a href="products/trainings" class="product-btn">Book Training</a>
+                <a href="/products/trainings" class="product-btn">Book Training</a>
             </div>
         </div>
 
@@ -242,7 +242,7 @@
                     <div class="product-title">Courses</div>
                     <div class="product-desc">Structured online courses with comprehensive lessons, practical exercises, and assessments. Learn at your own pace with expert guidance.</div>
                 </div>
-                <a href="products/courses" class="product-btn">Browse Courses</a>
+                <a href="/products/courses" class="product-btn">Browse Courses</a>
             </div>
         </div>
 
@@ -255,7 +255,7 @@
                     <div class="product-title">Coaching</div>
                     <div class="product-desc">Personalized coaching for individuals and teams. Our experienced coaches provide one-on-one guidance, support, and accountability for lasting growth.</div>
                 </div>
-                <a href="products/coaching" class="product-btn">Learn More</a>
+                <a href="/products/coaching" class="product-btn">Learn More</a>
             </div>
         </div>
 
@@ -268,7 +268,7 @@
                     <div class="product-title">Webinars</div>
                     <div class="product-desc">Live online webinars with Q&A, expert presentations, and interactive discussions—all from your home or office.</div>
                 </div>
-                <a href="products/webinars" class="product-btn">Join a Webinar</a>
+                <a href="/products/webinars" class="product-btn">Join a Webinar</a>
             </div>
         </div>
 
@@ -281,7 +281,7 @@
                     <div class="product-title">Seminars</div>
                     <div class="product-desc">In-person seminars with industry leaders. Learn, network, and gain hands-on knowledge in a collaborative environment.</div>
                 </div>
-                <a href="products/seminars" class="product-btn">View Seminars</a>
+                <a href="/products/seminars" class="product-btn">View Seminars</a>
             </div>
         </div>
 
@@ -294,7 +294,7 @@
                     <div class="product-title">Workshops</div>
                     <div class="product-desc">Hands-on workshops for practical skill-building and real-world problem solving. Collaborate and apply new techniques.</div>
                 </div>
-                <a href="products/workshops" class="product-btn">See Workshops</a>
+                <a href="/products/workshops" class="product-btn">See Workshops</a>
             </div>
         </div>
 
@@ -307,7 +307,7 @@
                     <div class="product-title">Offsites</div>
                     <div class="product-desc">Corporate offsite events for team-building, strategy, and renewal. Foster collaboration in inspiring environments.</div>
                 </div>
-                <a href="products/offsites" class="product-btn">Plan Offsite</a>
+                <a href="/products/offsites" class="product-btn">Plan Offsite</a>
             </div>
         </div>
 
@@ -320,7 +320,7 @@
                     <div class="product-title">Retreats</div>
                     <div class="product-desc">Focused retreat experiences in serene locations. Combine learning, relaxation, and personal development in nature.</div>
                 </div>
-                <a href="products/retreats" class="product-btn">Explore Retreats</a>
+                <a href="/products/retreats" class="product-btn">Explore Retreats</a>
             </div>
         </div>
 
