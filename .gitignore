@@ -77,3 +77,4 @@ composer.phar
 
 # Yarn Integrity file
 .yarn-integrity
+vendor/
