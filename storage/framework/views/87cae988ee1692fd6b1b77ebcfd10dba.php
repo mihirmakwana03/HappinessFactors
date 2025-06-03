@@ -25,8 +25,8 @@
                                 <a class="dropdown-item" href="<?php echo e(url('products/#app')); ?>">
                                     <i class="fa fa-mobile-alt mr-2"></i> App
                                 </a>
-                                <a class="dropdown-item" href="<?php echo e(url('products/#course')); ?>">
-                                    <i class="fa fa-book-open mr-2"></i> Course
+                                <a class="dropdown-item" href="<?php echo e(url('products/#Courses')); ?>">
+                                    <i class="fa fa-book-open mr-2"></i> Courses
                                 </a>
                                 <a class="dropdown-item" href="<?php echo e(url('products/#coaching')); ?>">
                                     <i class="fa fa-user-graduate mr-2"></i> Coaching

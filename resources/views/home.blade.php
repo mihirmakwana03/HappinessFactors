@@ -1040,7 +1040,7 @@
                 <div class="mb-4">
                     <h3 class="font-weight-bold mb-3 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">How It All Began</h3>
                     <p class="lead text-primary mb-2">Born from a passion for mindfulness and emotional intelligence, HappinessFactors started as a personal quest to unlock the secrets of joy and fulfillment.</p>
-                    <p class="mb-4 text-muted">What began as a journey of self-discovery soon blossomed into a mission to empower others. Today, we’re a vibrant community, blending ancient wisdom and modern science to help thousands find their happiest selves.</p>
+                    <p class="mb-4 text-muted">What began as a journey of self-discovery soon blossomed into a mission to empower others. Today, we're a vibrant community, blending ancient wisdom and modern science to help thousands find their happiest selves.</p>
                 </div>
                 <div class="row text-center mb-4">
                     <div class="col-6">
@@ -1102,7 +1102,7 @@
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 4</div>
                             <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/direct_hit.gif') }}" alt="Relaxation/Flow Zone!" style="height: 35px; width: 35px;"> Relaxation/Flow Zone!
                                 You're in the groove!</h4>
-                            <p class="mb-0 text-muted">You’re not just coping—you’re thriving. Productivity, purpose, and people skills... all flowing with ease</p>
+                            <p class="mb-0 text-muted">You're not just coping—you're thriving. Productivity, purpose, and people skills... all flowing with ease</p>
                         </div>
                     </div>
                     <div class="timeline-modern-item left">
@@ -1110,8 +1110,8 @@
                         <div class="timeline-modern-content shadow bg-white rounded-lg">
                             <div class="timeline-modern-date text-gradient font-weight-bold mb-2">Step 5</div>
                             <h4 class="mb-1"><img src="{{ asset('assets/img/GIF/trophy.gif') }}" alt="The Glow-Up" style="height: 35px; width: 35px;"> The Glow-Up</h4>
-                            <p class="mb-0 text-muted">You’re shining—and lifting others up too.
-                                Your happiness isn’t just personal—it’s contagious. You’re now a wellness warrior, inspiring joy wherever you go.</p>
+                            <p class="mb-0 text-muted">You're shining—and lifting others up too.
+                                Your happiness isn't just personal—it's contagious. You're now a wellness warrior, inspiring joy wherever you go.</p>
                         </div>
                     </div>
                 </div>
@@ -1126,7 +1126,7 @@
                         <h3 class="mb-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
                             Join The HappinessFactors Movement!
                         </h3>
-                        <p class="lead mb-4">Hop In—We’re Writing the World’s Happiest Story</p>
+                        <p class="lead mb-4">Hop In—We're Writing the World's Happiest Story</p>
                         <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse w-100 w-md-auto" style="max-width:320px;">
                             Subscribe Now <i class="fas fa-arrow-right ml-2"></i>
                         </a>
@@ -1429,7 +1429,7 @@
                         </div>
                         <h3 class="h4 mb-0 font-weight-bold">The Challenge</h3>
                     </div>
-                    <p class="lead mb-0 text-muted">Modern professionals face relentless pressure, burnout, and disengagement. Old-school wellness programs just don’t cut it anymore.</p>
+                    <p class="lead mb-0 text-muted">Modern professionals face relentless pressure, burnout, and disengagement. Old-school wellness programs just don't cut it anymore.</p>
                 </div>
             </div>
             <div class="col-lg-5">
@@ -1452,11 +1452,11 @@
                     @php
                     $features = [
                     ['icon' => 'fa-chart-line', 'title' => 'Business Impact', 'desc' => 'Boost productivity, reduce burnout, and improve retention with measurable ROI.'],
-                    ['icon' => 'fa-rocket', 'title' => 'Peak Performance', 'desc' => 'Sharper focus, more energy, and less stress—your team’s new normal.'],
+                    ['icon' => 'fa-rocket', 'title' => 'Peak Performance', 'desc' => 'Sharper focus, more energy, and less stress—your team\'s new normal.'],
                     ['icon' => 'fa-heart', 'title' => 'Whole-Person Care', 'desc' => 'Mind, body, and spirit—one platform, total wellness.'],
                     ['icon' => 'fa-clock', 'title' => 'Time-Smart', 'desc' => 'Bite-sized, AI-driven check-ins fit even the busiest schedules.'],
                     ['icon' => 'fa-shield-alt', 'title' => 'Proactive Support', 'desc' => 'Spot stress early and deliver help before it hurts performance.'],
-                    ['icon' => 'fa-lock', 'title' => 'Enterprise-Ready', 'desc' => 'Secure, scalable, and customizable to fit your organization’s unique needs.'],
+                    ['icon' => 'fa-lock', 'title' => 'Enterprise-Ready', 'desc' => 'Secure, scalable, and customizable to fit your organization\'s unique needs.'],
                     ];
                     @endphp
                     @foreach($features as $i => $feature)
@@ -2674,117 +2674,291 @@
     </style>
 </section>
 
-<!-- <section id="pricing">
-    <div class="container spacer-double-lg border-bottom">
-        <div class="row">
-            <div class="col">
-                <div class="mb-5 pb-5 text-center">
-                    <span class="text-uppercase text-secondary font-secondary font-size-12">Choose a plan</span>
-                    <h1 class="mb-0">Pricing Plans</h1>
-                    <img class=" max-width-4" src="assets/svg/title-line.svg" alt="">
-                    <p class=" mb-0 pt-3 lead w-md-60 mx-auto">Mountain Pose is the base for all standing poses it
-                        gives
-                        you a sense of how to ground in to your feet and feel the earth
-                        below you.
-                    </p>
+<!-- FAQ Section -->
+<section id="faq" class="spacer-double-lg position-relative overflow-hidden bg-light">
+    <!-- Decorative SVG Top Wave -->
+    <div class="faq-wave-top position-absolute w-100" style="top:0;left:0;z-index:1;">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
+            <path d="M0,80 C480,0 960,160 1440,80 L1440,0 L0,0 Z" fill="#4B0082" fill-opacity="0.07" />
+        </svg>
+    </div>
+    <div class="container position-relative" style="z-index:2;">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Got Questions?</span>
+                <h2 class="display-4 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Frequently Asked Questions</h2>
+                <div class="divider-custom animate-pulse mb-3">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-heart text-primary pulse-icon"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
                 </div>
+                <p class="lead text-muted mb-0">Find quick answers to common questions about our services, mission, and how we can help you.</p>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card border-0 bg-light shadow radius-2 text-center pt-6 pb-3">
-                    <header class="card-header border-0 p-0 ">
-                        <div class="table-price">
-                            <div class="table-price-border">
-                                <h3 class="mb-1 h4 ">Beginner</h3>
-                                <span class="h1 d-block font-base font-weight-600 mb-0">$90</span>
-                                <span class="font-size-14 font-secondary">Price per weeek</span>
+
+        <!-- FAQ Items -->
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="faqList">
+                    <!-- FAQ Item 1 -->
+                    <div class="card mb-3 shadow-sm rounded-lg faq-item">
+                        <div class="card-header bg-white border-0 py-4" id="headingOne" style="border-bottom: none !important;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">What services does HappinessFactors offer?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqList">
+                            <div class="card-body text-muted pt-0">
+                                HappinessFactors offers a holistic suite of services including Trainings, a mobile App, online Courses, one-on-one and group Coaching, and Webinars. We also have more innovative solutions coming soon!
                             </div>
                         </div>
-                    </header>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush  mb-4">
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Increased Flexibility.</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Cardio and Circulatory Health </h6>
-                            </li>
-                            <li class="list-group-item  py-2">
-                                <h6 class="text-muted">Protection from Injury. </h6>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn   btn-secondary ">By It Now</button>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4  mb-5 mb-lg-0">
-                <div class="card border-0 bg-light shadow radius-2 text-center pt-6 pb-3">
-                    <header class="card-header border-0 p-0 ">
-                        <div class="table-price">
-                            <div class="table-price-border">
-                                <h3 class="mb-1 h4 ">Advanced</h3>
-                                <span class="h1 d-block font-base font-weight-600 mb-0 text-secondary">$290</span>
-                                <span class="font-size-14 font-secondary">Price per weeek</span>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="card mb-3 shadow-sm rounded-lg faq-item">
+                        <div class="card-header bg-white border-0 py-4" id="headingTwo" style="border-bottom: none !important;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">What is the approach of HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqList">
+                            <div class="card-body text-muted pt-0">
+                                We combine Ancient Wisdom with Spiritual Science, modern neuroscience, and positive psychology to create holistic wellness solutions that deliver measurable outcomes like reduced stress, enhanced productivity, and improved emotional resilience.
                             </div>
                         </div>
-                    </header>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush  mb-4">
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Increased Flexibility.</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Cardio and Circulatory Health </h6>
-                            </li>
-                            <li class="list-group-item  py-2">
-                                <h6 class="text-muted">Protection from Injury. </h6>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn   btn-primary ">By It Now</button>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                <div class="card border-0 bg-light shadow radius-2 text-center pt-6 pb-3">
-                    <header class="card-header border-0 p-0 ">
-                        <div class="table-price">
-                            <div class="table-price-border">
-                                <h3 class="mb-1 h4">Private</h3>
-                                <span class="h1 d-block font-base font-weight-600 mb-0">$490</span>
-                                <span class="font-size-14 font-secondary">Price per weeek</span>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="card mb-3 shadow-sm rounded-lg faq-item">
+                        <div class="card-header bg-white border-0 py-4" id="headingThree" style="border-bottom: none !important;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">How can I contact HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqList">
+                            <div class="card-body text-muted pt-0">
+                                You can reach us via email at <a href="mailto:funny@happinessfactors.com" class="text-gradient">funny@happinessfactors.com</a>, by phone at 1 (408) 389 - 3073, or visit our office at PO Box 611104, San Jose, CA 95161. You can also connect with us on our social media channels linked in the contact section.
                             </div>
                         </div>
-                    </header>
-                    <div class="card-body">
-                        <ul class="list-group list-group-flush  mb-4">
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Increased Flexibility.</h6>
-                            </li>
-                            <li class="list-group-item">
-                                <h6 class="text-muted">Cardio and Circulatory Health </h6>
-                            </li>
-                            <li class="list-group-item  py-2">
-                                <h6 class="text-muted">Protection from Injury. </h6>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn   btn-secondary ">By It Now</button>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5 pt-5">
-            <div class="col-auto">
-                <div class="alert bg-light shadow mb-0 text-center radius-2">
-                    <p class="mb-0 small"><span class="mn-top">* Plan pricing may changes read our <a href="#"
-                                class="text-secondary">Terms</a> for more info.</span>
-                    </p>
+
+                     <!-- FAQ Item 4 -->
+                    <div class="card mb-3 shadow-sm rounded-lg faq-item">
+                        <div class="card-header bg-white border-0 py-4" id="headingFour" style="border-bottom: none !important;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">Is there a subscription or membership required?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqList">
+                            <div class="card-body text-muted pt-0">
+                                Yes, to access our full range of services including the App, Courses, and Coaching, you need to subscribe. You can find more details on the <a href="#subscribe" class="text-gradient">Subscribe</a> section of this page. We respect your privacy and you can unsubscribe anytime. Specific terms and privacy details would be available on dedicated Terms and Privacy pages (which are not included in this snippet but would be standard practice for a full website).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="card mb-3 shadow-sm rounded-lg faq-item">
+                        <div class="card-header bg-white border-0 py-4" id="headingFive" style="border-bottom: none !important;">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">Who is HappinessFactors for?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqList">
+                            <div class="card-body text-muted pt-0">
+                                Our solutions are designed for busy professionals seeking holistic mental wellness. We aim to empower individuals and companies to sustain happiness, productivity, and freedom from stress.
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-</section> -->
+    <!-- Decorative SVG Bottom Wave -->
+    <div class="faq-wave-bottom position-absolute w-100" style="bottom:0;left:0;z-index:1;">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
+            <path d="M0,0 C480,80 960,-80 1440,0 L1440,80 L0,80 Z" fill="#4B0082" fill-opacity="0.07" />
+        </svg>
+    </div>
+    <style>
+        #faq {
+            background: linear-gradient(135deg, #f8f9fa 0%, #f3f0fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
 
+        #faq .card {
+            border: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        #faq .card:hover {
+            box-shadow: 0 8px 24px rgba(75, 0, 130, 0.08) !important;
+        }
+
+        #faq .card-header {
+            cursor: pointer;
+            padding: 1.5rem 2rem;
+            position: relative;
+        }
+
+        #faq .card-header h5 {
+            width: 100%;
+        }
+
+        #faq .btn-link {
+            color: #212529; /* Dark text for question */
+            font-weight: 600;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #faq .btn-link:hover {
+            color: #4B0082; /* Highlight color on hover */
+        }
+
+        #faq .btn-link i {
+            transition: transform 0.3s ease;
+            color: #4B0082;
+        }
+
+        #faq .btn-link.collapsed i {
+            transform: rotate(0deg);
+        }
+
+        #faq .btn-link:not(.collapsed) i {
+            transform: rotate(180deg);
+        }
+
+        #faq .card-body {
+            padding: 1rem 2rem 1.5rem;
+            border-top: 1px solid rgba(0,0,0,.125);
+            color: #6c757d; /* Muted text for answer */
+        }
+
+        #faq .input-group.rounded-pill {
+            border-radius: 50rem !important;
+        }
+
+        #faq .form-control.rounded-pill {
+             border-radius: 50rem !important;
+             padding-left: 1.5rem;
+        }
+
+         #faq .input-group-text.rounded-pill {
+             border-radius: 0 50rem 50rem 0 !important;
+             background-color: #fff;
+         }
+
+         #faqSearch {
+            box-shadow: none !important; /* Remove default form control shadow */
+         }
+         #faqSearch:focus {
+             box-shadow: none !important;
+             border-color: transparent !important;
+         }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #4B0082, #9400D3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+         .divider-custom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+
+        .divider-custom-line {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #4B0082, transparent);
+        }
+
+        .divider-custom-icon {
+            margin: 0 1rem;
+        }
+
+        .pulse-icon {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+        .rounded-lg {
+            border-radius: 0.75rem !important;
+        }
+
+
+        /* Responsive Adjustments */
+        @media (max-width: 767.98px) {
+            #faq .card-header {
+                padding: 1rem 1.5rem;
+            }
+            #faq .card-body {
+                padding: 0.5rem 1.5rem 1rem;
+            }
+             #faq .form-control-lg {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simple search/filter functionality
+            const searchInput = document.getElementById('faqSearch');
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            searchInput.addEventListener('input', function() {
+                const filter = searchInput.value.toLowerCase();
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.faq-question').textContent.toLowerCase();
+                    const answer = item.querySelector('.card-body') ? item.querySelector('.card-body').textContent.toLowerCase() : '';
+                    if (question.includes(filter) || answer.includes(filter)) {
+                        item.style.display = ''; // Show item
+                    } else {
+                        item.style.display = 'none'; // Hide item
+                    }
+                });
+            });
+
+             // Initialize collapse state - ensure all are collapsed on load
+            $('#faqList .collapse').collapse('hide');
+        });
+    </script>
+
+</section>
 
 <section id="contact" class="contact-section position-relative overflow-hidden py-5">
     <!-- Decorative SVG Top Wave -->
@@ -2800,11 +2974,11 @@
                 <div class="contact-info-wrapper bg-white rounded-xl shadow-lg p-5 animate__animated animate__fadeInLeft">
                     <div class="mb-4">
                         <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">For Your HappinessFactors!</span>
-                        <h2 class="font-weight-bold mb-1 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Let’s Connect!</h2>
+                        <h2 class="font-weight-bold mb-1 text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Let's Connect!</h2>
                         <!-- <img class="max-width-4 mb-2" src="{{ asset('assets/svg/title-line.svg') }}" alt=""> -->
                         <p class="text-muted mb-0"><img src="{{ asset('assets/img/GIF/heart-letter.gif') }}" alt="Got questions, big dreams, or just want to say hi?" style="height: 20px; width: 20px;"> Got questions, big dreams, or just want to say hi? <br>
-                            We’re here for all of it—and for <span class="font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">you</span>.<br>
-                            <span class="d-block mt-2"><img src="{{ asset('assets/img/GIF/sparkle.gif') }}" alt="Let’s turn your “meh” days into magic." style="height: 20px; width: 20px;"> Let’s turn your “meh” days into magic. <img src="{{ asset('assets/img/GIF/purple-heart.gif') }}" alt="purple-heart" style="height: 20px; width: 20px;"></span>
+                            We're here for all of it—and for <span class="font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">you</span>.<br>
+                            <span class="d-block mt-2"><img src="{{ asset('assets/img/GIF/sparkle.gif') }}" alt="Let's turn your "meh" days into magic." style="height: 20px; width: 20px;"> Let's turn your "meh" days into magic. <img src="{{ asset('assets/img/GIF/purple-heart.gif') }}" alt="purple-heart" style="height: 20px; width: 20px;"></span>
                         </p>
                     </div>
                     <div class="row mb-4">
@@ -2852,13 +3026,14 @@
                 <div class="contact-form-wrapper bg-white rounded-xl shadow-lg p-5 animate__animated animate__fadeInRight">
                     <div class="mb-4 text-center">
                         <span class="badge badge-pill px-3 py-2 mb-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Contact Us</span>
-                        <!-- … your “Say Hello” badge and headings … -->
+                        <!-- … your "Say Hello" badge and headings … -->
                     </div>
 
                     {{-- Flash JS alert --}}
                     @if(session('status'))
                     <script>
-                        alert(@json(session('status')));
+                        var sessionStatus = @json(session('status'));
+                        alert(sessionStatus);
                     </script>
                     @endif
 
