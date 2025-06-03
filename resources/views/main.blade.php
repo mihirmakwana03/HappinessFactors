@@ -36,7 +36,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+    <!-- Add this in the head section after the existing CSS links -->
+    <style>
+        .subscribe-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .subscribe-modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            text-align: center;
+        }
+
+        .subscribe-modal-close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .subscribe-form {
+            margin-top: 20px;
+        }
+
+        .subscribe-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .subscribe-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
 
     <!-- @section('head')
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
@@ -140,6 +199,59 @@
             }
         })();
     </script>
+
+    <!-- Add this just before the closing body tag -->
+    <!-- <div id="subscribeModal" class="subscribe-modal">
+        <div class="subscribe-modal-content">
+            <span class="subscribe-modal-close">&times;</span>
+            <h2>Stay Updated!</h2>
+            <p>Subscribe to our newsletter for the latest updates on happiness and wellness.</p>
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Subscribe Modal Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('subscribeModal');
+            const closeBtn = document.querySelector('.subscribe-modal-close');
+            const subscribeForm = document.getElementById('subscribeForm');
+
+            // Show modal after 5 seconds
+            setTimeout(() => {
+                if (!localStorage.getItem('subscribeModalShown')) {
+                    modal.style.display = 'flex';
+                }
+            }, 5000);
+
+            // Close modal when clicking the close button
+            closeBtn.onclick = function() {
+                modal.style.display = 'none';
+                localStorage.setItem('subscribeModalShown', 'true');
+            }
+
+            // Close modal when clicking outside
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                    localStorage.setItem('subscribeModalShown', 'true');
+                }
+            }
+
+            // Handle form submission
+            subscribeForm.onsubmit = function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                // Here you would typically send the email to your backend
+                alert('Thank you for subscribing!');
+                modal.style.display = 'none';
+                localStorage.setItem('subscribeModalShown', 'true');
+            }
+        });
+    </script> -->
 
 </body>
 

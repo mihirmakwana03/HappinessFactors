@@ -59,6 +59,10 @@ Route::post('/contact/send', [ContactController::class, 'send'])
 
 
 //Download Quiz
-use App\Http\Controllers\QuizController;
+// use App\Http\Controllers\QuizController;
 
-Route::get('/quiz', [QuizController::class, 'downloadQuizPdf'])->name('quiz');
+// Route::get('/quiz', [QuizController::class, 'downloadQuizPdf'])->name('quiz');
+
+Route::get('/quiz', function () {
+    return view('quiz');
+});
