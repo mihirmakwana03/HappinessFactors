@@ -70,37 +70,40 @@
                 <p class="lead">Transform your organization with our proven mental wellness solutions</p>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm hover-lift">
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
-                            <i class="fas fa-chart-line fa-2x" style="color: #61009b;"></i>
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/95d66b27-0b18-49e7-bbba-2c0b4c2ce63c/bvPbkHC8Xb.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Increased Productivity</h3>
                         <p class="text-muted">Our solutions have been proven to increase employee productivity by up to 30% through improved mental wellbeing and reduced stress levels.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm hover-lift">
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
-                            <i class="fas fa-users fa-2x" style="color: #61009b;"></i>
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/ac641aab-2275-407b-bf35-448d2bfd3031/tTR4INeq7k.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Better Team Collaboration</h3>
                         <p class="text-muted">Foster a positive work environment that encourages open communication and stronger team relationships.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm hover-lift">
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
-                            <i class="fas fa-heart fa-2x" style="color: #61009b;"></i>
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/3de26b4a-2ae2-4fbb-bb29-3a2ce6eeb654/yo0sfxKRv1.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Reduced Absenteeism</h3>
                         <p class="text-muted">Companies using our solutions report up to 40% reduction in stress-related absenteeism and improved employee retention.</p>
@@ -123,7 +126,7 @@
                 <p class="lead">Tailored solutions for every organization's unique needs</p>
             </div>
         </div>
-        
+
         <div class="row">
             <!-- Employers -->
             <div class="col-md-4 mb-4">
@@ -144,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Consultants -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm hover-lift">
@@ -164,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Health Plans -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 border-0 shadow-sm hover-lift">
@@ -246,7 +249,7 @@
                 <p class="lead">Join hundreds of satisfied organizations using our solutions</p>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
@@ -269,7 +272,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body p-4">
@@ -291,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow-sm h-100">
                     <div class="card-body p-4">
@@ -331,7 +334,7 @@
                             <h2 class="display-4 mb-3">Request a Demo</h2>
                             <p class="lead">Experience how HappinessFactors can transform your organization</p>
                         </div>
-                        
+
                         <form action="{{ route('request.demo') }}" method="POST" class="needs-validation" novalidate>
                             @csrf
                             <div class="row">
@@ -392,11 +395,11 @@
 @section('scripts')
 <script>
     // Form validation
-    (function () {
+    (function() {
         'use strict'
         var forms = document.querySelectorAll('.needs-validation')
-        Array.prototype.slice.call(forms).forEach(function (form) {
-            form.addEventListener('submit', function (event) {
+        Array.prototype.slice.call(forms).forEach(function(form) {
+            form.addEventListener('submit', function(event) {
                 if (!form.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
@@ -406,4 +409,4 @@
         })
     })()
 </script>
-@endsection 
+@endsection

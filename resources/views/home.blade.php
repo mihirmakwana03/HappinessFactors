@@ -26,10 +26,49 @@
 @section('head')
 <!-- <link rel="stylesheet" href="{{ asset('css/home.css') }}"> -->
 <!-- <link rel="stylesheet" href="{{ asset('css/animations.css') }}"> -->
+<!-- Add Jarallax CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/jarallax@2/dist/jarallax.css">
+<script src="https://unpkg.com/jarallax@2/dist/jarallax.min.js"></script>
+<script src="https://unpkg.com/jarallax@2/dist/jarallax-element.min.js"></script>
 @endsection
 
 
 @section('content')
+
+<!-- New Section -->
+<!-- <section class="py-5 border-bottom" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="position-relative">
+                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/66b08fc7-cbac-47c2-8ebb-b6eeec6f85d8/mktEWUmhdT.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+
+            <div class="col-lg-6 ps-lg-5">
+                <div class="d-flex justify-content-start mb-3">
+                    <span class="badge badge-pill px-4 py-2" style="background: linear-gradient(90deg, #4B0082, #9400D3); color: #fff; font-size: 1rem; box-shadow: 0 2px 12px rgba(75,0,130,0.12); letter-spacing: 1px;">
+                        Corporate Wellness Solutions
+                    </span>
+                </div>
+                <h1 class="display-4 mb-3" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; line-height: 1.2; color: #2c3e50;">
+                    Holistic <span style="color: #61009b; font-weight: 700;">Mental Wellness</span> Solution for Busy Professionals
+                </h1>
+                <p class="lead mb-4" style="color: #2c3e50; font-size: 1.25rem;">
+                    <strong>Smart mental wellness for people on the move.</strong>
+                </p>
+                <div class="text-center">
+                    <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
+                        onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
+                        onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
+                        Subscribe
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <section class="">
     <img class="bg-image" src="{{ asset('assets/img/1-1.jpg') }}" alt="">
@@ -101,18 +140,18 @@
                             </svg>
                         </figure>
                     </div>
-                    <div class="row gap">
+                    <div class="row gap" data-jarallax-element="-60 0">
                         <div class="col-5 align-self-end mb-2">
-                            <img class="img-fluid w-100" src="{{ asset('assets/img/offset/1.jpg') }}" alt="">
+                            <img class="img-fluid w-100 slide-in-image" src="{{ asset('assets/img/offset/1.jpg') }}" alt="">
                         </div>
                         <div class="col-7 mb-2">
-                            <img class="img-fluid w-100" src="{{ asset('assets/img/offset/2.jpg') }}" alt="">
+                            <img class="img-fluid w-100 slide-in-image" src="{{ asset('assets/img/offset/2.jpg') }}" alt="">
                         </div>
                         <div class="col-5 offset-1 mb-2 mb-lg-0">
-                            <img class="img-fluid w-100" src="{{ asset('assets/img/offset/3.jpg') }}" alt="">
+                            <img class="img-fluid w-100 slide-in-image" src="{{ asset('assets/img/offset/3.jpg') }}" alt="">
                         </div>
                         <div class="col-5 mb-2">
-                            <img class="img-fluid w-100" src="{{ asset('assets/img/offset/4.jpg') }}" alt="">
+                            <img class="img-fluid w-100 slide-in-image" src="{{ asset('assets/img/offset/4.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -148,12 +187,42 @@
                         </div>
                         <div class="divider-custom-line"></div>
                     </div>
-                    <p class="lead mb-0">We combine <span class="" style="color: #61009b; font-weight: bold;">Ancient Wisdom</span> with <span class="" style="color: #61009b; font-weight: bold;">Spiritual Science</span> to create holistic wellness solutions that transform lives.</p>
+                    <p class="lead mb-5">We combine <span class="" style="color: #61009b; font-weight: bold;">Ancient Wisdom</span> with <span class="" style="color: #61009b; font-weight: bold;">Spiritual Science</span> to create holistic wellness solutions that transform lives.</p>
+                </div>
+            </div>
+
+            {{-- Founder Section --}}
+            <div class="row align-items-center mb-5 pb-5 border-bottom">
+                <div class="col-lg-6 mb-4 mb-lg-0 reveal-slide-right text-center">
+                    {{-- Replace with actual image path --}}
+                    <img src="{{ asset('assets/img/anita-kumari.png') }}" alt="Anita Kumari Srivastava" class="img-fluid rounded-circle shadow-lg" style="max-width: 350px; border: 5px solid #fff;">
+                </div>
+                <div class="col-lg-6 reveal-slide-left">
+                    <h3 class="h3 font-weight-bold mb-3 text-gradient" style="background: linear-gradient(90deg, #4B0082, #9400D3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Anita Kumari Srivastava</h3>
+                    <p class="lead text-muted font-weight-bold" style="color: #61009b;">Founder and Chief Strategist</p>
+
+                    <div class="bio-section mb-4">
+                        <p class="mb-4 text-muted">
+                            <span class="highlight-name" style="color: #4B0082; font-weight: 600;">Anita Kumari Srivastava</span>, an <span class="highlight-achievement" style="color: #9400D3; font-weight: 600;">award-winning poetess</span>, coach, and author of <span class="book-title" style="color: #4B0082; font-style: italic; font-weight: 600;">"Find Your Happy: Survivor's Guide to Finding Joy In Spite of Life's Challenges"</span>, is the driving force behind <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span>. Her vision is to spread emotional wellness globally by creating happy mindsets.
+                        </p>
+                    </div>
+
+                    <div class="expertise-section mb-4">
+                        <p class="mb-4 text-muted">
+                            A certified <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">NLP</span>, <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">Hypnotherapy</span>, and <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">MER practitioner</span>, Anita uniquely combines these techniques with <span class="highlight-text" style="color: #61009b; font-weight: 600;">Psychology, Energy, Meditation, Mindfulness, Healthful Habits, and Spirituality</span>. With extensive high-tech experience from companies like <span class="company-highlight" style="color: #4B0082; font-weight: 600;">Google</span> and a <span class="award-highlight" style="color: #9400D3; font-weight: 600;">Community Hero Award</span>, she is passionate about empowering individuals and organizations to achieve happiness, motivation, and joy, believing it is everyone's birthright.
+                        </p>
+                    </div>
+
+                    <div class="journey-section">
+                        <p class="mb-0 text-muted">
+                            An <span class="highlight-journey" style="color: #4B0082; font-weight: 600;">abuse survivor</span>, Anita has dedicated over a decade to personal growth, learning from renowned figures like <span class="mentor-name" style="color: #61009b; font-weight: 600;">Tony Robbins</span> and <span class="mentor-name" style="color: #61009b; font-weight: 600;">Oprah Winfrey</span>. She actively volunteers, helps the less fortunate, and through <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span>, aims to provide transformative solutions for emotional wellness and fulfillment.
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <!-- Main content with card hover effects -->
-            <div class="row align-items-center">
+            <div class="row align-items-center pt-5">
                 <!-- Left side content card -->
                 <div class="col-lg-6 mb-5 mb-lg-0 reveal-slide-right">
                     <div class="card border-0 bg-white shadow-lg rounded-lg overflow-hidden hover-lift" style="transition: all 0.3s ease;">
@@ -977,6 +1046,30 @@
                 // Initialize animations
                 window.addEventListener('scroll', revealOnScroll);
                 revealOnScroll(); // Check on load
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Initialize Jarallax
+                jarallax(document.querySelectorAll('[data-jarallax-element]'), {
+                    speed: 0.2
+                });
+
+                // Existing Intersection Observer code
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+
+                document.querySelectorAll('.slide-in-image').forEach((image) => {
+                    observer.observe(image);
+                });
             });
         </script>
 
@@ -2209,11 +2302,11 @@
     </div>
     </div>
     <!-- Decorative SVG Bottom Wave -->
-    <div class="subscribe-wave-bottom position-absolute w-100" style="bottom:0;left:0;z-index:1;">
+    <!-- <div class="subscribe-wave-bottom position-absolute w-100" style="bottom:0;left:0;z-index:1;">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
             <path d="M0,0 C480,80 960,-80 1440,0 L1440,80 L0,80 Z" fill="#4B0082" fill-opacity="0.07" />
         </svg>
-    </div>
+    </div> -->
     <style>
         .subscribe-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #f3f0fa 100%);
@@ -2753,7 +2846,7 @@
                         </div>
                     </div>
 
-                     <!-- FAQ Item 4 -->
+                    <!-- FAQ Item 4 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
                         <div class="card-header bg-white border-0 py-4" id="headingFour" style="border-bottom: none !important;">
                             <h5 class="mb-0">
@@ -2824,7 +2917,8 @@
         }
 
         #faq .btn-link {
-            color: #212529; /* Dark text for question */
+            color: #212529;
+            /* Dark text for question */
             font-weight: 600;
             text-decoration: none;
             display: flex;
@@ -2833,7 +2927,8 @@
         }
 
         #faq .btn-link:hover {
-            color: #4B0082; /* Highlight color on hover */
+            color: #4B0082;
+            /* Highlight color on hover */
         }
 
         #faq .btn-link i {
@@ -2851,8 +2946,9 @@
 
         #faq .card-body {
             padding: 1rem 2rem 1.5rem;
-            border-top: 1px solid rgba(0,0,0,.125);
-            color: #6c757d; /* Muted text for answer */
+            border-top: 1px solid rgba(0, 0, 0, .125);
+            color: #6c757d;
+            /* Muted text for answer */
         }
 
         #faq .input-group.rounded-pill {
@@ -2860,29 +2956,32 @@
         }
 
         #faq .form-control.rounded-pill {
-             border-radius: 50rem !important;
-             padding-left: 1.5rem;
+            border-radius: 50rem !important;
+            padding-left: 1.5rem;
         }
 
-         #faq .input-group-text.rounded-pill {
-             border-radius: 0 50rem 50rem 0 !important;
-             background-color: #fff;
-         }
+        #faq .input-group-text.rounded-pill {
+            border-radius: 0 50rem 50rem 0 !important;
+            background-color: #fff;
+        }
 
-         #faqSearch {
-            box-shadow: none !important; /* Remove default form control shadow */
-         }
-         #faqSearch:focus {
-             box-shadow: none !important;
-             border-color: transparent !important;
-         }
+        #faqSearch {
+            box-shadow: none !important;
+            /* Remove default form control shadow */
+        }
+
+        #faqSearch:focus {
+            box-shadow: none !important;
+            border-color: transparent !important;
+        }
 
         .text-gradient {
             background: linear-gradient(90deg, #4B0082, #9400D3);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-         .divider-custom {
+
+        .divider-custom {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2902,6 +3001,7 @@
         .pulse-icon {
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -2915,6 +3015,7 @@
                 transform: scale(1);
             }
         }
+
         .rounded-lg {
             border-radius: 0.75rem !important;
         }
@@ -2925,10 +3026,12 @@
             #faq .card-header {
                 padding: 1rem 1.5rem;
             }
+
             #faq .card-body {
                 padding: 0.5rem 1.5rem 1rem;
             }
-             #faq .form-control-lg {
+
+            #faq .form-control-lg {
                 font-size: 1rem;
             }
         }
@@ -2953,7 +3056,7 @@
                 });
             });
 
-             // Initialize collapse state - ensure all are collapsed on load
+            // Initialize collapse state - ensure all are collapsed on load
             $('#faqList .collapse').collapse('hide');
         });
     </script>
@@ -2978,7 +3081,7 @@
                         <!-- <img class="max-width-4 mb-2" src="{{ asset('assets/svg/title-line.svg') }}" alt=""> -->
                         <p class="text-muted mb-0"><img src="{{ asset('assets/img/GIF/heart-letter.gif') }}" alt="Got questions, big dreams, or just want to say hi?" style="height: 20px; width: 20px;"> Got questions, big dreams, or just want to say hi? <br>
                             We're here for all of it—and for <span class="font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">you</span>.<br>
-                            <span class="d-block mt-2"><img src="{{ asset('assets/img/GIF/sparkle.gif') }}" alt="Let's turn your "meh" days into magic." style="height: 20px; width: 20px;"> Let's turn your "meh" days into magic. <img src="{{ asset('assets/img/GIF/purple-heart.gif') }}" alt="purple-heart" style="height: 20px; width: 20px;"></span>
+                            <span class="d-block mt-2"><img src="{{ asset('assets/img/GIF/sparkle.gif') }}" alt="Let's turn your " meh" days into magic." style="height: 20px; width: 20px;"> Let's turn your "meh" days into magic. <img src="{{ asset('assets/img/GIF/purple-heart.gif') }}" alt="purple-heart" style="height: 20px; width: 20px;"></span>
                         </p>
                     </div>
                     <div class="row mb-4">
