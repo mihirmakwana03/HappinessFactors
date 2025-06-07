@@ -3133,32 +3133,32 @@
         </svg>
     </div>
     <div class="container position-relative" style="z-index:2;">
-        <div class="row justify-content-center mb-4 mb-md-5">
-            <div class="col-12 col-md-10 col-lg-8 text-center">
-                <span class="badge badge-pill px-3 px-md-4 py-2 mb-2 mb-md-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:0.9rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Got Questions?</span>
-                <h2 class="display-5 display-md-4 mb-2 mb-md-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Frequently Asked Questions</h2>
-                <div class="divider-custom animate-pulse mb-2 mb-md-3">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Got Questions?</span>
+                <h2 class="display-4 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent; font-size: calc(1.8rem + 1.2vw);">Frequently Asked Questions</h2>
+                <div class="divider-custom animate-pulse mb-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
                         <i class="fas fa-heart text-primary pulse-icon"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <p class="lead text-muted mb-0 px-2">Find quick answers to common questions about our services, mission, and how we can help you.</p>
+                <p class="lead text-muted mb-0" style="font-size: calc(1rem + 0.2vw);">Find quick answers to common questions about our services, mission, and how we can help you.</p>
             </div>
         </div>
 
         <!-- FAQ Items -->
         <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
+            <div class="col-lg-8">
                 <div id="faqList">
                     <!-- FAQ Item 1 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingOne" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-4" id="headingOne" style="border-bottom: none !important;">
                             <h5 class="mb-0">
-                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">What services does HappinessFactors offer?</span>
-                                    <i class="fas fa-chevron-down ml-2"></i>
+                                <button class="btn btn-link text-left text-decoration-none d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span class="faq-question font-weight-bold">What services does HappinessFactors offer?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3171,11 +3171,11 @@
 
                     <!-- FAQ Item 2 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingTwo" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-4" id="headingTwo" style="border-bottom: none !important;">
                             <h5 class="mb-0">
-                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">What is the approach of HappinessFactors?</span>
-                                    <i class="fas fa-chevron-down ml-2"></i>
+                                <button class="btn btn-link text-left text-decoration-none d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="faq-question font-weight-bold">What is the approach of HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3188,11 +3188,11 @@
 
                     <!-- FAQ Item 3 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingThree" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-4" id="headingThree" style="border-bottom: none !important;">
                             <h5 class="mb-0">
-                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">How can I contact HappinessFactors?</span>
-                                    <i class="fas fa-chevron-down ml-2"></i>
+                                <button class="btn btn-link text-left text-decoration-none d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="faq-question font-weight-bold">How can I contact HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3205,11 +3205,11 @@
 
                     <!-- FAQ Item 4 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingFour" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-4" id="headingFour" style="border-bottom: none !important;">
                             <h5 class="mb-0">
-                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">Is there a subscription or membership required?</span>
-                                    <i class="fas fa-chevron-down ml-2"></i>
+                                <button class="btn btn-link text-left text-decoration-none d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span class="faq-question font-weight-bold">Is there a subscription or membership required?</span>
+                                    <i class="fas fa-chevron-down"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3224,8 +3224,8 @@
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
                         <div class="card-header bg-white border-0 py-4" id="headingFive" style="border-bottom: none !important;">
                             <h5 class="mb-0">
-                                <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">Who is HappinessFactors for?</span>
+                                <button class="btn btn-link text-left text-decoration-none d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span class="faq-question font-weight-bold">Who is HappinessFactors for?</span>
                                     <i class="fas fa-chevron-down"></i>
                                 </button>
                             </h5>
@@ -3280,7 +3280,8 @@
             text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-between; /* Restore space-between */
+            flex-wrap: wrap; /* Allow text to wrap */
         }
 
         #faq .btn-link:hover {
@@ -3291,6 +3292,7 @@
         #faq .btn-link i {
             transition: transform 0.3s ease;
             color: #4B0082;
+            flex-shrink: 0; /* Prevent icon from shrinking */
         }
 
         #faq .btn-link.collapsed i {
@@ -3299,6 +3301,16 @@
 
         #faq .btn-link:not(.collapsed) i {
             transform: rotate(180deg);
+        }
+
+        #faq .faq-question {
+            font-size: 1.1rem; /* Default font size */
+            color: #4B0082;
+            flex: 1; /* Simplified flex shorthand for robust wrapping */
+            min-width: 0; /* Allow content to shrink below its intrinsic size */
+            text-align: left;
+            word-break: break-word;
+            white-space: normal; /* Ensure text wraps */
         }
 
         #faq .card-body {
@@ -3335,7 +3347,9 @@
         .text-gradient {
             background: linear-gradient(90deg, #4B0082, #9400D3);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: transparent;
         }
 
         .divider-custom {
@@ -3386,10 +3400,17 @@
 
             #faq .card-body {
                 padding: 0.5rem 1.5rem 1rem;
+                font-size: 0.95rem; /* Adjusted font size for mobile answers */
             }
 
-            #faq .form-control-lg {
-                font-size: 1rem;
+            #faq .btn-link {
+                /* font-size: 1rem; Adjusted font size for mobile questions - removed as it's set on faq-question */
+            }
+
+            #faq .faq-question {
+                font-size: 1rem; /* Adjusted font size for mobile questions */
+                margin-right: 10px; /* Add space between text and icon */
+                width: 100%; /* Force question to take full width and wrap */
             }
         }
 
