@@ -34,13 +34,13 @@
 <?php $__env->startSection('content'); ?>
 
 <!-- New Section -->
-<!-- <section class="py-5 border-bottom" style="margin-top: 100px;">
+<section class="py-5 border-bottom" style="margin-top: 100px;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="position-relative">
                     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/66b08fc7-cbac-47c2-8ebb-b6eeec6f85d8/mktEWUmhdT.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                 </div>
             </div>
 
@@ -66,9 +66,9 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
-<section class="">
+<!-- <section class="">
     <img class="bg-image" src="<?php echo e(asset('assets/img/1-1.jpg')); ?>" alt="">
     <div class="container hero hero-responsive" style="padding-top: 350px; margin-top: -100px;">
         <div class="row align-items-center z-index-2 position-relative text-center">
@@ -100,7 +100,7 @@
             </svg>
         </div>
     </div>
-</section>
+</section> -->
 
 <section id="about">
     <div class="container spacer-double-lg border-bottom">
@@ -111,7 +111,24 @@
                     <!-- <span class="text-uppercase font-size-12 font-weight-bold" style="color:rgb(162, 0, 255);">what we do</span> -->
                     <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">what we do</span>
                     <h1 class="mb-0">Who We Are?</h1>
-                    <img class="max-width-4" src="<?php echo e(asset('assets/img/title-line.svg')); ?>" alt="" style="filter: invert(16%) sepia(100%) saturate(7472%) hue-rotate(266deg) brightness(90%) contrast(110%);">
+                    <img class="max-width-4 title-line-animated" src="<?php echo e(asset('assets/img/title-line.svg')); ?>" alt="" style="filter: invert(16%) sepia(100%) saturate(7472%) hue-rotate(266deg) brightness(90%) contrast(110%);">
+                    <style>
+                        .title-line-animated {
+                            animation: revealLine 5s ease-in-out infinite;
+                            clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+                        }
+                        @keyframes revealLine {
+                            0% {
+                                clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+                            }
+                            50% {
+                                clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+                            }
+                            100% {
+                                clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+                            }
+                        }
+                    </style>
                 </div>
                 <p class="mb-4">
                     At <span class="" style="color:rgb(255, 92, 95); font-weight: bold;">HappinessFactors</span>, we believe in the power of
@@ -143,7 +160,8 @@
                             <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/1.jpg')); ?>" alt="">
                         </div>
                         <div class="col-7 mb-2">
-                            <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/2.jpg')); ?>" alt="">
+                            <!-- <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/2.jpg')); ?>" alt=""> -->
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/3254fefd-ac04-4806-b012-bc5039d52331/j5pN5szXPM.lottie" background="#FFFFFF" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                         </div>
                         <div class="col-5 offset-1 mb-2 mb-lg-0">
                             <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/3.jpg')); ?>" alt="">

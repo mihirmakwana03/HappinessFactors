@@ -77,7 +77,7 @@
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
                             <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                            <dotlottie-player src="https://lottie.host/95d66b27-0b18-49e7-bbba-2c0b4c2ce63c/bvPbkHC8Xb.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                            <dotlottie-player src="https://lottie.host/62494fe8-5da6-463b-abc5-4c11b10ca6a7/K6fVYQ8TWq.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Increased Productivity</h3>
                         <p class="text-muted">Our solutions have been proven to increase employee productivity by up to 30% through improved mental wellbeing and reduced stress levels.</p>
@@ -89,8 +89,8 @@
                 <div class="card h-100 border-0 shadow-sm hover-lift">
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
-                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                        <dotlottie-player src="https://lottie.host/ac641aab-2275-407b-bf35-448d2bfd3031/tTR4INeq7k.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/11dd784d-2981-455c-af2a-03858152bb06/ryS8JT4J9g.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Better Team Collaboration</h3>
                         <p class="text-muted">Foster a positive work environment that encourages open communication and stronger team relationships.</p>
@@ -102,8 +102,8 @@
                 <div class="card h-100 border-0 shadow-sm hover-lift">
                     <div class="card-body p-4">
                         <div class="icon-wrapper mb-4">
-                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                        <dotlottie-player src="https://lottie.host/3de26b4a-2ae2-4fbb-bb29-3a2ce6eeb654/yo0sfxKRv1.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player src="https://lottie.host/a3e66079-63bd-41de-b215-c3fa23893d51/XSQpd5HOKX.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
                         </div>
                         <h3 class="h4 mb-3">Reduced Absenteeism</h3>
                         <p class="text-muted">Companies using our solutions report up to 40% reduction in stress-related absenteeism and improved employee retention.</p>
