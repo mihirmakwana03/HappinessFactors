@@ -36,20 +36,25 @@
 @section('content')
 
 <!-- New Section -->
-<section class="py-5 border-bottom position-relative overflow-hidden" style="margin-top: 100px; background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.95) 100%);">
+<section class="py-5 border-bottom position-relative overflow-hidden" style="margin-top: 100px;">
+    <!-- SVG Decorative Line Left -->
+    <svg class="bg-line-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 80px; left: 0; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,150 C100,50 300,250 400,150" fill="none" stroke="rgba(97, 0, 155, 0.3)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Right -->
+    <svg class="bg-line-svg-right" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: 0; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M400,150 C300,50 100,250 0,150" fill="none" stroke="rgba(97, 0, 155, 0.3)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative Elements -->
-    <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1;">
-        <div class="position-absolute" style="top: -50px; left: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(97,0,155,0.05) 0%, rgba(97,0,155,0) 70%); border-radius: 50%;"></div>
-        <div class="position-absolute" style="bottom: -30px; right: -30px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(75,0,130,0.05) 0%, rgba(75,0,130,0) 70%); border-radius: 50%;"></div>
-    </div>
-    
-    <div class="container">
+    <div class="decorative-shape shape-left d-none d-lg-block"></div>
+    <div class="decorative-shape shape-right d-none d-lg-block"></div>
+
+    <div class="container position-relative z-index-1">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="position-relative">
-                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(97,0,155,0.1) 0%, rgba(97,0,155,0) 70%); transform: scale(1.2);"></div>
                     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover; max-width: 500px; margin: 0 auto; display: block;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
+                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
                 </div>
             </div>
 
@@ -65,51 +70,119 @@
                 <p class="lead mb-4" style="color: #2c3e50; font-size: 1.25rem;">
                     <strong>Smart mental wellness for people on the move.</strong>
                 </p>
-                <div class="text-center text-lg-start">
-                    <a href="#subscribe" class="btn btn-secondary btn-lg px-5 py-3" style="color: #61009b; border-color: #61009b; transition: all 0.3s ease; border: 2px solid #61009b; box-shadow: 0 4px 15px rgba(97,0,155,0.1);"
-                        onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(97,0,155,0.2)';"
-                        onmouseout="this.style.background='';this.style.color='#61009b';this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(97,0,155,0.1)';">
+                <div class="text-center">
+                    <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
+                        onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
+                        onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
                         Subscribe
                     </a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <style>
+        .decorative-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+            filter: blur(10px);
+            /* Soften the look */
+        }
 
-<!-- <section class="">
-    <img class="bg-image" src="{{ asset('assets/img/1-1.jpg') }}" alt="">
-    <div class="container hero hero-responsive" style="padding-top: 350px; margin-top: -100px;">
-        <div class="row align-items-center z-index-2 position-relative text-center">
-            <div class="col-12 d-flex justify-content-center mb-3">
-                <span class="badge badge-pill px-4 py-2 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">
-                    Corporate Wellness Solutions
-                </span>
-            </div>
-            <div class="col-12">
-                <h1 class="display-4 text-white mb-2 sparkle-text" style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 3.5rem; line-height: 1.1; letter-spacing: -1px; text-shadow: 2px 4px 16px rgba(0,0,0,0.45), 0 2px 8px #b6e0fe;">
-                    Holistic <span style="color: #61009b; font-weight: 700;">Mental Wellness</span> Solution for Busy Professionals
-                </h1>
-                <p class="text-black mb-5 text-12">
-                    <strong style="color: #2c3e50;">Smart mental wellness for people on the move.</strong>
-                </p>
-                <a href="#subscribe" class="btn btn-secondary scroll" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
-                    onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
-                    onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
-                    Subscribe
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="curved-decoration">
-        <div class="curved-decoration decoration-bottom bottom-n1">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 43.2" enable-background="new 0 0 800 43.2;" xml:space="preserve">
-                <path fill="#f3f5f8" opacity="0.3" d="M0,43V18.7c0,0,131.8-13.9,269.2,20.9C407.2,60,600.3-13.9,800,27.8V43H0z" />
-                <path fill="#f3f5f8" d="M0,43.1v-4.8c0,0,187.9-30,400-3S800,0,800,0v43.1H0z" />
-            </svg>
-        </div>
-    </div>
-</section> -->
+        .shape-left {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(90deg, #61009b, #9400D3);
+            top: 20%;
+            left: -90px;
+            animation: floatShape 6s infinite ease-in-out alternate;
+        }
+
+        .shape-right {
+            width: 220px;
+            height: 220px;
+            background: linear-gradient(90deg, #FF7D7F, #4B0082);
+            bottom: 15%;
+            right: -110px;
+            animation: floatShape 8s infinite ease-in-out alternate-reverse;
+        }
+
+        @keyframes floatShape {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Ensure content visibility on small screens */
+        @media (max-width: 991.98px) {
+            section.py-5.border-bottom {
+                margin-top: 0 !important;
+                /* Remove top margin on mobile */
+                padding-top: 0 !important;
+                /* Remove top padding on mobile */
+            }
+
+            .ps-lg-5 {
+                padding-left: 15px !important;
+                /* Adjust padding for mobile */
+                padding-right: 15px !important;
+            }
+
+            .display-4 {
+                font-size: 2.5rem;
+                /* Adjust font size for mobile */
+            }
+
+            .lead {
+                font-size: 1.1rem;
+                /* Adjust font size for mobile */
+            }
+
+            .text-center {
+                text-align: center !important;
+                /* Center the button on mobile */
+            }
+
+            .d-flex.justify-content-start.mb-3 {
+                justify-content: center !important;
+                /* Center the badge on mobile */
+            }
+        }
+
+        .bg-line-path {
+            stroke-dasharray: 2000;
+            /* Needs to be larger than path length */
+            stroke-dashoffset: 2000;
+            /* Start invisible */
+            animation: drawLine 5s ease-in-out forwards infinite alternate;
+            /* Animate drawing */
+        }
+
+        .bg-line-path-right {
+            stroke-dasharray: 2000;
+            /* Needs to be larger than path length */
+            stroke-dashoffset: 2000;
+            /* Start invisible */
+            animation: drawLine 5s ease-in-out forwards infinite alternate;
+            /* Animate drawing */
+        }
+
+        @keyframes drawLine {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</section>
 
 <section id="about">
     <div class="container spacer-double-lg border-bottom">
@@ -126,13 +199,16 @@
                             animation: revealLine 5s ease-in-out infinite;
                             clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
                         }
+
                         @keyframes revealLine {
                             0% {
                                 clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
                             }
+
                             50% {
                                 clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
                             }
+
                             100% {
                                 clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
                             }
@@ -186,6 +262,14 @@
 </section>
 
 <section id="about-us" class="spacer-double-lg position-relative overflow-hidden">
+    <!-- SVG Decorative Line Left -->
+    <svg class="bg-line-svg-about-left" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 150px; left: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,150 C100,50 300,250 400,150" fill="none" stroke="rgba(97, 0, 155, 0.2)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Right -->
+    <svg class="bg-line-svg-about-right" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 100px; right: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M400,150 C300,50 100,250 0,150" fill="none" stroke="rgba(97, 0, 155, 0.2)" stroke-width="4"></path>
+    </svg>
     <div class="border-bottom">
         <!-- Background decorative elements -->
         <div class="decoration-wrapper">
@@ -1019,6 +1103,12 @@
                     margin-bottom: 20px;
                 }
             }
+
+            /* Add styles for the new SVG lines in #about-us */
+            .bg-line-svg-about-left .bg-line-path,
+            .bg-line-svg-about-right .bg-line-path-right {
+                animation: drawLine 5s ease-in-out forwards infinite alternate; /* Animate drawing */
+            }
         </style>
 
         <script>
@@ -1579,7 +1669,7 @@
                     @endphp
                     @foreach($features as $i => $feature)
                     <div class="col-md-4 mb-4">
-                        <div class="feature-card-animated bg-white rounded-xl shadow-lg p-4 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: '{{ 0.1 + $i*0.1 }}'s;">
+                        <div class="feature-card-animated bg-white rounded-xl shadow-lg p-4 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: '<?php echo (0.1 + $i * 0.1); ?>'s;">
                             <div class="feature-icon-animated mb-3 mx-auto">
                                 <i class="fas {{ $feature['icon'] }} text-gradient fa-2x"></i>
                             </div>
@@ -1957,8 +2047,8 @@
             @foreach($services as $i => $service)
             <div class="col-md-4 mb-4">
                 <a href="{{ $service['link'] }}" class="text-decoration-none">
-                    <div class="service-card-animated bg-white rounded-xl shadow-lg p-5 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: {{ 0.1 + $i*0.1 }}s;">
-                        <div class="service-icon-animated mb-4 mx-auto" style="background: {{ $service['color'] }};">
+                    <div class="service-card-animated bg-white rounded-xl shadow-lg p-5 h-100 text-center animate__animated animate__fadeInUp" style="animation-delay: <?php echo (0.1 + $i * 0.1); ?>s;">
+                        <div class="service-icon-animated mb-4 mx-auto" style="background: <?php echo $service['color']; ?>;">
                             <i class="fas {{ $service['icon'] }} text-white fa-2x"></i>
                         </div>
                         <h5 class="font-weight-bold mb-2 text-dark">{{ $service['title'] }}</h5>
@@ -3160,7 +3250,7 @@
                     {{-- Flash JS alert --}}
                     @if(session('status'))
                     <script>
-                        var sessionStatus = @json(session('status'));
+                        var sessionStatus = <?php echo json_encode(session('status')); ?>;
                         alert(sessionStatus);
                     </script>
                     @endif
