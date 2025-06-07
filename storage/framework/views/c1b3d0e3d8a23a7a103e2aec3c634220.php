@@ -182,15 +182,56 @@
     </style>
 </section>
 
-<section id="about" class="position-relative overflow-hidden">
+<!-- About Section -->
+<section id="about" class="spacer-double-lg position-relative bg-light overflow-hidden">
     <!-- SVG Decorative Line About Top Left -->
-    <svg class="bg-line-svg-about-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path" d="M0,100 C75,20 225,180 300,100" fill="none" stroke="rgba(94, 0, 211, 0.15)" stroke-width="4"></path>
+    <svg class="bg-line-svg-about-top-left" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <defs>
+            <linearGradient id="aboutGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: rgba(75, 0, 130, 0.1); stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: rgba(148, 0, 211, 0.1); stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <path class="bg-line-path" d="M0,200 C100,150 200,250 300,150 C350,100 380,50 400,0" fill="none" stroke="url(#aboutGradient1)" stroke-width="3" stroke-linecap="round"></path>
+        <path class="bg-line-path" d="M50,250 C150,200 250,220 350,150" fill="none" stroke="url(#aboutGradient1)" stroke-width="2" stroke-linecap="round" opacity="0.5"></path>
     </svg>
     <!-- SVG Decorative Line About Bottom Right -->
-    <svg class="bg-line-svg-about-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path-right" d="M300,100 C225,20 75,180 0,100" fill="none" stroke="rgba(94, 0, 211, 0.15)" stroke-width="4"></path>
+    <svg class="bg-line-svg-about-bottom-right" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <defs>
+            <linearGradient id="aboutGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgba(148, 0, 211, 0.1); stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: rgba(75, 0, 130, 0.1); stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <path class="bg-line-path-right" d="M400,200 C300,150 200,250 100,150 C50,100 20,50 0,0" fill="none" stroke="url(#aboutGradient2)" stroke-width="3" stroke-linecap="round"></path>
+        <path class="bg-line-path-right" d="M350,250 C250,200 150,220 50,150" fill="none" stroke="url(#aboutGradient2)" stroke-width="2" stroke-linecap="round" opacity="0.5"></path>
     </svg>
+    <style>
+        @media (max-width: 991.98px) {
+            .bg-line-svg-about-top-left,
+            .bg-line-svg-about-bottom-right {
+                width: 300px;
+                height: 250px;
+                opacity: 0.7;
+            }
+            .bg-line-svg-about-top-left {
+                top: 20px;
+                left: -50px;
+            }
+            .bg-line-svg-about-bottom-right {
+                bottom: 20px;
+                right: -50px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            .bg-line-svg-about-top-left,
+            .bg-line-svg-about-bottom-right {
+                width: 200px;
+                height: 150px;
+                opacity: 0.5;
+            }
+        }
+    </style>
     <div class="container spacer-double-lg border-bottom">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-5 mb-5 mb-lg-0 text-center">
@@ -2811,13 +2852,53 @@
 <!-- Testimonials Full Section -->
 <section id="testimonials" class="spacer-double-lg position-relative bg-light overflow-hidden">
     <!-- SVG Decorative Line Testimonials Top Left -->
-    <svg class="bg-line-svg-testimonials-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path" d="M0,150 C100,50 200,150 300,50" fill="none" stroke="rgba(97, 0, 155, 0.15)" stroke-width="4"></path>
+    <svg class="bg-line-svg-testimonials-top-left" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <defs>
+            <linearGradient id="testimonialGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: rgba(75, 0, 130, 0.15); stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: rgba(148, 0, 211, 0.15); stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <path class="bg-line-path" d="M0,200 C100,100 200,250 300,150 C350,100 380,50 400,0" fill="none" stroke="url(#testimonialGradient1)" stroke-width="3" stroke-linecap="round"></path>
+        <path class="bg-line-path" d="M50,250 C150,150 250,200 350,100" fill="none" stroke="url(#testimonialGradient1)" stroke-width="2" stroke-linecap="round" opacity="0.5"></path>
     </svg>
     <!-- SVG Decorative Line Testimonials Bottom Right -->
-    <svg class="bg-line-svg-testimonials-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path-right" d="M300,150 C200,50 100,150 0,50" fill="none" stroke="rgba(97, 0, 155, 0.15)" stroke-width="4"></path>
+    <svg class="bg-line-svg-testimonials-bottom-right" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: -100px; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
+        <defs>
+            <linearGradient id="testimonialGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgba(148, 0, 211, 0.15); stop-opacity: 1" />
+                <stop offset="100%" style="stop-color: rgba(75, 0, 130, 0.15); stop-opacity: 1" />
+            </linearGradient>
+        </defs>
+        <path class="bg-line-path-right" d="M400,200 C300,100 200,250 100,150 C50,100 20,50 0,0" fill="none" stroke="url(#testimonialGradient2)" stroke-width="3" stroke-linecap="round"></path>
+        <path class="bg-line-path-right" d="M350,250 C250,150 150,200 50,100" fill="none" stroke="url(#testimonialGradient2)" stroke-width="2" stroke-linecap="round" opacity="0.5"></path>
     </svg>
+    <style>
+        @media (max-width: 991.98px) {
+            .bg-line-svg-testimonials-top-left,
+            .bg-line-svg-testimonials-bottom-right {
+                width: 250px;
+                height: 200px;
+                opacity: 0.7;
+            }
+            .bg-line-svg-testimonials-top-left {
+                top: 20px;
+                left: -50px;
+            }
+            .bg-line-svg-testimonials-bottom-right {
+                bottom: 20px;
+                right: -50px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            .bg-line-svg-testimonials-top-left,
+            .bg-line-svg-testimonials-bottom-right {
+                width: 200px;
+                height: 150px;
+                opacity: 0.5;
+            }
+        }
+    </style>
     <div class="container position-relative z-index-2">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
