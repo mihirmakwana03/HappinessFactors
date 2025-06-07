@@ -1780,12 +1780,12 @@
 
         <!-- CTA Section -->
         <div class="row justify-content-center mt-5 pt-4">
-            <div class="col-lg-8 text-center">
-                <div class="card border-0 bg-gradient-primary-to-secondary text-white p-5 rounded-xl shadow-lg animate__animated animate__pulse animate__infinite">
+            <div class="col-12 col-lg-8 text-center">
+                <div class="card border-0 bg-gradient-primary-to-secondary text-white p-3 p-lg-5 rounded-xl shadow-lg animate__animated animate__pulse animate__infinite">
                     <div class="card-body">
-                        <h3 class="mb-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">Ready to unlock your team's happiest, healthiest potential?</h3>
-                        <p class="lead mb-4">Join the movement—Boost resilience, productivity, and happiness starting today.</p>
-                        <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse shadow">
+                        <h3 class="mb-3 mb-lg-4 font-weight-bold" style="background: linear-gradient(90deg, #FF7D7F, #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; color: #FF7D7F; letter-spacing: 1px; text-shadow: 0 1px 2px rgba(0,0,0,0.1); font-size: calc(1.2rem + 0.6vw);">Ready to unlock your team's happiest, healthiest potential?</h3>
+                        <p class="lead mb-3 mb-lg-4" style="font-size: calc(1rem + 0.3vw);">Join the movement—Boost resilience, productivity, and happiness starting today.</p>
+                        <a href="#subscribe" class="btn btn-lg btn-light btn-hover-pulse shadow w-100 w-lg-auto">
                             Get Started Today <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -2208,9 +2208,9 @@
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
         <!-- Call to Action -->
-        <div class="row justify-content-center mt-5 pt-3">
-            <div class="col-lg-8 text-center">
-                <a href="/products" class="btn btn-gradient btn-lg btn-ripple shadow">
+        <div class="row justify-content-center mt-4 mt-md-5 pt-2 pt-md-3">
+            <div class="col-12 col-md-8 col-lg-8 text-center">
+                <a href="/products" class="btn btn-gradient btn-md btn-lg-md btn-ripple shadow w-100 w-md-auto">
                     Get Started with Happiness <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
@@ -2377,15 +2377,7 @@
     </style>
 </section>
 
-<section id="video-cover" class="gradient-overlay gradient-overlay-dark video-cover mt-5 mb-5 position-relative overflow-hidden">
-    <!-- SVG Decorative Line Video Cover Top Left -->
-    <svg class="bg-line-svg-video-cover-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path" d="M0,150 C100,50 200,150 300,50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"></path>
-    </svg>
-    <!-- SVG Decorative Line Video Cover Bottom Right -->
-    <svg class="bg-line-svg-video-cover-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
-        <path class="bg-line-path-right" d="M300,150 C200,50 100,150 0,50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"></path>
-    </svg>
+<section id="video-cover" class="gradient-overlay gradient-overlay-dark video-cover mt-5 mb-5">
     <div class="curved-decoration top-n1 flip-xy">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 800 43.2" enable-background="new 0 0 800 43.2;" xml:space="preserve">
@@ -2474,242 +2466,6 @@
 
         </svg>
     </div>
-    <style>
-        .video-cover {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bg-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-        }
-
-        .curved-decoration {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .top-n1, .bottom-n1 {
-            width: 100%;
-            height: 100px;
-            overflow: hidden;
-        }
-
-        .top-n1 {
-            top: -100px;
-        }
-
-        .bottom-n1 {
-            bottom: -100px;
-        }
-
-        .flip-xy {
-            transform: scaleX(-1);
-        }
-
-        .spacer-xlg {
-            padding: 100px 0;
-        }
-
-        .z-index-2 {
-            z-index: 2;
-        }
-
-        .play-but {
-            position: relative;
-            display: inline-block;
-            padding: 20px 30px;
-            color: #fff;
-            font-size: 1.5rem;
-            text-decoration: none;
-            border-radius: 50%;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-
-        .play-icon {
-            position: relative;
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            transition: all 0.3s ease;
-        }
-
-        .play-icon-md {
-            width: 60px;
-            height: 60px;
-            border-width: 4px;
-        }
-
-        .play-icon-inner {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 0;
-            height: 0;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 15px solid #fff;
-            transition: all 0.3s ease;
-        }
-
-        .play-but:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .play-but:hover .play-icon {
-            border-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .play-but:hover .play-icon-inner {
-            border-left-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .play-icon.play-icon-md {
-            width: 60px;
-            height: 60px;
-            border-width: 4px;
-        }
-
-        .play-icon.play-icon-inner {
-            width: 0;
-            height: 0;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 15px solid #fff;
-        }
-
-        .play-icon.play-icon-md::before,
-        .play-icon.play-icon-inner::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .play-icon.play-icon-md::after,
-        .play-icon.play-icon-inner::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .play-icon.play-icon-md:hover::before,
-        .play-icon.play-icon-inner:hover::before {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .play-icon.play-icon-md:hover::after,
-        .play-icon.play-icon-inner:hover::after {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .play-icon.play-icon-md:hover {
-            border-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .play-icon.play-icon-inner:hover {
-            border-left-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .play-icon.play-icon-md::before,
-        .play-icon.play-icon-inner::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .play-icon.play-icon-md::after,
-        .play-icon.play-icon-inner::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .play-icon.play-icon-md:hover::before,
-        .play-icon.play-icon-inner:hover::before {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .play-icon.play-icon-md:hover::after,
-        .play-icon.play-icon-inner:hover::after {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        .play-icon.play-icon-md:hover {
-            border-color: rgba(255, 255, 255, 0.7);
-        }
-
-        .play-icon.play-icon-inner:hover {
-            border-left-color: rgba(255, 255, 255, 0.7);
-        }
-
-        /* Add styles for new SVG lines in #video-cover */
-        .bg-line-svg-video-cover-top-left .bg-line-path,
-        .bg-line-svg-video-cover-bottom-right .bg-line-path-right {
-            animation: drawLine 8s ease-in-out forwards infinite alternate; /* Slower animation speed */
-        }
-
-        @media (max-width: 991.98px) {
-            .bg-line-svg-video-cover-top-left,
-            .bg-line-svg-video-cover-bottom-right {
-                width: 150px;
-                height: 100px;
-                top: 10px;
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
-            }
-            .bg-line-svg-video-cover-bottom-right {
-                bottom: 10px;
-                right: 10px;
-                left: auto;
-            }
-        }
-    </style>
 </section>
 
 <section id="subscribe" class="subscribe-section position-relative py-5 overflow-hidden">
@@ -3377,32 +3133,32 @@
         </svg>
     </div>
     <div class="container position-relative" style="z-index:2;">
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-8 text-center">
-                <span class="badge badge-pill px-4 py-2 mb-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Got Questions?</span>
-                <h2 class="display-4 mb-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Frequently Asked Questions</h2>
-                <div class="divider-custom animate-pulse mb-3">
+        <div class="row justify-content-center mb-4 mb-md-5">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+                <span class="badge badge-pill px-3 px-md-4 py-2 mb-2 mb-md-3 animated-badge" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:0.9rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">Got Questions?</span>
+                <h2 class="display-5 display-md-4 mb-2 mb-md-3 font-weight-bold text-gradient" style="background:linear-gradient(90deg,#4B0082,#9400D3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Frequently Asked Questions</h2>
+                <div class="divider-custom animate-pulse mb-2 mb-md-3">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon">
                         <i class="fas fa-heart text-primary pulse-icon"></i>
                     </div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <p class="lead text-muted mb-0">Find quick answers to common questions about our services, mission, and how we can help you.</p>
+                <p class="lead text-muted mb-0 px-2">Find quick answers to common questions about our services, mission, and how we can help you.</p>
             </div>
         </div>
 
         <!-- FAQ Items -->
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-12 col-md-10 col-lg-8">
                 <div id="faqList">
                     <!-- FAQ Item 1 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-4" id="headingOne" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingOne" style="border-bottom: none !important;">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">What services does HappinessFactors offer?</span>
-                                    <i class="fas fa-chevron-down"></i>
+                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">What services does HappinessFactors offer?</span>
+                                    <i class="fas fa-chevron-down ml-2"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3415,11 +3171,11 @@
 
                     <!-- FAQ Item 2 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-4" id="headingTwo" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingTwo" style="border-bottom: none !important;">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">What is the approach of HappinessFactors?</span>
-                                    <i class="fas fa-chevron-down"></i>
+                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">What is the approach of HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down ml-2"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3432,11 +3188,11 @@
 
                     <!-- FAQ Item 3 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-4" id="headingThree" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingThree" style="border-bottom: none !important;">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">How can I contact HappinessFactors?</span>
-                                    <i class="fas fa-chevron-down"></i>
+                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">How can I contact HappinessFactors?</span>
+                                    <i class="fas fa-chevron-down ml-2"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3449,11 +3205,11 @@
 
                     <!-- FAQ Item 4 -->
                     <div class="card mb-3 shadow-sm rounded-lg faq-item">
-                        <div class="card-header bg-white border-0 py-4" id="headingFour" style="border-bottom: none !important;">
+                        <div class="card-header bg-white border-0 py-3 py-md-4" id="headingFour" style="border-bottom: none !important;">
                             <h5 class="mb-0">
                                 <button class="btn btn-link text-left text-decoration-none w-100 d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="faq-question font-weight-bold" style="font-size: 1.1rem; color: #4B0082;">Is there a subscription or membership required?</span>
-                                    <i class="fas fa-chevron-down"></i>
+                                    <span class="faq-question font-weight-bold" style="font-size: 1rem; color: #4B0082;">Is there a subscription or membership required?</span>
+                                    <i class="fas fa-chevron-down ml-2"></i>
                                 </button>
                             </h5>
                         </div>
@@ -3636,6 +3392,29 @@
                 font-size: 1rem;
             }
         }
+
+        /* Add styles for new SVG lines in #faq */
+        .bg-line-svg-faq-top-left .bg-line-path,
+        .bg-line-svg-faq-bottom-right .bg-line-path-right {
+            animation: drawLine 6s ease-in-out forwards infinite alternate; /* Moderate animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-faq-top-left,
+            .bg-line-svg-faq-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 20px;
+                left: -20px;
+                right: -20px;
+                bottom: 20px;
+            }
+            .bg-line-svg-faq-bottom-right {
+                bottom: 20px;
+                right: -20px;
+                left: auto;
+            }
+        }
     </style>
 
     <script>
@@ -3665,6 +3444,14 @@
 </section>
 
 <section id="contact" class="contact-section position-relative overflow-hidden py-5">
+    <!-- SVG Decorative Line Contact Top Left -->
+    <svg class="bg-line-svg-contact-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,150 C100,50 200,150 300,50" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Contact Bottom Right -->
+    <svg class="bg-line-svg-contact-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,150 C200,50 100,150 0,50" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative SVG Top Wave -->
     <div class="contact-wave-top position-absolute w-100" style="top:0;left:0;z-index:1;">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
@@ -4043,6 +3830,29 @@ unset($__errorArgs, $__bag); ?>
             .contact-info-wrapper,
             .contact-form-wrapper {
                 padding: 2rem 1rem;
+            }
+        }
+
+        /* Add styles for new SVG lines in #contact */
+        .bg-line-svg-contact-top-left .bg-line-path,
+        .bg-line-svg-contact-bottom-right .bg-line-path-right {
+            animation: drawLine 6s ease-in-out forwards infinite alternate; /* Moderate animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-contact-top-left,
+            .bg-line-svg-contact-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 20px;
+                left: -20px;
+                right: -20px;
+                bottom: 20px;
+            }
+            .bg-line-svg-contact-bottom-right {
+                bottom: 20px;
+                right: -20px;
+                left: auto;
             }
         }
     </style>
