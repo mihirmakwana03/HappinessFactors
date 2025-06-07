@@ -312,19 +312,19 @@
 
                     <div class="bio-section mb-4">
                         <p class="mb-4 text-muted">
-                            <span class="highlight-name" style="color: #4B0082; font-weight: 600;">Anita Kumari Srivastava</span>, an <span class="highlight-achievement" style="color: #9400D3; font-weight: 600;">award-winning poetess</span>, coach, and author of <span class="book-title" style="color: #4B0082; font-style: italic; font-weight: 600;">"Find Your Happy: Survivor's Guide to Finding Joy In Spite of Life's Challenges"</span>, is the driving force behind <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span>. Her vision is to spread emotional wellness globally by creating happy mindsets.
+                            <span class="highlight-name" style="color: #4B0082; font-weight: 600;">Anita Kumari Srivastava</span>, an award-winning coach and author, leads <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span> with a mission to spread emotional wellness globally.
                         </p>
                     </div>
 
                     <div class="expertise-section mb-4">
                         <p class="mb-4 text-muted">
-                            A certified <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">NLP</span>, <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">Hypnotherapy</span>, and <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">MER practitioner</span>, Anita uniquely combines these techniques with <span class="highlight-text" style="color: #61009b; font-weight: 600;">Psychology, Energy, Meditation, Mindfulness, Healthful Habits, and Spirituality</span>. With extensive high-tech experience from companies like <span class="company-highlight" style="color: #4B0082; font-weight: 600;">Google</span> and a <span class="award-highlight" style="color: #9400D3; font-weight: 600;">Community Hero Award</span>, she is passionate about empowering individuals and organizations to achieve happiness, motivation, and joy, believing it is everyone's birthright.
+                            With expertise in <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">NLP</span>, <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">Hypnotherapy</span>, and <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">MER</span>, combined with her experience at <span class="company-highlight" style="color: #4B0082; font-weight: 600;">Google</span>, Anita helps individuals and organizations achieve lasting happiness and motivation.
                         </p>
                     </div>
 
                     <div class="journey-section">
                         <p class="mb-0 text-muted">
-                            An <span class="highlight-journey" style="color: #4B0082; font-weight: 600;">abuse survivor</span>, Anita has dedicated over a decade to personal growth, learning from renowned figures like <span class="mentor-name" style="color: #61009b; font-weight: 600;">Tony Robbins</span> and <span class="mentor-name" style="color: #61009b; font-weight: 600;">Oprah Winfrey</span>. She actively volunteers, helps the less fortunate, and through <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span>, aims to provide transformative solutions for emotional wellness and fulfillment.
+                            Through her personal journey and mentorship from leaders like <span class="mentor-name" style="color: #61009b; font-weight: 600;">Tony Robbins</span>, Anita has developed transformative solutions for emotional wellness at <span class="company-name" style="color: #9400D3; font-weight: 600;">HappinessFactors</span>.
                         </p>
                     </div>
                 </div>
