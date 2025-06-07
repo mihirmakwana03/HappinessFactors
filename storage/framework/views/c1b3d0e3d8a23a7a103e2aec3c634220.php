@@ -182,7 +182,15 @@
     </style>
 </section>
 
-<section id="about">
+<section id="about" class="position-relative overflow-hidden">
+    <!-- SVG Decorative Line About Top Left -->
+    <svg class="bg-line-svg-about-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,100 C75,20 225,180 300,100" fill="none" stroke="rgba(94, 0, 211, 0.15)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line About Bottom Right -->
+    <svg class="bg-line-svg-about-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,100 C225,20 75,180 0,100" fill="none" stroke="rgba(94, 0, 211, 0.15)" stroke-width="4"></path>
+    </svg>
     <div class="container spacer-double-lg border-bottom">
         <div class="row justify-content-between align-items-center">
             <div class="col-md-5 mb-5 mb-lg-0 text-center">
@@ -1107,6 +1115,30 @@
             .bg-line-svg-about-right .bg-line-path-right {
                 animation: drawLine 5s ease-in-out forwards infinite alternate; /* Animate drawing */
             }
+
+            /* Add styles for new SVG lines in #about */
+            .bg-line-svg-about-top-left .bg-line-path,
+            .bg-line-svg-about-bottom-right .bg-line-path-right {
+                animation: drawLine 6s ease-in-out forwards infinite alternate; /* Slightly different animation speed */
+            }
+
+            @media (max-width: 991.98px) {
+                .bg-line-svg-about-top-left,
+                .bg-line-svg-about-bottom-right {
+                    width: 200px; /* Adjust size for mobile */
+                    height: 150px;
+                    top: 20px; /* Adjust position for mobile */
+                    left: -20px;
+                    right: -20px;
+                    bottom: 20px;
+                }
+                .bg-line-svg-about-bottom-right {
+                    bottom: 20px;
+                    right: -20px;
+                    left: auto;
+                }
+            }
+
         </style>
 
         <script>
@@ -1191,6 +1223,14 @@
 
 <!-- Our Story -->
 <section id="our-story" class="spacer-double-lg position-relative overflow-hidden bg-light">
+    <!-- SVG Decorative Line Our Story Top Right -->
+    <svg class="bg-line-svg-our-story-top-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 80px; right: -80px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M300,0 C200,100 100,100 0,200" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Our Story Bottom Left -->
+    <svg class="bg-line-svg-our-story-bottom-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 80px; left: -80px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M0,200 C100,100 200,100 300,0" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative SVG Wave Top -->
     <div class="position-absolute w-100" style="top:0;left:0;z-index:1;">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
@@ -1597,10 +1637,41 @@
             -webkit-text-fill-color: transparent;
             color: transparent;
         }
+
+        /* Add styles for new SVG lines in #our-story */
+        .bg-line-svg-our-story-top-right .bg-line-path,
+        .bg-line-svg-our-story-bottom-left .bg-line-path-right {
+            animation: drawLine 7s ease-in-out forwards infinite alternate; /* Slower animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-our-story-top-right,
+            .bg-line-svg-our-story-bottom-left {
+                width: 150px;
+                height: 100px;
+                top: 40px;
+                right: -40px;
+                bottom: 40px;
+                left: -40px;
+            }
+            .bg-line-svg-our-story-bottom-left {
+                bottom: 40px;
+                left: -40px;
+                right: auto;
+            }
+        }
     </style>
 </section>
 
 <section id="why-us" class="spacer-double-lg position-relative overflow-hidden">
+    <!-- SVG Decorative Line Why Us Top Left -->
+    <svg class="bg-line-svg-why-us-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,50 C100,150 200,50 300,150" fill="none" stroke="rgba(148, 0, 211, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Why Us Bottom Right -->
+    <svg class="bg-line-svg-why-us-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,50 C200,150 100,50 0,150" fill="none" stroke="rgba(148, 0, 211, 0.1)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative Background Shapes -->
     <div class="position-absolute d-none d-lg-block" style="top: -60px; right: -60px; width: 220px; height: 220px; background: radial-gradient(circle at 60% 40%, #9400D3 0%, #4B0082 80%, transparent 100%); opacity: 0.08; border-radius: 50%; z-index: 1;"></div>
     <div class="position-absolute d-none d-lg-block" style="bottom: -100px; left: -100px; width: 300px; height: 300px; background: radial-gradient(circle at 40% 60%, #FF7D7F 0%, #6A5ACD 80%, transparent 100%); opacity: 0.07; border-radius: 50%; z-index: 1;"></div>
@@ -1944,16 +2015,41 @@
                 margin-bottom: 1rem;
             }
         }
+
+        /* Add styles for new SVG lines in #why-us */
+        .bg-line-svg-why-us-top-left .bg-line-path,
+        .bg-line-svg-why-us-bottom-right .bg-line-path-right {
+            animation: drawLine 6s ease-in-out forwards infinite alternate; /* Moderate animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-why-us-top-left,
+            .bg-line-svg-why-us-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 20px;
+                left: -20px;
+                right: -20px;
+                bottom: 20px;
+            }
+            .bg-line-svg-why-us-bottom-right {
+                bottom: 20px;
+                right: -20px;
+                left: auto;
+            }
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Counter animation
             const counters = document.querySelectorAll('.counter');
             const speed = 200;
+
             counters.forEach(counter => {
                 const animate = () => {
                     const value = +counter.getAttribute('data-count');
                     const data = +counter.innerText;
+
                     const time = value / speed;
                     if (data < value) {
                         counter.innerText = Math.ceil(data + time);
@@ -1964,18 +2060,73 @@
                 }
                 animate();
             });
-            // Animate.css fallback for feature cards if not loaded
-            setTimeout(() => {
-                document.querySelectorAll('.animate__animated.animate__fadeInUp').forEach(el => {
-                    el.style.opacity = 1;
-                    el.style.transform = 'none';
+
+            // Parallax effect for video
+            const videoContainer = document.querySelector('.parallax-effect');
+            if (videoContainer) {
+                document.addEventListener('mousemove', function(e) {
+                    const mouseX = e.clientX / window.innerWidth - 0.5;
+                    const mouseY = e.clientY / window.innerHeight - 0.5;
+
+                    videoContainer.style.transform = `rotateY(${mouseX * 5}deg) rotateX(${mouseY * -5}deg)`;
                 });
-            }, 1000);
+            }
+
+            // Scroll reveal animations
+            const revealElements = document.querySelectorAll('.reveal-fade, .reveal-slide-right, .reveal-slide-left, .reveal-fade-up');
+
+            const revealOnScroll = () => {
+                revealElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.style.animationPlayState = 'running';
+                    }
+                });
+            }
+
+            // Initialize animations
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Check on load
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Jarallax
+            jarallax(document.querySelectorAll('[data-jarallax-element]'), {
+                speed: 0.2
+            });
+
+            // Existing Intersection Observer code
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.slide-in-image').forEach((image) => {
+                observer.observe(image);
+            });
+        });
+    </script>
+
 </section>
 
 <section id="services" class="spacer-double-lg position-relative overflow-hidden bg-light">
+    <!-- SVG Decorative Line Services Top Left -->
+    <svg class="bg-line-svg-services-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,50 C100,150 200,50 300,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Services Bottom Right -->
+    <svg class="bg-line-svg-services-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,50 C200,150 100,50 0,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
     <div class="container">
         <!-- Section Header -->
         <div class="row justify-content-center mb-5">
@@ -2200,10 +2351,41 @@
                 margin-bottom: 1rem;
             }
         }
+
+        /* Add styles for new SVG lines in #services */
+        .bg-line-svg-services-top-left .bg-line-path,
+        .bg-line-svg-services-bottom-right .bg-line-path-right {
+            animation: drawLine 6s ease-in-out forwards infinite alternate; /* Moderate animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-services-top-left,
+            .bg-line-svg-services-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 20px;
+                left: -20px;
+                right: -20px;
+                bottom: 20px;
+            }
+            .bg-line-svg-services-bottom-right {
+                bottom: 20px;
+                right: -20px;
+                left: auto;
+            }
+        }
     </style>
 </section>
 
-<section id="video-cover" class="gradient-overlay gradient-overlay-dark video-cover mt-5 mb-5">
+<section id="video-cover" class="gradient-overlay gradient-overlay-dark video-cover mt-5 mb-5 position-relative overflow-hidden">
+    <!-- SVG Decorative Line Video Cover Top Left -->
+    <svg class="bg-line-svg-video-cover-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,150 C100,50 200,150 300,50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Video Cover Bottom Right -->
+    <svg class="bg-line-svg-video-cover-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,150 C200,50 100,150 0,50" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="4"></path>
+    </svg>
     <div class="curved-decoration top-n1 flip-xy">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" viewBox="0 0 800 43.2" enable-background="new 0 0 800 43.2;" xml:space="preserve">
@@ -2292,9 +2474,253 @@
 
         </svg>
     </div>
+    <style>
+        .video-cover {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .curved-decoration {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .top-n1, .bottom-n1 {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .top-n1 {
+            top: -100px;
+        }
+
+        .bottom-n1 {
+            bottom: -100px;
+        }
+
+        .flip-xy {
+            transform: scaleX(-1);
+        }
+
+        .spacer-xlg {
+            padding: 100px 0;
+        }
+
+        .z-index-2 {
+            z-index: 2;
+        }
+
+        .play-but {
+            position: relative;
+            display: inline-block;
+            padding: 20px 30px;
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 50%;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .play-icon {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .play-icon-md {
+            width: 60px;
+            height: 60px;
+            border-width: 4px;
+        }
+
+        .play-icon-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid #fff;
+            transition: all 0.3s ease;
+        }
+
+        .play-but:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .play-but:hover .play-icon {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .play-but:hover .play-icon-inner {
+            border-left-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .play-icon.play-icon-md {
+            width: 60px;
+            height: 60px;
+            border-width: 4px;
+        }
+
+        .play-icon.play-icon-inner {
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid #fff;
+        }
+
+        .play-icon.play-icon-md::before,
+        .play-icon.play-icon-inner::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .play-icon.play-icon-md::after,
+        .play-icon.play-icon-inner::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .play-icon.play-icon-md:hover::before,
+        .play-icon.play-icon-inner:hover::before {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .play-icon.play-icon-md:hover::after,
+        .play-icon.play-icon-inner:hover::after {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .play-icon.play-icon-md:hover {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .play-icon.play-icon-inner:hover {
+            border-left-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .play-icon.play-icon-md::before,
+        .play-icon.play-icon-inner::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .play-icon.play-icon-md::after,
+        .play-icon.play-icon-inner::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .play-icon.play-icon-md:hover::before,
+        .play-icon.play-icon-inner:hover::before {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .play-icon.play-icon-md:hover::after,
+        .play-icon.play-icon-inner:hover::after {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .play-icon.play-icon-md:hover {
+            border-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .play-icon.play-icon-inner:hover {
+            border-left-color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Add styles for new SVG lines in #video-cover */
+        .bg-line-svg-video-cover-top-left .bg-line-path,
+        .bg-line-svg-video-cover-bottom-right .bg-line-path-right {
+            animation: drawLine 8s ease-in-out forwards infinite alternate; /* Slower animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-video-cover-top-left,
+            .bg-line-svg-video-cover-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+            .bg-line-svg-video-cover-bottom-right {
+                bottom: 10px;
+                right: 10px;
+                left: auto;
+            }
+        }
+    </style>
 </section>
 
-<section id="subscribe" class="subscribe-section position-relative py-5">
+<section id="subscribe" class="subscribe-section position-relative py-5 overflow-hidden">
+    <!-- SVG Decorative Line Subscribe Top Left -->
+    <svg class="bg-line-svg-subscribe-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,50 C100,150 200,50 300,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Subscribe Bottom Right -->
+    <svg class="bg-line-svg-subscribe-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,50 C200,150 100,50 0,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative SVG Top Wave -->
     <div class="subscribe-wave-top position-absolute w-100" style="top:0;left:0;z-index:1;">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
@@ -2600,11 +3026,42 @@
                 border-radius: .75rem !important;
             }
         }
+
+        /* Add styles for new SVG lines in #subscribe */
+        .bg-line-svg-subscribe-top-left .bg-line-path,
+        .bg-line-svg-subscribe-bottom-right .bg-line-path-right {
+            animation: drawLine 7s ease-in-out forwards infinite alternate; /* Slower animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-subscribe-top-left,
+            .bg-line-svg-subscribe-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+            .bg-line-svg-subscribe-bottom-right {
+                bottom: 10px;
+                right: 10px;
+                left: auto;
+            }
+        }
     </style>
 </section>
 
 <!-- Testimonials Full Section -->
-<section id="testimonials" class="spacer-double-lg position-relative bg-light">
+<section id="testimonials" class="spacer-double-lg position-relative bg-light overflow-hidden">
+    <!-- SVG Decorative Line Testimonials Top Left -->
+    <svg class="bg-line-svg-testimonials-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 50px; left: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,150 C100,50 200,150 300,50" fill="none" stroke="rgba(97, 0, 155, 0.15)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line Testimonials Bottom Right -->
+    <svg class="bg-line-svg-testimonials-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 50px; right: -50px; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,150 C200,50 100,150 0,50" fill="none" stroke="rgba(97, 0, 155, 0.15)" stroke-width="4"></path>
+    </svg>
     <div class="container position-relative z-index-2">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8 text-center">
@@ -2877,11 +3334,42 @@
                 margin-bottom: 1rem;
             }
         }
+
+        /* Add styles for new SVG lines in #testimonials */
+        .bg-line-svg-testimonials-top-left .bg-line-path,
+        .bg-line-svg-testimonials-bottom-right .bg-line-path-right {
+            animation: drawLine 6s ease-in-out forwards infinite alternate; /* Moderate animation speed */
+        }
+
+        @media (max-width: 991.98px) {
+            .bg-line-svg-testimonials-top-left,
+            .bg-line-svg-testimonials-bottom-right {
+                width: 150px;
+                height: 100px;
+                top: 20px;
+                left: -20px;
+                right: -20px;
+                bottom: 20px;
+            }
+            .bg-line-svg-testimonials-bottom-right {
+                bottom: 20px;
+                right: -20px;
+                left: auto;
+            }
+        }
     </style>
 </section>
 
 <!-- FAQ Section -->
 <section id="faq" class="spacer-double-lg position-relative overflow-hidden bg-light">
+    <!-- SVG Decorative Line FAQ Top Left -->
+    <svg class="bg-line-svg-faq-top-left" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: 0; left: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path" d="M0,50 C100,150 200,50 300,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
+    <!-- SVG Decorative Line FAQ Bottom Right -->
+    <svg class="bg-line-svg-faq-bottom-right" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; bottom: 0; right: 0; width: 300px; height: 200px; pointer-events: none; z-index: 0;">
+        <path class="bg-line-path-right" d="M300,50 C200,150 100,50 0,150" fill="none" stroke="rgba(75, 0, 130, 0.1)" stroke-width="4"></path>
+    </svg>
     <!-- Decorative SVG Top Wave -->
     <div class="faq-wave-top position-absolute w-100" style="top:0;left:0;z-index:1;">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;">
