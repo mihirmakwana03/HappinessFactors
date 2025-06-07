@@ -52,7 +52,7 @@
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="position-relative">
                     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
+                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="0.2" loop autoplay></dotlottie-player>
                 </div>
             </div>
 
@@ -243,8 +243,8 @@
                             <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/1.jpg')); ?>" alt="">
                         </div>
                         <div class="col-7 mb-2">
-                            <!-- <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/2.jpg')); ?>" alt=""> -->
-                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script><dotlottie-player src="https://lottie.host/3254fefd-ac04-4806-b012-bc5039d52331/j5pN5szXPM.lottie" background="#FFFFFF" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+                            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                            <dotlottie-player class="img-fluid w-100 slide-in-image" src="https://lottie.host/3254fefd-ac04-4806-b012-bc5039d52331/j5pN5szXPM.lottie" background="#FFFFFF" speed="1" direction="1" playMode="normal" loop autoplay></dotlottie-player>
                         </div>
                         <div class="col-5 offset-1 mb-2 mb-lg-0">
                             <img class="img-fluid w-100 slide-in-image" src="<?php echo e(asset('assets/img/offset/3.jpg')); ?>" alt="">
