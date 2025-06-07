@@ -36,13 +36,20 @@
 @section('content')
 
 <!-- New Section -->
-<section class="py-5 border-bottom" style="margin-top: 100px;">
+<section class="py-5 border-bottom position-relative overflow-hidden" style="margin-top: 100px; background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.95) 100%);">
+    <!-- Decorative Elements -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: -1;">
+        <div class="position-absolute" style="top: -50px; left: -50px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(97,0,155,0.05) 0%, rgba(97,0,155,0) 70%); border-radius: 50%;"></div>
+        <div class="position-absolute" style="bottom: -30px; right: -30px; width: 150px; height: 150px; background: radial-gradient(circle, rgba(75,0,130,0.05) 0%, rgba(75,0,130,0) 70%); border-radius: 50%;"></div>
+    </div>
+    
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at center, rgba(97,0,155,0.1) 0%, rgba(97,0,155,0) 70%); transform: scale(1.2);"></div>
                     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+                    <dotlottie-player class="img-fluid rounded-4 shadow-lg" style="width: 100%; height: auto; object-fit: cover; max-width: 500px; margin: 0 auto; display: block;" src="https://lottie.host/ce443241-60ff-406a-b984-88dad55f17f0/rgeFB54Tsm.lottie" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
                 </div>
             </div>
 
@@ -58,10 +65,10 @@
                 <p class="lead mb-4" style="color: #2c3e50; font-size: 1.25rem;">
                     <strong>Smart mental wellness for people on the move.</strong>
                 </p>
-                <div class="text-center">
-                    <a href="#subscribe" class="btn btn-secondary btn-sm" style="color: #61009b; border-color: #ffffff; transition: background 0.2s, color 0.2s, border-color 0.2s; border: 2px solid #61009b;"
-                        onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.borderColor='#61009b';"
-                        onmouseout="this.style.background='';this.style.color='#61009b';this.style.borderColor='#61009b';">
+                <div class="text-center text-lg-start">
+                    <a href="#subscribe" class="btn btn-secondary btn-lg px-5 py-3" style="color: #61009b; border-color: #61009b; transition: all 0.3s ease; border: 2px solid #61009b; box-shadow: 0 4px 15px rgba(97,0,155,0.1);"
+                        onmouseover="this.style.background='#61009b';this.style.color='#fff';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 20px rgba(97,0,155,0.2)';"
+                        onmouseout="this.style.background='';this.style.color='#61009b';this.style.transform='translateY(0)';this.style.boxShadow='0 4px 15px rgba(97,0,155,0.1)';">
                         Subscribe
                     </a>
                 </div>
