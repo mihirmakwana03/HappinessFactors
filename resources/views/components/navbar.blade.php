@@ -69,7 +69,7 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link scroll" href="#contact"><span>Contact</span></a></li>
+                        <li class="nav-item"><a class="nav-link scroll" href="/#contact"><span>Contact</span></a></li>
                     </ul>
                 </div>
             </nav>

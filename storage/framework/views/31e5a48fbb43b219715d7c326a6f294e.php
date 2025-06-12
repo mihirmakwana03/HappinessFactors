@@ -1,8 +1,8 @@
-    <footer class="footer position-relative">
-        <div class="footer-wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
-            <path fill="#0099ff" fill-opacity="0.6" d="M0,128L48,138.7C96,149,192,171,288,176C384,181,480,171,576,144C672,117,768,75,864,69.3C960,64,1056,96,1152,106.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            <path fill="#0099ff" fill-opacity="0.8" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,208C672,213,768,203,864,181.3C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+<footer class="footer position-relative">
+    <div class="footer-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"></svg>
+        <path fill="#0099ff" fill-opacity="0.6" d="M0,128L48,138.7C96,149,192,171,288,176C384,181,480,171,576,144C672,117,768,75,864,69.3C960,64,1056,96,1152,106.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <path fill="#0099ff" fill-opacity="0.8" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,208C672,213,768,203,864,181.3C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
     </div>
 
@@ -55,14 +55,17 @@
             </div>
 
             <!-- Get the app Column -->
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <div class="col-lg col-md-6 col-sm-12 mb-4 text-center text-md-left">
                 <h5 class="text-white mb-4 footer-heading">Get the app</h5>
                 <div class="d-flex flex-column align-items-center align-items-md-start">
                     <a href="<?php echo e(url('https://apps.apple.com/us/app/happiness-factors/id1575587044')); ?>" target="_blank" class="mb-3">
-                        <img src="<?php echo e(asset('assets/img/app-store.webp')); ?>" alt="Download on the App Store" style="height: 48px;">
+                        <!-- <img src="<?php echo e(asset('assets/img/app-store.webp')); ?>" alt="Download on the App Store" style="height: 48px;"> -->
+                        <lottie-player src="<?php echo e(asset('assets/json/App-Store.json')); ?>" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -70px -10px;" loop autoplay></lottie-player>
                     </a>
                     <a href="#" target="_blank">
-                        <img src="<?php echo e(asset('assets/img/google-play.webp')); ?>" alt="GET IT ON Google Play" style="height: 48px;">
+                        <!-- <img src="<?php echo e(asset('assets/img/google-play.webp')); ?>" alt="GET IT ON Google Play" style="height: 48px;"> -->
+                        <lottie-player src="<?php echo e(asset('assets/json/Google-Play.json')); ?>" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -50px -10px;" loop autoplay></lottie-player>
                     </a>
                 </div>
             </div>
@@ -141,7 +144,8 @@
     }
 
     .footer-logo-container {
-        margin-bottom: 1.5rem; /* Adjusted margin as logo is now above columns */
+        margin-bottom: 1.5rem;
+        /* Adjusted margin as logo is now above columns */
     }
 
     #footerLogo {
@@ -159,14 +163,18 @@
         padding-top: 2rem;
     }
 
-    .footer-link-list h5, /* Combined heading styles */
-    .footer-connect h5 { /* Keep existing connect heading style for potential reuse or cleanup */
+    .footer-link-list h5,
+    /* Combined heading styles */
+    .footer-connect h5 {
+        /* Keep existing connect heading style for potential reuse or cleanup */
         position: relative;
         padding-bottom: 15px;
     }
 
-    .footer-link-list h5:after, /* Combined heading underline */
-    .footer-connect h5:after { /* Keep existing connect heading underline for potential reuse or cleanup */
+    .footer-link-list h5:after,
+    /* Combined heading underline */
+    .footer-connect h5:after {
+        /* Keep existing connect heading underline for potential reuse or cleanup */
         content: '';
         position: absolute;
         bottom: 0;
@@ -249,11 +257,13 @@
     .footer-content .col-lg,
     .footer-content .col-md-6,
     .footer-content .col-sm-12 {
-        padding: 0 15px; /* Add horizontal padding for spacing */
+        padding: 0 15px;
+        /* Add horizontal padding for spacing */
     }
 
     .footer-content .row {
-        margin: 0 -15px; /* Compensate for column padding */
+        margin: 0 -15px;
+        /* Compensate for column padding */
     }
 
     .footer-heading {
@@ -320,7 +330,8 @@
 
     .contact-info i {
         color: #0099ff;
-        margin-right: 8px; /* Add space between icon and text */
+        margin-right: 8px;
+        /* Add space between icon and text */
     }
 </style>
 

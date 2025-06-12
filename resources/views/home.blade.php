@@ -367,7 +367,7 @@
 
                     <div class="expertise-section mb-4">
                         <p class="mb-4 text-muted">
-                            With expertise in <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">NLP</span>, <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">Hypnotherapy</span>, and <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">MER</span>, combined with her experience at <span class="company-highlight" style="color: #4B0082; font-weight: 600;">Google</span>, Anita helps individuals and organizations achieve lasting happiness and motivation.
+                            With expertise in <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">NLP</span>, <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">Hypnotherapy</span>, and <span class="expertise-tag" style="background: rgba(75,0,130,0.1); padding: 2px 8px; border-radius: 4px; color: #4B0082;">MER practitioner</span>, combined with her experience at <span class="company-highlight" style="color: #4B0082; font-weight: 600;">Google</span>, Anita helps individuals and organizations achieve lasting happiness and motivation.
                         </p>
                     </div>
 
