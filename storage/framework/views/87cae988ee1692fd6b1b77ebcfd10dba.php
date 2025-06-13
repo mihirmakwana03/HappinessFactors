@@ -6,7 +6,7 @@
                     <img class="mb-0 logo-light" src="<?php echo e(asset('assets/img/Logo.png')); ?>" alt="Logo Light">
                     <img class="mb-0 logo-dark" src="<?php echo e(asset('assets/img/Logo.png')); ?>" alt="Logo Dark">
                 </a>
-                <button class="navbar-toggler btn-navbar-toggler" type="button" data-toggle="collapse" data-target=".nav-menu" aria-expanded="true" aria-label="Toggle navigation">
+                <button class="navbar-toggler btn-navbar-toggler" type="button" data-toggle="collapse" data-target=".nav-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="nav-menu collapse navbar-collapse justify-content-end mr-5">
@@ -257,8 +257,9 @@
     .navbar-toggler {
         border: none;
         padding: 0.5rem;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease-out;
         background: transparent;
+        will-change: transform;
     }
 
     .navbar-toggler:focus {
@@ -269,12 +270,22 @@
     .navbar-toggler .fa-bars {
         color: #1a1a1a;
         font-size: 1.5rem;
-        transition: all 0.3s ease;
+        transition: transform 0.2s ease-out;
+        transform: rotate(0deg);
+        will-change: transform;
     }
 
     .navbar-toggler:hover .fa-bars {
         color: #c71e19;
-        transform: scale(1.1) rotate(90deg);
+        transform: scale(1.1);
+    }
+
+    .navbar-toggler[aria-expanded="true"] .fa-bars {
+        transform: rotate(90deg);
+    }
+
+    .navbar-toggler[aria-expanded="false"] .fa-bars {
+        transform: rotate(0deg);
     }
 
     /* Mobile Responsive Styles */
@@ -301,6 +312,24 @@
             max-height: calc(100vh - 80px);
             overflow-y: auto;
             backdrop-filter: blur(10px);
+            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+            transform-origin: top;
+            will-change: transform, opacity;
+        }
+
+        .nav-menu.collapsing {
+            transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+        }
+
+        .nav-menu.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .nav-menu.collapse:not(.show) {
+            transform: translateY(-10px);
+            opacity: 0;
+            pointer-events: none;
         }
 
         .nav-link {
