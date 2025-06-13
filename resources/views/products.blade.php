@@ -182,7 +182,7 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="products-hero position-relative" style="min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') center/cover;">
+<section class="products-hero position-relative" style="min-height: 60vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80') center/cover;">
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center">
             <div class="col-lg-8 text-center">

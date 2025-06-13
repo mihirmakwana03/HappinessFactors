@@ -385,7 +385,7 @@
                         <div class="card-body p-5">
                             <!-- Enhanced Header Section -->
                             <div class="card-header-icon mb-4 d-flex align-items-center">
-                                <div class="icon-wrapper responsive-icon-wrapper bg-gradient-primary-to-secondary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 64px; height: 64px; font-size: 24px; box-shadow: 0 4px 15px rgba(75,0,130,0.15);">
+                                <div class="icon-wrapper responsive-icon-wrapper bg-gradient-primary-to-secondary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #4B0082, #9400D3); display: flex; align-items: center; justify-content: center; color: white; font-size: 20px;  flex-shrink: 0;">
                                     <i class="fas fa-spa"></i>
                                 </div>
                                 <h3 class="h4 ml-3 mb-0 text-gradient" style="background: linear-gradient(90deg, #4B0082, #9400D3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our Approach to Mental Wellness</h3>

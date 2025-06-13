@@ -4,10 +4,22 @@
 <head>
     {{-- Other head elements like title, meta tags, etc. --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <div class="quiz-container">
-    <div id="quiz-title">Emotional Wellness Quiz</div>
+    <!-- Decorative elements -->
+    <div class="decorative-circle circle-1"></div>
+    <div class="decorative-circle circle-2"></div>
+    <div class="decorative-circle circle-3"></div>
+    <div class="decorative-wave wave-1"></div>
+    <div class="decorative-wave wave-2"></div>
+    
+    <div id="quiz-title">
+        <span class="title-icon"><i class="fas fa-heart"></i></span>
+        Emotional Wellness Quiz
+    </div>
     <div id="question-area">
         <div id="question-number"></div>
         <div id="question-text"></div>
@@ -16,13 +28,16 @@
         </div>
     </div>
     <div class="button-container">
-        <button id="prev-button" style="display: none;">Previous</button>
-        <button id="submit-button" style="display: none;">Submit</button>
-        <button id="next-button" style="display: none;">Next</button>
+        <button id="prev-button" style="display: none;"><i class="fas fa-arrow-left"></i> Previous</button>
+        <button id="submit-button" style="display: none;">Submit <i class="fas fa-check"></i></button>
+        <button id="next-button" style="display: none;">Next <i class="fas fa-arrow-right"></i></button>
     </div>
     
     <div id="results-area" style="display: none;">
-        <div id="total-score"></div>
+        <div class="results-header">
+            <i class="fas fa-star results-icon"></i>
+            <div id="total-score"></div>
+        </div>
         <div id="rating"></div>
         <div id="rating-details"></div>
         <div class="social-links">
@@ -48,233 +63,394 @@
                 </a>
             </div>
         </div>
-        <button id="home-button" style="display: none;" class="btn btn-primary">Go to Homepage</button>
+        <div class="results-buttons" style="margin-top: 20px;">
+            <button id="home-button" style="display: none;" class="btn btn-primary">
+                <i class="fas fa-home"></i> Go to Homepage
+            </button>
+            <button id="contact-button" style="display: none;" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Contact Us
+            </button>
+        </div>
     </div>
 </div>
 
 <style>
+    :root {
+        --primary-color: #4a90e2;
+        --secondary-color: #f5f7fa;
+        --accent-color: #ff6b6b;
+        --text-color: #2c3e50;
+        --border-radius: 12px;
+        --transition: all 0.3s ease;
+    }
+
     body {
-        font-family: 'Helvetica Neue', sans-serif; /* More modern font */
+        font-family: 'Helvetica Neue', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: #f4f7f6; /* Lighter background */
+        background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
         margin: 0;
-        overflow: hidden; /* Hide overflow during animations */
+        overflow-x: hidden;
+        padding: 20px;
     }
+
     .quiz-container {
-        background-color: #ffffff; /* White background */
+        background-color: rgba(255, 255, 255, 0.95);
         padding: 40px;
-        border-radius: 8px; /* Slightly less rounded */
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+        border-radius: var(--border-radius);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         text-align: center;
-        max-width: 700px; /* Wider container */
-        width: 90%;
-        box-sizing: border-box; /* Include padding in width */
-        position: relative; /* For absolute positioning of question area */
+        max-width: 700px;
+        width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
     }
+
+    /* Decorative Elements */
+    .decorative-circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.1;
+        z-index: 0;
+    }
+
+    .circle-1 {
+        width: 200px;
+        height: 200px;
+        background: var(--primary-color);
+        top: -100px;
+        right: -100px;
+    }
+
+    .circle-2 {
+        width: 150px;
+        height: 150px;
+        background: var(--accent-color);
+        bottom: -75px;
+        left: -75px;
+    }
+
+    .circle-3 {
+        width: 100px;
+        height: 100px;
+        background: var(--primary-color);
+        top: 50%;
+        right: -50px;
+    }
+
+    .decorative-wave {
+        position: absolute;
+        height: 100px;
+        width: 200%;
+        background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+        opacity: 0.05;
+        z-index: 0;
+    }
+
+    .wave-1 {
+        top: 20%;
+        transform: rotate(-5deg);
+    }
+
+    .wave-2 {
+        bottom: 20%;
+        transform: rotate(5deg);
+    }
+
     #quiz-title {
-        font-size: 32px; /* Larger title */
-        font-weight: 700; /* Bolder */
-        margin-bottom: 30px;
-        color: #333;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: var(--text-color);
+        position: relative;
+        z-index: 1;
     }
+
+    .title-icon {
+        color: var(--accent-color);
+        margin-right: 10px;
+    }
+
     #question-area {
         margin-bottom: 30px;
-        min-height: 150px; /* More space for questions */
+        min-height: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Center content vertically */
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out; /* Fade animation */
+        justify-content: center;
+        position: relative;
+        z-index: 1;
     }
-    #question-area.fade-out {
-        opacity: 0;
-    }
-    #question-area.fade-in {
-        opacity: 1;
-    }
+
     #question-number {
-        font-size: 16px; /* Smaller question number */
-        color: #777; /* More subtle color */
+        font-size: 1rem;
+        color: var(--primary-color);
         margin-bottom: 15px;
+        font-weight: 500;
     }
+
     #question-text {
-        font-size: 24px; /* Larger question text */
-        font-weight: 600; /* Semi-bold */
+        font-size: 1.5rem;
+        font-weight: 600;
         margin-bottom: 30px;
-        color: #000;
-        line-height: 1.4; /* Improve readability */
+        color: var(--text-color);
+        line-height: 1.4;
+        padding: 0 20px;
     }
+
     #options {
         display: flex;
-        flex-direction: column; /* Stack options vertically */
-        gap: 12px; /* Space between options */
-        width: 100%; /* Make options take full width */
-        align-items: center; /* Center options */
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
     }
+
     #options label {
-        background-color: #f9f9f9; /* Light gray background */
-        padding: 15px 20px; /* More padding */
-        border-radius: 6px; /* Slightly rounded */
+        background-color: var(--secondary-color);
+        padding: 20px;
+        border-radius: var(--border-radius);
         cursor: pointer;
-        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-        width: 100%; /* Full width options */
-        text-align: left; /* Align text left */
-        border: 1px solid #eee; /* Subtle border */
+        transition: var(--transition);
+        width: 100%;
+        text-align: left;
+        border: 2px solid transparent;
         box-sizing: border-box;
+        font-size: 1.1rem;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
     }
+
     #options label:hover {
-        background-color: #e9e9e9; /* Darker hover */
-        border-color: #ddd;
+        background-color: #e8eef7;
+        transform: translateY(-2px);
     }
+
     #options input[type="radio"] {
-        display: none; /* Hide the default radio button */
+        display: none;
     }
+
     #options input[type="radio"]:checked + label {
-        background-color: #007bff; /* Primary blue */
+        background-color: var(--primary-color);
         color: white;
-        border-color: #007bff;
+        border-color: var(--primary-color);
     }
 
     .button-container {
         display: flex;
-        justify-content: space-between; /* Space out buttons */
-        margin-top: 20px; /* Space above the button container */
+        justify-content: space-between;
+        margin-top: 30px;
+        gap: 15px;
     }
 
     .button-container button {
-        padding: 12px 25px; /* More padding */
-        font-size: 18px;
-        border-radius: 5px;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: var(--border-radius);
         cursor: pointer;
-        transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-        border: none; /* Remove default border */
+        transition: var(--transition);
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+        justify-content: center;
     }
 
     #next-button,
     #submit-button {
-        background-color: #17a2b8; /* Info blue color */
+        background-color: var(--primary-color);
         color: white;
-    }
-    #next-button:hover:not(:disabled),
-    #submit-button:hover:not(:disabled) {
-        background-color: #138496; /* Darker hover for info blue */
     }
 
     #prev-button {
-        background-color: #6c757d; /* Secondary gray color */
+        background-color: #6c757d;
         color: white;
     }
-    #prev-button:hover:not(:disabled) {
-        background-color: #5a6268; /* Darker hover for gray */
-    }
 
-    .button-container button:disabled {
-        opacity: 0.5; /* Indicate disabled state */
-        cursor: not-allowed;
+    .button-container button:hover:not(:disabled) {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     #results-area {
         margin-top: 30px;
-        padding-top: 20px;
-        border-top: 1px solid #eee; /* Separator line */
+        padding: 30px;
+        border-radius: var(--border-radius);
+        background-color: var(--secondary-color);
+        position: relative;
+        z-index: 1;
     }
+
+    .results-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .results-icon {
+        font-size: 2rem;
+        color: var(--accent-color);
+    }
+
     #total-score {
-        font-size: 24px;
+        font-size: 2rem;
         font-weight: bold;
-        color: #333;
-        margin-bottom: 15px;
+        color: var(--text-color);
     }
+
     #rating {
-         font-size: 22px;
-         font-weight: bold;
-         color: #007bff;
-         margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 20px;
     }
+
     #rating-details {
-        font-size: 18px;
-        color: #555;
-        line-height: 1.5;
+        font-size: 1.1rem;
+        color: var(--text-color);
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .results-buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #home-button,
+    #contact-button {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: var(--transition);
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #home-button:hover,
+    #contact-button:hover {
+        background-color: #357abd;
+        transform: translateY(-2px);
     }
 
     .social-links {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .social-links p {
-        font-size: 16px;
-        color: #555;
-        margin-bottom: 10px;
+        font-size: 1.1rem;
+        color: var(--text-color);
+        margin-bottom: 20px;
     }
 
-     /* Social Icons Grid Styles from footer */
     .social-icons-grid {
         display: flex;
         justify-content: center;
-        gap: 15px; /* Space between icons */
-        margin-bottom: 1.5rem; /* Added margin below social icons */
+        gap: 15px;
+        flex-wrap: wrap;
     }
 
     .social-icons-grid a {
-        font-size: 24px; /* Icon size */
-        transition: all 0.3s ease; /* Transition for all properties */
-        background-color: #ffffff; /* White background */
-        border-radius: 50%; /* Circular background */
-        width: 40px; /* Fixed width */
-        height: 40px; /* Fixed height */
-        display: inline-flex; /* Use flexbox for centering */
-        justify-content: center; /* Center icon horizontally */
-        align-items: center; /* Center icon vertically */
-        text-decoration: none; /* Remove underline */
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-        border: 1px solid #ddd; /* Subtle border */
+        font-size: 1.2rem;
+        transition: var(--transition);
+        background-color: white;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
     }
-
-    /* Default icon color */
-    .social-icons-grid a i {
-        color: #555; /* Default grey color for icons */
-        transition: color 0.3s ease; /* Smooth color transition */
-    }
-
-    /* Specific brand colors for icons */
-    .social-icons-grid a .fa-facebook-f { color: #1877F2; } /* Facebook Blue */
-    .social-icons-grid a .fa-twitter { color: #1DA1F2; } /* Twitter Blue (optional, based on image it looks grey) */
-    .social-icons-grid a .fa-instagram { color: #C13584; } /* Instagram Pink */
-    .social-icons-grid a .fa-linkedin { color: #0077B5; } /* LinkedIn Blue */
-    .social-icons-grid a .fa-youtube { color: #FF0000; } /* YouTube Red */
-    .social-icons-grid a .fa-tumblr { color: #36465D; } /* Tumblr Dark Blue */
-    /* Keeping other icons grey as per image */
 
     .social-icons-grid a:hover {
-        background-color: #f0f0f0; /* Light grey background on hover */
-        border-color: #ccc; /* Darker border on hover */
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-     .social-icons-grid a:hover i {
-         color: #333; /* Darken icon on hover */
-     }
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .quiz-container {
+            padding: 20px;
+        }
 
-     /* Style for the new Home button */
-    #home-button {
-        background-color: #28a745; /* Green color */
-        color: white;
-        border: none;
-        padding: 12px 25px;
-        font-size: 18px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-top: 20px; /* Space above the button */
+        #quiz-title {
+            font-size: 2rem;
+        }
+
+        #question-text {
+            font-size: 1.2rem;
+            padding: 0 10px;
+        }
+
+        #options label {
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        .button-container {
+            flex-direction: column;
+        }
+
+        .button-container button {
+            width: 100%;
+        }
+
+        #results-area {
+            padding: 20px;
+        }
+
+        #total-score {
+            font-size: 1.8rem;
+        }
+
+        #rating {
+            font-size: 1.3rem;
+        }
+
+        #rating-details {
+            font-size: 1rem;
+        }
+
+        .results-buttons {
+            flex-direction: column;
+        }
+
+        #home-button,
+        #contact-button {
+            width: 100%;
+        }
+
+        .social-icons-grid {
+            gap: 10px;
+        }
+
+        .social-icons-grid a {
+            width: 40px;
+            height: 40px;
+            font-size: 1.1rem;
+        }
     }
 
-    #home-button:hover {
-        background-color: #218838; /* Darker green on hover */
-    }
-
-    /* Added keyframes for animations */
+    /* Animations */
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
@@ -293,6 +469,21 @@
         animation: fadeOut 0.6s ease-out forwards;
     }
 
+    /* Progress indicator */
+    .progress-container {
+        width: 100%;
+        height: 4px;
+        background-color: var(--secondary-color);
+        border-radius: 2px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background-color: var(--primary-color);
+        transition: width 0.3s ease;
+    }
 </style>
 
 <script>
@@ -336,6 +527,7 @@
     const prevButton = document.getElementById('prev-button');
     const submitButton = document.getElementById('submit-button');
     const homeButton = document.getElementById('home-button');
+    const contactButton = document.getElementById('contact-button');
     const questionAreaEl = document.getElementById('question-area');
     const resultsAreaEl = document.getElementById('results-area');
     const totalScoreEl = document.getElementById('total-score');
@@ -443,8 +635,10 @@
             nextButton.style.display = 'none';
             submitButton.style.display = 'none';
             homeButton.style.display = 'inline-block'; // Show home button
+            contactButton.style.display = 'inline-block'; // Show contact button
         } else {
              homeButton.style.display = 'none'; // Hide home button during quiz
+             contactButton.style.display = 'none'; // Hide contact button during quiz
         }
     }
 
@@ -488,15 +682,21 @@
 
         // Show the home button after results are displayed
         homeButton.style.display = 'inline-block'; // Show home button
+        contactButton.style.display = 'inline-block'; // Show contact button
     }
 
     function goToHomePage() {
         window.location.href = '/'; // Redirect to home page
     }
 
+    function goToContactPage() {
+        window.location.href = '/#contact'; // Redirect to contact page
+    }
+
     //nextButton.addEventListener('click', nextQuestion); // Removed auto-advance
     prevButton.addEventListener('click', goToPreviousQuestion);
     homeButton.addEventListener('click', goToHomePage);
+    contactButton.addEventListener('click', goToContactPage);
     submitButton.addEventListener('click', showResults);
 
     // Initial display with fade-in animation
@@ -505,8 +705,11 @@
 
 
     // Tooltip for social icons
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip();
+    document.addEventListener('DOMContentLoaded', function() {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="tooltip"]'));
+        tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
     });
 
 </script>
