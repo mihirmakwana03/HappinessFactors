@@ -56,76 +56,19 @@
 
             <!-- Get the app Column -->
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <div class="col-lg col-md-6 col-sm-12 mb-4">
-                <h5 class="text-white mb-4 footer-heading text-center text-md-left">Get the app</h5>
-                <div class="d-flex flex-column align-items-center">
-                    <a href="{{ url('https://apps.apple.com/us/app/happiness-factors/id1575587044') }}" target="_blank" class="mb-3 app-store-link">
-                        <lottie-player 
-                            src="{{ asset('assets/json/App-Store.json') }}" 
-                            background="transparent" 
-                            speed="0.5" 
-                            class="app-store-animation"
-                            loop 
-                            autoplay>
-                        </lottie-player>
+            <div class="col-lg col-md-6 col-sm-12 mb-4 text-md-left">
+                <h5 class="text-white mb-4 footer-heading">Get the app</h5>
+                <div class="d-flex flex-column align-items-center align-items-md-start">
+                    <a href="{{ url('https://apps.apple.com/us/app/happiness-factors/id1575587044') }}" target="_blank" class="mb-3">
+                        <!-- <img src="{{ asset('assets/img/app-store.webp') }}" alt="Download on the App Store" style="height: 48px;"> -->
+                        <lottie-player src="{{ asset('assets/json/App-Store.json') }}" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -70px -10px;" loop autoplay></lottie-player>
                     </a>
-                    <a href="#" target="_blank" class="google-play-link">
-                        <lottie-player 
-                            src="{{ asset('assets/json/Google-Play.json') }}" 
-                            background="transparent" 
-                            speed="0.5" 
-                            class="google-play-animation"
-                            loop 
-                            autoplay>
-                        </lottie-player>
+                    <a href="#" target="_blank">
+                        <!-- <img src="{{ asset('assets/img/google-play.webp') }}" alt="GET IT ON Google Play" style="height: 48px;"> -->
+                        <lottie-player src="{{ asset('assets/json/Google-Play.json') }}" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -50px -10px;" loop autoplay></lottie-player>
                     </a>
                 </div>
             </div>
-
-            <style>
-                .app-store-animation, .google-play-animation {
-                    width: 170px;
-                    height: 170px;
-                }
-
-                .app-store-animation {
-                    margin: -70px -10px;
-                }
-
-                .google-play-animation {
-                    margin: -50px -10px;
-                }
-
-                @media (max-width: 768px) {
-                    .app-store-animation, .google-play-animation {
-                        width: 140px;
-                        height: 140px;
-                    }
-
-                    .app-store-animation {
-                        margin: -50px -5px;
-                    }
-
-                    .google-play-animation {
-                        margin: -35px -5px;
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .app-store-animation, .google-play-animation {
-                        width: 120px;
-                        height: 120px;
-                    }
-
-                    .app-store-animation {
-                        margin: -40px -5px;
-                    }
-
-                    .google-play-animation {
-                        margin: -30px -5px;
-                    }
-                }
-            </style>
 
             <!-- Connect Column -->
             <div class="col-lg col-md-6 col-sm-12 mb-4">
