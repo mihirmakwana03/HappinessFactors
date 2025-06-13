@@ -56,7 +56,7 @@
 
             <!-- Get the app Column -->
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <div class="col-lg col-md-6 col-sm-12 mb-4 text-center text-md-left">
+            <div class="col-lg col-md-6 col-sm-12 mb-4 text-md-left">
                 <h5 class="text-white mb-4 footer-heading">Get the app</h5>
                 <div class="d-flex flex-column align-items-center align-items-md-start">
                     <a href="{{ url('https://apps.apple.com/us/app/happiness-factors/id1575587044') }}" target="_blank" class="mb-3">
