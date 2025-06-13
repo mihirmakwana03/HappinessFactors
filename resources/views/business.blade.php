@@ -41,7 +41,7 @@
                 <span class="badge badge-pill px-4 py-2 animated-badge mb-3" style="background:linear-gradient(90deg,#4B0082,#9400D3);color:#fff;font-size:1rem;box-shadow:0 2px 12px rgba(75,0,130,0.12);letter-spacing:1px;">
                     Enterprise Solutions
                 </span>
-                <h1 class="display-4 mb-4 fw-bold" style="color: #2d3436; line-height: 1.2;">
+                <h1 class="display-4 mb-4 fw-bold" style="color: #2d3436; line-height: 1.2; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 700;">
                     Transform Your Workplace with <span style="color: #61009b;">Mental Wellness</span>
                 </h1>
                 <p class="lead mb-5" style="color: #636e72; font-weight: 500;">
