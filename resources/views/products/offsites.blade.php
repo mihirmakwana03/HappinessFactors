@@ -5,18 +5,18 @@
 @section('keywords', 'offsites, team building, corporate retreats, team development, happiness factors')
 
 @section('content')
-<div class="container py-5"><br><br><br>
+<div class="container py-5">
     <!-- Hero Section -->
     <div class="offsite-hero mb-5">
         <div class="offsite-hero-content">
-            <h1 class="display-4 font-weight-bold mb-4" style="color: #1565c0;">
+            <h1 class="display-4 font-weight-bold mb-4" style="color: #61009b;">
                 Transformative Offsite Experiences
             </h1>
             <p class="lead mb-4" style="color: #333;">
                 Create lasting connections and boost team performance through our carefully curated offsite programs.
             </p>
             <div class="d-flex gap-3">
-                <a href="/#contact" class="btn btn-primary btn-lg">Plan Your Offsite</a>
+                <a href="/#contact" class="btn btn-primary btn-lg mr-4">Plan Your Offsite</a>
                 <a href="#programs" class="btn btn-outline-primary btn-lg">View Programs</a>
             </div>
         </div>
@@ -30,7 +30,7 @@
     <!-- Featured Programs -->
     <div id="programs" class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Featured Offsite Programs</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Featured Offsite Programs</h2>
         </div>
         @php
         $featuredPrograms = [
@@ -66,19 +66,19 @@
             <div class="card h-100 shadow-lg border-0 hover-card">
                 <div class="position-relative">
                     <img src="{{ $program['image'] }}" class="card-img-top" alt="{{ $program['title'] }}" style="height: 200px; object-fit: cover;">
-                    <div class="position-absolute top-0 end-0 m-3">
-                        <span class="badge bg-primary">{{ $program['duration'] }}</span>
+                    <div class="top-0 end-0 m-3">
+                        <span class="badge" style="background: linear-gradient(90deg, #4B0082, #9400D3);">{{ $program['duration'] }}</span>
                     </div>
                 </div>
                 <div class="card-body p-4">
-                    <h3 class="card-title h4 mb-3" style="color: #1565c0;">{{ $program['title'] }}</h3>
+                    <h3 class="card-title h4 mb-3" style="color: #61009b;">{{ $program['title'] }}</h3>
                     <p class="card-text mb-3">{{ $program['desc'] }}</p>
                     <div class="mb-3">
-                        <small class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>{{ $program['location'] }}</small>
+                        <small class="text-muted"><i class="fas fa-map-marker-alt me-2 mr-2"></i>{{ $program['location'] }}</small>
                     </div>
                     <ul class="list-unstyled mb-4">
                         @foreach($program['features'] as $feature)
-                        <li class="mb-2"><i class="fas fa-check-circle me-2" style="color: #1565c0;"></i>{{ $feature }}</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2 mr-2" style="color: #61009b;"></i>{{ $feature }}</li>
                         @endforeach
                     </ul>
                     <a href="#" class="btn btn-primary w-100">Learn More</a>
@@ -91,32 +91,32 @@
     <!-- Program Benefits -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Why Choose Our Offsites?</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Why Choose Our Offsites?</h2>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-users fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-users fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Team Building</h3>
                 <p>Strengthen relationships and build trust among team members.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-lightbulb fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-lightbulb fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Innovation</h3>
                 <p>Spark creativity and drive innovation through collaborative activities.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-chart-line fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-chart-line fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Performance</h3>
                 <p>Enhance team performance and productivity through strategic planning.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-heart fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-heart fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Well-being</h3>
                 <p>Promote team well-being and work-life balance.</p>
             </div>
@@ -126,7 +126,7 @@
     <!-- Testimonials -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Success Stories</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Success Stories</h2>
         </div>
         @php
         $testimonials = [
@@ -157,7 +157,7 @@
                 <div class="card-body p-4">
                     <img src="{{ $testimonial['image'] }}" alt="{{ $testimonial['name'] }}" 
                          class="img-fluid rounded mb-3" style="height: 150px; object-fit: cover;">
-                    <p class="card-text mb-3"><i class="fas fa-quote-left me-2" style="color: #1565c0;"></i>{{ $testimonial['quote'] }}</p>
+                    <p class="card-text mb-3"><i class="fas fa-quote-left me-2" style="color: #61009b;"></i>{{ $testimonial['quote'] }}</p>
                     <h5 class="card-title mb-1">{{ $testimonial['name'] }}</h5>
                     <small class="text-muted">{{ $testimonial['role'] }}</small>
                 </div>
@@ -170,7 +170,7 @@
     <div class="row">
         <div class="col-12">
             <div class="p-5 rounded text-center" style="background: linear-gradient(135deg, #bbdefb 0%, #e3f2fd 100%);">
-                <h2 class="mb-4" style="color: #1565c0;">Ready to Transform Your Team?</h2>
+                <h2 class="mb-4" style="color: #61009b;">Ready to Transform Your Team?</h2>
                 <p class="lead mb-4">Let's create a custom offsite experience that meets your team's unique needs.</p>
                 <a href="/#contact" class="btn btn-primary btn-lg">Contact Us Today</a>
             </div>
@@ -213,7 +213,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #61009b, #0d47a1);
     border: none;
     padding: 10px 20px;
     font-weight: 600;
@@ -221,8 +221,8 @@
 }
 
 .btn-outline-primary {
-    border: 2px solid #1565c0;
-    color: #1565c0;
+    border: 2px solid #61009b;
+    color: #61009b;
     padding: 10px 20px;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -231,6 +231,9 @@
 .btn-primary:hover, .btn-outline-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(21, 101, 192, 0.3);
+    color: white;
+    background-color: #61009b;
+    border: #61009b;
 }
 
 .card {

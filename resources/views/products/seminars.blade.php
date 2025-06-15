@@ -9,7 +9,7 @@
     <!-- Hero Section -->
     <div class="seminar-hero mb-5">
         <div class="seminar-hero-content">
-            <h1 class="display-4 font-weight-bold mb-4" style="color: #1565c0;">
+            <h1 class="display-4 font-weight-bold mb-4" style="color: #61009b;">
                 Transformative Seminars
             </h1>
             <p class="lead mb-4" style="color: #333;">
@@ -27,7 +27,7 @@
     <!-- Featured Seminars -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Featured Seminars</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Featured Seminars</h2>
         </div>
         @php
         $featuredSeminars = [
@@ -63,12 +63,12 @@
             <div class="card h-100 shadow-lg border-0 hover-card">
                 <div class="position-relative">
                     <img src="{{ $seminar['image'] }}" class="card-img-top" alt="{{ $seminar['title'] }}" style="height: 200px; object-fit: cover;">
-                    <div class="position-absolute top-0 end-0 m-3">
-                        <span class="badge bg-primary">{{ $seminar['duration'] }}</span>
+                    <div class="top-0 end-0 mt-3 ml-3">
+                        <span class="badge" style="background: linear-gradient(90deg, #4B0082, #9400D3);">{{ $seminar['duration'] }}</span>
                     </div>
                 </div>
                 <div class="card-body p-4">
-                    <h3 class="card-title h4 mb-3" style="color: #1565c0;">{{ $seminar['title'] }}</h3>
+                    <h3 class="card-title h4 mb-3" style="color: #61009b;">{{ $seminar['title'] }}</h3>
                     <p class="card-text mb-3">{{ $seminar['desc'] }}</p>
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <small class="text-muted"><i class="fas fa-calendar-alt me-2"></i>{{ $seminar['date'] }}</small>
@@ -84,32 +84,32 @@
     <!-- Seminar Benefits -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Why Attend Our Seminars?</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Why Attend Our Seminars?</h2>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-chalkboard-teacher fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-chalkboard-teacher fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Expert Speakers</h3>
                 <p>Learn from industry leaders and experienced professionals.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-hands-helping fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-hands-helping fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Interactive Sessions</h3>
                 <p>Engage in hands-on activities and group discussions.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-network-wired fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-network-wired fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Networking</h3>
                 <p>Connect with like-minded professionals and expand your network.</p>
             </div>
         </div>
         <div class="col-md-3 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-certificate fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-certificate fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h5 mb-3">Certification</h3>
                 <p>Receive professional certification upon completion.</p>
             </div>
@@ -119,7 +119,7 @@
     <!-- Testimonials -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">What Our Participants Say</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">What Our Participants Say</h2>
         </div>
         @php
         $testimonials = [
@@ -150,7 +150,7 @@
                 <div class="card-body p-4 text-center">
                     <img src="{{ $testimonial['image'] }}" alt="{{ $testimonial['name'] }}" 
                          class="rounded-circle mb-3" style="width: 80px; height: 80px; object-fit: cover;">
-                    <p class="card-text mb-3"><i class="fas fa-quote-left me-2" style="color: #1565c0;"></i>{{ $testimonial['quote'] }}</p>
+                    <p class="card-text mb-3"><i class="fas fa-quote-left me-2" style="color: #61009b;"></i>{{ $testimonial['quote'] }}</p>
                     <h5 class="card-title mb-1">{{ $testimonial['name'] }}</h5>
                     <small class="text-muted">{{ $testimonial['role'] }}</small>
                 </div>
@@ -163,7 +163,7 @@
     <div class="row">
         <div class="col-12">
             <div class="p-5 rounded text-center" style="background: linear-gradient(135deg, #bbdefb 0%, #e3f2fd 100%);">
-                <h2 class="mb-4" style="color: #1565c0;">Ready to Transform Your Life?</h2>
+                <h2 class="mb-4" style="color: #61009b;">Ready to Transform Your Life?</h2>
                 <p class="lead mb-4">Join our upcoming seminars and take the first step towards personal and professional growth.</p>
                 <a href="/#contact" class="btn btn-primary btn-lg">Book Your Seat Now</a>
             </div>
@@ -206,7 +206,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #61009b, #0d47a1);
     border: none;
     padding: 10px 20px;
     font-weight: 600;

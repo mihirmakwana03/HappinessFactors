@@ -21,18 +21,18 @@
              alt="Happiness Courses Banner" 
              class="img-fluid rounded shadow-lg mb-4"
              style="max-height: 320px; object-fit: cover; border-radius: 10px;">
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary shadow" style="font-size: 1rem; padding: 0.7em 1.2em; left: 90%; top: 20%;">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill shadow" style="font-size: 1rem; padding: 0.7em 1.2em; left: 90%; top: 20%; background: linear-gradient(90deg, #4B0082, #9400D3);">
             <i class="fa-solid fa-star"></i> New!
             </span>
         </div>
-        <h1 class="display-4 font-weight-bold mt-3" style="color: #1565c0; letter-spacing: 2px;">
+        <h1 class="display-4 font-weight-bold mt-3" style="color: #61009b; letter-spacing: 2px;">
             <span style="background: linear-gradient(90deg, #bbdefb 40%, #e3f2fd 100%); padding: 0 15px; border-radius: 8px;">
                 Discover Our Courses
             </span>
         </h1>
         <p class="lead mt-3 mb-4" style="color: #555; max-width: 600px; margin: 0 auto;">
-            Unlock your potential and boost your happiness with our <span style="color: #1565c0; font-weight: 600;">expertly designed</span> courses.<br>
-            <span style="color: #1976d2;"><i class="fa-solid fa-arrow-down"></i> Start your journey today!</span>
+            Unlock your potential and boost your happiness with our <span style="color: #61009b; font-weight: 600;">expertly designed</span> courses.<br>
+            <span style="color: #61009b;"><i class="fa-solid fa-arrow-down"></i> Start your journey today!</span>
         </p>
     </div>
     @endsection
@@ -85,11 +85,11 @@
                 <img src="{{ $course['image'] }}" class="card-img-top" alt="{{ $course['title'] }}" style="height: 220px; object-fit: cover; border-top-left-radius: 15px; border-top-right-radius: 15px;">
                 <div class="card-body text-center p-4">
                     <div class="mb-3">
-                        <i class="{{ $course['icon'] }} fa-3x" style="color: #1565c0; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);"></i>
+                        <i class="{{ $course['icon'] }} fa-3x" style="color: #61009b; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);"></i>
                     </div>
                     <h5 class="card-title font-weight-bold mb-3" style="color: #0d47a1; font-size: 1.4rem;">{{ $course['title'] }}</h5>
                     <p class="card-text mb-4" style="color: #333; font-size: 1rem; line-height: 1.6;">{{ $course['desc'] }}</p>
-                    <a href="#" class="btn btn-primary mt-2 px-4 py-2" style="background: linear-gradient(135deg, #1565c0, #0d47a1); border: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);">Learn More</a>
+                    <a href="#" class="btn btn-primary mt-2 px-4 py-2" style="background: linear-gradient(135deg, #61009b, #0d47a1); border: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2);">Learn More</a>
                 </div>
             </div>
         </div>

@@ -197,7 +197,7 @@
                 </a>
                 <div class="mt-6" style="display: flex; justify-content: center; align-items: center;">
                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="{{ asset('assets/json/Scroll-Down.json') }}" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -50px -10px;" loop autoplay></lottie-player>
+                <lottie-player src="{{ asset('assets/json/Scroll-Down.json') }}" background="transparent" speed="1" style="width: auto; height: auto;" loop autoplay></lottie-player>
                 </div>
             </div>
         </div>

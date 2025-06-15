@@ -5,14 +5,14 @@
 @section('keywords', 'webinars, online learning, professional development, well-being, happiness factors')
 
 @section('content')
-<div class="container py-5"><br><br><br>
+<div class="container py-5">
     <!-- Hero Section -->
     <div class="text-center mb-5">
         <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
              alt="Webinars Banner" 
              class="img-fluid rounded shadow-lg mb-4"
              style="max-height: 400px; object-fit: cover; width: 100%;">
-        <h1 class="display-4 font-weight-bold mb-3" style="color: #1565c0;">
+        <h1 class="display-4 font-weight-bold mb-3" style="color: #61009b;">
             <span style="background: linear-gradient(90deg, #bbdefb 40%, #e3f2fd 100%); padding: 0 15px; border-radius: 8px;">
                 Expert-Led Webinars
             </span>
@@ -25,7 +25,7 @@
     <!-- Featured Webinars -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Featured Webinars</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Featured Webinars</h2>
         </div>
         @php
         $featuredWebinars = [
@@ -58,10 +58,10 @@
             <div class="card h-100 shadow-lg border-0 hover-card">
                 <img src="{{ $webinar['image'] }}" class="card-img-top" alt="{{ $webinar['title'] }}" style="height: 200px; object-fit: cover;">
                 <div class="card-body p-4">
-                    <h3 class="card-title h4 mb-3" style="color: #1565c0;">{{ $webinar['title'] }}</h3>
+                    <h3 class="card-title h4 mb-3" style="color: #61009b;">{{ $webinar['title'] }}</h3>
                     <p class="card-text mb-3">{{ $webinar['desc'] }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-primary">{{ $webinar['duration'] }}</span>
+                        <span class="badge" style="background: linear-gradient(90deg, #4B0082, #9400D3);">{{ $webinar['duration'] }}</span>
                         <small class="text-muted">{{ $webinar['date'] }}</small>
                     </div>
                     <a href="#" class="btn btn-primary mt-3 w-100">Register Now</a>
@@ -74,7 +74,7 @@
     <!-- Upcoming Webinars -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Upcoming Webinars</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Upcoming Webinars</h2>
         </div>
         @php
         $upcomingWebinars = [
@@ -107,10 +107,10 @@
             <div class="card h-100 shadow-lg border-0 hover-card">
                 <img src="{{ $webinar['image'] }}" class="card-img-top" alt="{{ $webinar['title'] }}" style="height: 200px; object-fit: cover;">
                 <div class="card-body p-4">
-                    <h3 class="card-title h4 mb-3" style="color: #1565c0;">{{ $webinar['title'] }}</h3>
+                    <h3 class="card-title h4 mb-3" style="color: #61009b;">{{ $webinar['title'] }}</h3>
                     <p class="card-text mb-3">{{ $webinar['desc'] }}</p>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span class="badge bg-primary">{{ $webinar['duration'] }}</span>
+                        <span class="badge" style="background: linear-gradient(90deg, #4B0082, #9400D3);">{{ $webinar['duration'] }}</span>
                         <small class="text-muted">{{ $webinar['date'] }}</small>
                     </div>
                     <a href="#" class="btn btn-primary mt-3 w-100">Register Now</a>
@@ -123,25 +123,25 @@
     <!-- Benefits Section -->
     <div class="row mb-5">
         <div class="col-12">
-            <h2 class="text-center mb-4" style="color: #1565c0;">Why Join Our Webinars?</h2>
+            <h2 class="text-center mb-4" style="color: #61009b;">Why Join Our Webinars?</h2>
         </div>
         <div class="col-md-4 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-users fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-users fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h4 mb-3">Expert-Led Sessions</h3>
                 <p>Learn from industry experts with years of experience in their respective fields.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-comments fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-comments fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h4 mb-3">Interactive Learning</h3>
                 <p>Engage in real-time discussions and get your questions answered directly.</p>
             </div>
         </div>
         <div class="col-md-4 mb-4">
             <div class="text-center p-4">
-                <i class="fas fa-certificate fa-3x mb-3" style="color: #1565c0;"></i>
+                <i class="fas fa-certificate fa-3x mb-3" style="color: #61009b;"></i>
                 <h3 class="h4 mb-3">Certification</h3>
                 <p>Receive certificates of completion to enhance your professional profile.</p>
             </div>
@@ -152,7 +152,7 @@
     <div class="row">
         <div class="col-12 text-center">
             <div class="p-5 rounded" style="background: linear-gradient(135deg, #bbdefb 0%, #e3f2fd 100%);">
-                <h2 class="mb-4" style="color: #1565c0;">Ready to Transform Your Life?</h2>
+                <h2 class="mb-4" style="color: #61009b;">Ready to Transform Your Life?</h2>
                 <p class="lead mb-4">Join our community of learners and start your journey to personal and professional growth.</p>
                 <a href="/#contact" class="btn btn-primary btn-lg">Contact Us Today</a>
             </div>
@@ -176,7 +176,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #1565c0, #0d47a1);
+    background: linear-gradient(135deg, #61009b, #0d47a1);
     border: none;
     padding: 10px 20px;
     font-weight: 600;
