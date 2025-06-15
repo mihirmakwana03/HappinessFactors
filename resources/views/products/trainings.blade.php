@@ -99,7 +99,7 @@
     .training-hero-title {
         font-size: 2.7rem;
         font-weight: 800;
-        color: #0275d8;
+        color: #61009b;
         margin-bottom: 1.1rem;
         letter-spacing: -1px;
         text-shadow: 0 2px 12px rgba(2,117,216,0.08);
@@ -126,7 +126,7 @@
 
     .training-hero-benefits li {
         font-size: 1.08rem;
-        color: #0275d8;
+        color: #61009b;
         font-weight: 600;
         display: flex;
         align-items: center;
@@ -141,7 +141,7 @@
     .training-hero-benefits li i {
         margin-right: 0.7em;
         font-size: 1.3em;
-        color: #0275d8;
+        color: #61009b;
         filter: drop-shadow(0 1px 2px rgba(2,117,216,0.12));
     }
 
@@ -151,7 +151,7 @@
 
     .training-hero-cta {
         display: inline-block;
-        background: linear-gradient(90deg, #0275d8 0%, #0056b3 100%);
+        background: linear-gradient(90deg, #61009b 0%, #0056b3 100%);
         color: #fff;
         font-weight: 700;
         font-size: 1.13rem;
@@ -165,7 +165,7 @@
     }
 
     .training-hero-cta:hover {
-        background: linear-gradient(90deg, #0056b3 0%, #0275d8 100%);
+        background: linear-gradient(90deg, #0056b3 0%, #61009b 100%);
         color: #fff;
         transform: translateY(-2px) scale(1.04);
         box-shadow: 0 8px 28px rgba(2,117,216,0.19);
@@ -218,7 +218,7 @@
             <h3>🧠 From Blah to Boom: Disrupting Unhappiness at Work</h3>
             <p><em>"Happiness is not by chance, but by choice."</em> – Jim Rohn</p>
             <p>Happy employees are motivated, loyal, engaged and productive.</p>
-            <a href="trainings/disrupting-unhappiness" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/disrupting-unhappiness') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -226,7 +226,7 @@
             <div class="card-icon"><i class="fas fa-brain"></i></div>
             <h3>🌪️ Calm in the Chaos: Mental Wellness for Uncertain Times</h3>
             <p>In these times of a global pandemic, people are forced to stay at home, only go out when necessary, maintain social distancing, wear masks while outside.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/mental-wellness') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -235,7 +235,7 @@
             <h3>🌟 Leading with Positivity: Building Happy Teams</h3>
             <p><em>"The role of a leader is not to put greatness into people, but to elicit it, for the greatness is there already."</em> – John Buchan</p>
             <p>Discover how positive leadership inspires trust, boosts morale, and creates a culture where teams thrive and happiness drives results.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/leading-positivity') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -245,7 +245,7 @@
             <p><em>"If you cannot manage stress, you will not manage success."</em> – Buddhist proverb</p>
             <p>Many times, life throws us curveballs or unexpected things happen, that lead us to stress...</p>
             <p class="note">*Offered as both a group training and one-on-one coaching package</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/lead-with-smile') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -254,7 +254,7 @@
             <h3>💥 Stressed But Still Awesome: Mastering Stress Like a Pro</h3>
             <p><em>"Conflict is inevitable, but combat is optional."</em> – Max Lucardo</p>
             <p>By our very nature, human beings are unique. They have their own thought patterns, opinions, lifestyle and deciding what's wrong or what's right...</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/stress-mastery') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -262,7 +262,7 @@
             <div class="card-icon"><i class="fas fa-chart-line"></i></div>
             <h3>🤝 Squash the Drama: Conflict to Connection in Teams</h3>
             <p><em>"Productivity is less about what you do with your time. And more about how you run your mind."</em> – Robin Sharma</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/conflict-resolution') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -270,7 +270,7 @@
             <div class="card-icon"><i class="fas fa-building"></i></div>
             <h3>🚀 Joy = Results: The Happy Path to High Performance</h3>
             <p>A company's culture defines the company's success, employee motivation, core beliefs, behavior norms, accepted work practices and the different styles of operation.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/happiness-advantage') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -278,7 +278,7 @@
             <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
             <h3>🎉 Ready to Energize Your Workplace?</h3>
             <p>Innovation is the bottom line for the success of any organization. It can transform insights into growth, build and launch new products, transform customer experiences.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/happiness-edge') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -287,7 +287,7 @@
             <h3>🙌 Building Engagement: Fostering a Happy Workplace</h3>
             <p><em>"To win in the marketplace you must first win in the workplace."</em> – Doug Conant</p>
             <p>Discover actionable strategies to boost employee engagement, create a sense of belonging, and inspire teams to contribute their best every day.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/happiness-factor') }}" class="read-more">Read more</a>
         </div>
 
         <div class="training-card">
@@ -296,7 +296,7 @@
             <h3>🎯 Purposeful Progress: Goal Setting for Team Success</h3>
             <p><em>"Setting goals is the first step in turning the invisible into the visible."</em> – Tony Robbins</p>
             <p>Learn how to set meaningful goals, align team objectives, and drive motivation through clarity and shared purpose.</p>
-            <a href="#" class="read-more">Read more</a>
+            <a href="{{ url('products/trainings/happiness-formula') }}" class="read-more">Read more</a>
         </div>
     </div>
 </div>
@@ -366,7 +366,7 @@
     }
 
     .btn-primary {
-        background-color: #0275d8;
+        background-color: #61009b;
         color: white;
         padding: 12px 24px;
         border-radius: 30px;
@@ -413,12 +413,12 @@
         left: 0;
         height: 5px;
         width: 100%;
-        background: linear-gradient(to right, #0275d8, #5bc0de);
+        background: linear-gradient(to right, #61009b, #5bc0de);
     }
 
     .card-icon {
         font-size: 2.5rem;
-        color: #0275d8;
+        color: #61009b;
         margin-bottom: 1.5rem;
         text-align: center;
     }
@@ -444,7 +444,7 @@
     }
 
     .read-more {
-        color: #0275d8;
+        color: #61009b;
         text-decoration: none;
         font-weight: 600;
         margin-top: auto;

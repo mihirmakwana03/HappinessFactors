@@ -101,7 +101,7 @@
 
     .product-icon {
         font-size: 2.5rem;
-        color: #4f46e5;
+        color: #61009b;
         margin-bottom: 1rem;
         transition: transform 0.3s ease;
     }
@@ -118,7 +118,7 @@
     }
 
     .product-card:hover .product-title {
-        color: #4f46e5;
+        color: #61009b;
     }
 
     .product-desc {
@@ -129,7 +129,7 @@
 
     .product-btn {
         align-self: flex-start;
-        background: #4f46e5;
+        background: #61009b;
         color: #fff;
         border: none;
         border-radius: 0.5rem;
@@ -192,16 +192,20 @@
                 <p class="lead text-white mb-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
                     Discover transformative services to nurture your mental wellness and cultivate lasting happiness
                 </p>
-                <a href="#products" class="btn btn-primary btn-lg px-5 py-3" style="background: linear-gradient(135deg, #1565c0, #0d47a1); border: none; border-radius: 30px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2); text-decoration: none;">
+                <a href="#products" class="btn btn-primary btn-lg px-5 py-3" style="background: linear-gradient(90deg, #4B0082, #9400D3); border: none; border-radius: 30px; font-weight: 600; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2); text-decoration: none;">
                     Explore Products
                 </a>
-                <div class="mt-6 animate__animated animate__bounce animate__infinite" style="animation-duration: 2.5s;">
-                    <i class="fas fa-chevron-down text-white" style="font-size: 1.5rem;"></i>
+                <div class="mt-6" style="display: flex; justify-content: center; align-items: center;">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="{{ asset('assets/json/Scroll-Down.json') }}" background="transparent" speed="0.5" style="width: 170px; height: 170px; margin: -50px -10px;" loop autoplay></lottie-player>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Add Lottie Player Script -->
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
 <!-- Products Grid Section -->
 <section class="products-section bg-gray-50 py-5" id="products">

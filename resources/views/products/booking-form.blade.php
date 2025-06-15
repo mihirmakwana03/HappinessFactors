@@ -1,0 +1,1 @@
+<groovemail-form-embed permalink="Njg0ZDcxYjYwYWI1YjgzODhhMjMzMjgz" variation="684d76d79aa3b601075cbc84"></groovemail-form-embed><script src="https://app.groove.cm/groovemail/embed/app.js"></script>

@@ -1,17 +1,17 @@
 @extends('main')
 
-@section('title', 'Coaching - Happiness Factors')
-@section('description', 'Coaching services to help you achieve your goals and improve your well-being. Personalized coaching sessions tailored to your needs.')
-@section('keywords', 'coaching, personal development, well-being, happiness factors, coaching services')
+@section('title', 'One-on-One Coaching - Happiness Factors')
+@section('description', 'Personalized one-on-one coaching sessions to help you achieve your goals and improve your well-being. Tailored guidance for your unique journey.')
+@section('keywords', 'one-on-one coaching, personal development, well-being, happiness factors, coaching services')
 
 @section('content')
 
 <div class="container py-5"><br><br><br>
     <div class="row mb-5">
         <div class="col-md-10 mx-auto text-center">
-            <img src="https://images.unsplash.com/photo-1475506631979-72412c606f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Coaching" class="img-fluid rounded mb-4" style="max-height: 300px; object-fit: cover;">
-            <h1 class="display-4 mb-3">Personal Coaching Services</h1>
-            <p class="lead">Tailored guidance to help you achieve greater well-being and success in all areas of life.</p>
+            <img src="https://images.unsplash.com/photo-1475506631979-72412c606f4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="One-on-One Coaching" class="img-fluid rounded mb-4" style="max-height: 300px; object-fit: cover;">
+            <h1 class="display-4 mb-3">One-on-One Coaching</h1>
+            <p class="lead">Experience personalized guidance tailored to your unique journey towards greater well-being and success.</p>
             <hr class="my-4 w-25 mx-auto">
         </div>
     </div>
@@ -19,23 +19,22 @@
     <div class="row mb-4">
         <div class="col-lg-6 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="One-on-one Coaching">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Anxiety Coaching">
                 <div class="card-body p-4">
-                    <h3 class="card-title text-primary"><i class="bi bi-person-check me-2"></i>One-on-one Happiness</h3>
-                    <p class="card-text">We offer individual coaching to achieve greater emotional wellbeing with focus on all key areas of life – relationships, career, health and mental clarity.</p>
-                    <p><strong>Contact us to book your 30 minute session now.</strong></p>
-                    <a href="/#contact" class="btn btn-outline-primary">Book a Session</a>
+                    <h3 class="card-title text-primary"><i class="bi bi-heart-pulse me-2"></i>Anxiety Coaching</h3>
+                    <p class="card-text fst-italic">"The way you speak to yourself matters." – Unknown</p>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-6 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Anxiety Coaching">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Happiness Coaching">
                 <div class="card-body p-4">
-                    <h3 class="card-title text-primary"><i class="bi bi-heart-pulse me-2"></i>Anxiety Coaching</h3>
-                    <p class="card-text fst-italic">"The way you speak to yourself matters." – Unknown</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <h3 class="card-title text-primary"><i class="bi bi-emoji-smile me-2"></i>Happiness Coaching</h3>
+                    <p class="card-text fst-italic">"I try to keep everyone happy but that makes me unhappy." – Anita, Happiness Factors</p>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -44,22 +43,23 @@
     <div class="row mb-4">  
         <div class="col-lg-6 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Happiness Coaching">
-                <div class="card-body p-4">
-                    <h3 class="card-title text-primary"><i class="bi bi-emoji-smile me-2"></i>Happiness Coaching</h3>
-                    <p class="card-text fst-italic">"I try to keep everyone happy but that makes me unhappy." – Anita, Happiness Factors</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Well For Life">
+                <div class="card-body p-4"> 
+                    <h3 class="card-title text-primary"><i class="bi bi-flower1 me-2"></i>Well For Life</h3>
+                    <p class="card-text fst-italic">"The higher your energy level, the more efficient your body. The more efficient your body, the better you feel and the more you will use your talent to produce outstanding results." – Tony Robbins</p>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-6 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Well For Life">
+                <img src="https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Energetic For Life">
                 <div class="card-body p-4"> 
-                    <h3 class="card-title text-primary"><i class="bi bi-flower1 me-2"></i>Well For Life</h3>
-                    <p class="card-text fst-italic">"The higher your energy level, the more efficient your body. The more efficient your body, the better you feel and the more you will use your talent to produce outstanding results." – Tony Robbins</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <h3 class="card-title text-primary"><i class="bi bi-lightning me-2"></i>Energetic For Life</h3>
+                    <p class="card-text fst-italic">"The energy of the mind is the essence of life." – Aristotle</p>
+                    <p>For people who have met our founder, they know what energy looks like! Energy is the very essence for a happy life.</p>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                 <div class="card-body p-4"> 
                     <h3 class="card-title text-primary"><i class="bi bi-people me-2"></i>Effective Relationships</h3>
                     <p class="card-text fst-italic">"A great relationship is about two things: first, appreciating the similarities and second, respecting the differences." – Unknown</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
                     <h3 class="card-title text-primary"><i class="bi bi-trophy me-2"></i>Happiness And Success 101</h3>
                     <p class="card-text fst-italic">"Your success and happiness lie in you." – Helen Keller</p>
                     <p>Having goals and a purpose in life are essential to happiness and success.</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                     <p class="card-text fst-italic">"If you cannot manage stress, you will not manage success." – Buddhist proverb</p>
                     <p>Many times, life throws us curveballs or unexpected things happen, that lead us to stress and if it is not managed well, it can lead to both physical and emotional issues.</p>
                     <p class="small">*Offered as both a one-on-one coaching and group training package</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -123,31 +123,31 @@
                     <h3 class="card-title text-primary"><i class="bi bi-briefcase me-2"></i>Work-Life Integration</h3>
                     <p class="card-text fst-italic">"Don't get so busy making a living that you forget to make a life." – Dolly Parton</p>
                     <p>Managing responsibilities at work and chores and errands at home, while making time for family, friends and self-care, are difficult enough on regular days.</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
 
         <div class="col-lg-4 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Energetic For Life">
-                <div class="card-body p-4"> 
-                    <h3 class="card-title text-primary"><i class="bi bi-lightning me-2"></i>Energetic For Life</h3>
-                    <p class="card-text fst-italic">"The energy of the mind is the essence of life." – Aristotle</p>
-                    <p>For people who have met our founder, they know what energy looks like! Energy is the very essence for a happy life.</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Achievement Of Goals">
+                <img src="https://images.unsplash.com/photo-1507120410856-1f35574c3b45?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Achievement Of Goals">
                 <div class="card-body p-4">
                     <h3 class="card-title text-primary"><i class="bi bi-bullseye me-2"></i>Achievement Of Goals</h3>
                     <p class="card-text fst-italic">"You should set goals beyond your reach so you always have something to live for." – Ted Turner</p>
                     <p>Setting a goal and a timeline to achieve it is very important, and if your goal is really big, chunking it down...</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm border-0 hover-card">  
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Shining Confidence">
+                <div class="card-body p-4">
+                    <h3 class="card-title text-primary"><i class="bi bi-stars me-2"></i>Shining Confidence</h3>
+                    <p class="card-text fst-italic">"Confidence is the most beautiful thing you can possess." – Sabrina Carpenter</p>
+                    <p>When we have confidence in ourselves, we trust our own abilities and when we have confidence in others, we have faith that they will deliver what they promised.</p>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>
@@ -156,24 +156,12 @@
     <div class="row">
         <div class="col-lg-6 mb-4">
             <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Shining Confidence">
-                <div class="card-body p-4"> 
-                    <h3 class="card-title text-primary"><i class="bi bi-stars me-2"></i>Shining Confidence</h3>
-                    <p class="card-text fst-italic">"Confidence is the most beautiful thing you can possess." – Sabrina Carpenter</p>
-                    <p>When we have confidence in ourselves, we trust our own abilities and when we have confidence in others, we have faith that they will deliver what they promised.</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-6 mb-4">
-            <div class="card h-100 shadow-sm border-0 hover-card">  
-                <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Reframing For A Happy Life">
+                <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Reframing For A Happy Life">
                 <div class="card-body p-4"> 
                     <h3 class="card-title text-primary"><i class="bi bi-arrow-repeat me-2"></i>Reframing For A Happy Life</h3>
                     <p class="card-text fst-italic">"Our key to transforming anything lies in our ability to reframe it." – Marianne Williamson</p>
                     <p>There are many situations in life that are beyond our control.</p>
-                    <a href="#" class="btn btn-link p-0">Read more…</a>
+                    <a href="{{ route('booking.form') }}" class="btn btn-outline-primary mt-3">Book a Session</a>
                 </div>
             </div>
         </div>

@@ -34,7 +34,7 @@
 <?php $__env->startSection('content'); ?>
 
 <!-- New Section -->
-<section class="py-5 border-bottom position-relative overflow-hidden" style="margin-top: 100px;">
+<section class="py-5 border-bottom position-relative overflow-hidden">
     <!-- SVG Decorative Line Left -->
     <svg class="bg-line-svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="position: absolute; top: -100px; left: 0; width: 400px; height: 300px; pointer-events: none; z-index: 0;">
         <path class="bg-line-path" d="M0,150 C100,50 300,250 400,150" fill="none" stroke="rgba(97, 0, 155, 0.3)" stroke-width="4"></path>

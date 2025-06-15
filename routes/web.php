@@ -33,6 +33,16 @@ Route::get('/privacy-policy', function () {
 // Products---------------------------------------------------------------------------------------------------------
 
     Route::view('products/trainings', 'products.trainings');
+    Route::view('products/trainings/disrupting-unhappiness', 'products.trainings.disrupting-unhappiness');
+    Route::view('products/trainings/mental-wellness', 'products.trainings.mental-wellness');
+    Route::view('products/trainings/leading-positivity', 'products.trainings.leading-positivity');
+    Route::view('products/trainings/lead-with-smile', 'products.trainings.lead-with-smile');
+    Route::view('products/trainings/stress-mastery', 'products.trainings.stress-mastery');
+    Route::view('products/trainings/conflict-resolution', 'products.trainings.conflict-resolution');
+    Route::view('products/trainings/happiness-advantage', 'products.trainings.happiness-advantage');
+    Route::view('products/trainings/happiness-edge', 'products.trainings.happiness-edge');
+    Route::view('products/trainings/happiness-factor', 'products.trainings.happiness-factor');
+    Route::view('products/trainings/happiness-formula', 'products.trainings.happiness-formula');
     Route::view('products/courses', 'products.courses');
     Route::view('products/coaching', 'products.coaching');
     Route::view('products/webinars', 'products.webinars');
@@ -66,3 +76,7 @@ Route::post('/contact/send', [ContactController::class, 'send'])
 Route::get('/quiz', function () {
     return view('quiz');
 });
+
+Route::get('/booking-form', function () {
+    return view('products.booking-form');
+})->name('booking.form');

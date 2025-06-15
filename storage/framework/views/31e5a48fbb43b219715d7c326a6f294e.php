@@ -127,6 +127,13 @@
 </footer>
 
 <style>
+    body {
+        padding-top: 15vh;
+        padding-bottom: 0vh;
+        min-height: 100vh;
+        position: relative;
+    }
+
     .footer {
         background: linear-gradient(135deg, #3a6073, #16222a);
         color: rgba(255, 255, 255, 0.8);

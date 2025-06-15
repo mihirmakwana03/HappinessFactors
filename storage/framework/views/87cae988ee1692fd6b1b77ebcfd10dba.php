@@ -78,20 +78,37 @@
 </header>
 
 <style>
+    /* Add body padding to prevent content from hiding under fixed navbar */
+    body {
+        padding-top: 15vh; /* Height of navbar + some extra space */
+        padding-bottom: 15vh;
+        min-height: 100vh;
+        position: relative;
+    }
+
     .header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 9999; /* Ensure navbar stays on top */
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.95));
         backdrop-filter: blur(10px);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
     }
 
-    .header:hover {
-        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2), 0 3px 15px rgba(0, 0, 0, 0.15);
+    .header-section {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-navbar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .navbar-logo img {
@@ -291,11 +308,11 @@
     /* Mobile Responsive Styles */
     @media (max-width: 991.98px) {
         body {
-            padding-top: 70px;
+            padding-top: 70px; /* Slightly smaller padding for mobile */
         }
 
         .header {
-            background: rgba(255, 255, 255, 0.98);
+            height: 70px; /* Slightly smaller height for mobile */
         }
 
         .navbar-logo img {

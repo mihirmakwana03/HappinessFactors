@@ -24,7 +24,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<section class="py-5 border-bottom position-relative overflow-hidden" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin-top: 100px;">
+<section class="py-5 border-bottom position-relative overflow-hidden" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
     <!-- Decorative Elements -->
     <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;">
         <svg class="position-absolute" style="top: 10%; left: 5%; opacity: 0.1;" width="100" height="100" viewBox="0 0 100 100">
@@ -59,10 +59,8 @@
                 </div>
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-items-center order-1 order-lg-2 mb-5 mb-lg-0">
-                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                <dotlottie-player src="https://lottie.host/ad344c6a-39d3-4651-91ae-2d3e2369769d/cQbXqQv5UB.lottie"
-                    background="transparent" speed="0.5" style="width: 100%; max-width: 500px; height: auto;" loop autoplay>
-                </dotlottie-player>
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="{{ asset('assets/json/Workplace-Meditation.json') }}" background="transparent" speed="0.5" style="width: 100%; max-width: 500px; height: auto;" loop autoplay></lottie-player>
             </div>
         </div>
     </div>
@@ -204,27 +202,27 @@
                         <h3 class="h4 mb-3 fw-bold text-center" style="color: #2d3436;">For Employers</h3>
                         <ul class="list-unstyled">
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Employee Wellness Programs</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Stress Management Tools</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Productivity Enhancement</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Team Building Activities</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Leadership Development</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Work-Life Balance Support</span>
                             </li>
                         </ul>
@@ -242,27 +240,27 @@
                         <h3 class="h4 mb-3 fw-bold text-center" style="color: #2d3436;">For Consultants</h3>
                         <ul class="list-unstyled">
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Professional Development</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Client Management Tools</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Resource Library</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Networking Opportunities</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Certification Programs</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Business Growth Support</span>
                             </li>
                         </ul>
@@ -280,27 +278,27 @@
                         <h3 class="h4 mb-3 fw-bold text-center" style="color: #2d3436;">For Health Plans</h3>
                         <ul class="list-unstyled">
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Integrated Care Solutions</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Preventive Care Tools</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Outcome Tracking</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Member Engagement</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Cost Reduction Programs</span>
                             </li>
                             <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <i class="fas fa-check-circle text-success me-2 mr-2"></i>
                                 <span style="color: #636e72;">Quality Metrics</span>
                             </li>
                         </ul>
@@ -352,7 +350,7 @@
                 <div class="feature-list">
                     <div class="d-flex mb-4">
                         <div class="feature-icon me-3">
-                            <div class="rounded-circle p-3" style="background: rgba(97, 0, 155, 0.1);">
+                            <div class="rounded-circle p-3 mr-4" style="background: rgba(97, 0, 155, 0.1);">
                                 <i class="fas fa-mobile-alt fa-lg" style="color: #61009b;"></i>
                             </div>
                         </div>
@@ -363,7 +361,7 @@
                     </div>
                     <div class="d-flex mb-4">
                         <div class="feature-icon me-3">
-                            <div class="rounded-circle p-3" style="background: rgba(97, 0, 155, 0.1);">
+                            <div class="rounded-circle p-3 mr-4" style="background: rgba(97, 0, 155, 0.1);">
                                 <i class="fas fa-chart-bar fa-lg" style="color: #61009b;"></i>
                             </div>
                         </div>
@@ -374,7 +372,7 @@
                     </div>
                     <div class="d-flex mb-4">
                         <div class="feature-icon me-3">
-                            <div class="rounded-circle p-3" style="background: rgba(97, 0, 155, 0.1);">
+                            <div class="rounded-circle p-3 mr-4" style="background: rgba(97, 0, 155, 0.1);">
                                 <i class="fas fa-lock fa-lg" style="color: #61009b;"></i>
                             </div>
                         </div>
@@ -385,7 +383,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="feature-icon me-3">
-                            <div class="rounded-circle p-3" style="background: rgba(97, 0, 155, 0.1);">
+                            <div class="rounded-circle p-3 mr-4" style="background: rgba(97, 0, 155, 0.1);">
                                 <i class="fas fa-users fa-lg" style="color: #61009b;"></i>
                             </div>
                         </div>
@@ -437,7 +435,8 @@
                                 alt="Client"
                                 class="rounded-circle me-3"
                                 width="50"
-                                style="border: 3px solid #61009b;">
+                                style="border: 3px solid #61009b;
+                                margin-right: 1rem">
                             <div>
                                 <h5 class="mb-0 fw-bold" style="color: #2d3436;">Sarah Johnson</h5>
                                 <small class="text-muted">HR Director, TechCorp</small>
@@ -463,7 +462,8 @@
                                 alt="Client"
                                 class="rounded-circle me-3"
                                 width="50"
-                                style="border: 3px solid #61009b;">
+                                style="border: 3px solid #61009b;
+                                margin-right: 1rem">
                             <div>
                                 <h5 class="mb-0 fw-bold" style="color: #2d3436;">Michael Chen</h5>
                                 <small class="text-muted">Lead Consultant, WellnessPro</small>
@@ -489,7 +489,8 @@
                                 alt="Client"
                                 class="rounded-circle me-3"
                                 width="50"
-                                style="border: 3px solid #61009b;">
+                                style="border: 3px solid #61009b;
+                                margin-right: 1rem">
                             <div>
                                 <h5 class="mb-0 fw-bold" style="color: #2d3436;">Emily Rodriguez</h5>
                                 <small class="text-muted">Director, HealthFirst</small>
